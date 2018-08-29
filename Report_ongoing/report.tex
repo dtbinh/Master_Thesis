@@ -11,7 +11,7 @@
 % som/bt/st/mt: Studies on Mechatronics, Bachelor Thesis, Semester Thesis, Master Thesis
 % fs/hs: Spring term, Autumn term
 % german/english: German/English
-\usepackage[bt,hs,english]{packages/ethasl}
+\usepackage[mt,fs,english]{packages/ethasl}
 
 % Activate for german language
 %\usepackage{german}
@@ -28,17 +28,15 @@
 \begin{document}
 
 % TODO Add your title
-\title{\LaTeX\ \!-Template for Student Projects}
+\title{Morphology Optimization of a Tilt-Rotor MAV}
 %\subtitle{bla bla bla}
 
 % TODO Add name of the authors
-\studentA{Student 1}
-\studentB{Student 2}
-% \studentC{Student 3}
+\studentA{Luca Rinsoz}
 
 % TODO Add name of the supervisors
-\supervisionA{Supervisor 1}
-%\supervisionB{Supervisor B}
+\supervisionA{Karen Bodie}
+\supervisionB{Zachary Taylor}
 %\supervisionC{Supervisor C}
 
 % TODO Change if necessary
@@ -86,7 +84,15 @@
 % TODO Add your own chapters here
 \input{chapters/introduction}
 \cleardoublepage
-\input{chapters/chapter}
+\input{chapters/optimization_problem}
+\cleardoublepage
+\input{chapters/modelling}
+\cleardoublepage
+\input{chapters/results}
+\cleardoublepage
+\input{chapters/evaluation}
+\cleardoublepage
+\input{chapters/conclusion}
 \cleardoublepage
 % \input{}
 % \cleardoublepage
