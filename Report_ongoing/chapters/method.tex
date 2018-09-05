@@ -51,8 +51,9 @@ the theoretical background needed to perform the simulations is covered.
 \section{Modelisation of MAVs}
 \label{sec:modeling_mav}
 In the following part, a dynamical model for a general design of MAV is presented.
-This model is inspired from the models presented in \citep{kamel_voliro:_2018} and
-\citep{ryll_modeling_2012}.
+Such a modelisation is much needed to mathematiacally optimize the morphology of
+a MAV. This model is inspired from the models presented in
+\citep{kamel_voliro:_2018} and \citep{ryll_modeling_2012}.
 
 \subsubsection{Initial Definitions}
 \label{sec:definitions}
@@ -108,24 +109,26 @@ n is the number of propellers.
 \subsubsection{Assumptions}
 \label{sec:assumptions}
 In this model the first assumption is that the MAV is composed of n+1 rigid bodies:
-one for each propeller $P_i$ and one for the body B. Then, it is considered that
-the motors that actuate the propellers can only rotate in one direction. Finally,
-the airflow interactions between the different rotors are neglected.
+one for each propeller unit $P_i$ and one for the body B. Then, it is considered that
+the thrust is produced by irreversible fixed-pitch motor-propeller actuators. Finally,
+only the aerodynamic forces and torques that are responsible for the MAV actuation
+are considered, all the second order effects and disturbances are neglected and
+also the airflow interactions between the different rotors are neglected.
 
 \subsubsection{Equations of motion}
 \label{sec:equations}
-Using Newton-Euler formalism, it follows that
+Using Newton-Euler formalism, the general equations of motion of the MAV are
 \begin{equation}
   \label{acc_eq}
   \begin{cases}
-    \dot{\omega}_B  \ = \ I_B^{-1} \sum_{n=1}^{n}  \big(\ ^{B}O_{P_{i}} \tau_{ext,i} + \tau_{Bi} \ \big) \, ,\\
+    \dot{\omega}_B  \ = \ I_B^{-1} \sum_{i=1}^{n}  \big(\ ^{B}R_{P_{i}} \tau_{ext,i} + \tau_{Bi} \ \big) \, ,\\
     \ddot{p}  \ = \
     \begin{bmatrix}
       0 \\
       0 \\
-      g
+      -g
     \end{bmatrix}
-    \ ^{W}R_B \sum_{n=1}^{n} T_i \, .
+    \frac{1}{m} \ ^{W}R_B \sum_{i=1}^{n} T_i \, .
   \end{cases}
 \end{equation}
 
@@ -133,17 +136,17 @@ Where
 
 \begin{equation}
   \label{tau_b_i}
-  \tau_{Bi}  \ = \ ^{B}O_{P_{i}} \times\   ^{B}R_{P_{i}} T_{P,i}
+  \tau_{Bi}  \ = \ ^{B}O_{P_{i}} \times\   ^{B}R_{P_{i}} T_{P,i}\, ,
 \end{equation}
 
 \begin{equation}
   \label{tau_ext_i}
   \tau_{ext,i}  \ = \  \big[0 \ \  0 \ \  - c_i \kappa_m w_i^2 \big]^T \
-  \begin{cases}
-    c_i = 1, & \mbox{if } i \mbox{ is odd } (cw\ rotation)\\
-    c_i = -1 & \mbox{if } i\mbox{ is even } (ccw\ rotation)
-  \end{cases}
 \end{equation}
+
+\centerline{ $\begin{cases} c_i = 1, & \mbox{if } i \mbox{ is odd } (cw\ rotation\ to
+\ produce + thrust)\\ c_i = -1 & \mbox{if } i\mbox{ is even } (ccw\ rotation\ to
+\ produce + thrust) \end{cases}$ }
 
 and
 
@@ -153,16 +156,169 @@ and
   \kappa_f w_i^2 \big]^T\, .
 \end{equation}
 
+In \Cref{acc_eq} $g$ is the gravity constant, in \Cref{tau_ext_i}, $\kappa_{m}$
+is the propeller drag coefficient, in \Cref{T_i} $\kappa_{f}$ is the propeller
+thrust coefficient and in \Cref{tau_ext_i} and (\ref{T_i}) $w_{i}$ is the i-th
+propeller rotation speed.\\
+The force and torque that the drone produce in body frame $\mathcal{F}_B$ are
 
+\begin{equation}
+  \label{force_eq}
+    \begin{bmatrix}
+      M_B \\
+      F_B
+    \end{bmatrix} \ = \
+    \begin{bmatrix}
+      \sum_{i=1}^{n}  \big(\ ^{B}R_{P_{i}} \tau_{ext,i} + \tau_{Bi} \ \big) \\
+      \sum_{i=1}^{n} T_i
+    \end{bmatrix}
+    \, ,
+\end{equation}
 
+that can be rewritten
+
+\begin{equation}
+  \label{force_eq}
+    \begin{bmatrix}
+      M_B \\
+      F_B
+    \end{bmatrix} \ = \
+    A(\alpha)W
+    \, .
+\end{equation}
+
+Where $W = [w_1^2,\ w_2^2,\ ...,\ w_n^2]$ and\\\\
+\centerline{\begingroup
+    \fontsize{9pt}{11pt}\selectfont
+$A(\alpha) \ = \
+\begin{bmatrix}
+  (-\kappa_f L s(\beta_1) c(\theta_1) +c_1\kappa_m s(\theta_1)) s(\alpha_1)
+  + (\kappa_f L s(\theta_1) +c_1 \kappa_m c(\theta_1) s(\beta_1)) c(\alpha_1) & ...\\
+  (-\kappa_f L s(\beta_1) s(\theta_1) - c_1 \kappa_m c(\theta_1)) s(\alpha_1)
+  + (-\kappa_f L c(\theta_1) +c_1 \kappa_m s(\beta_1) s(\theta_1)) c(\alpha_1) & ...\\
+  (-L \kappa_f c(\beta_1)) s(\alpha_1) +(c_1 \kappa_m c(\beta_1)) c(\alpha_1) & ...\\
+  s(\theta_1) \kappa_f s(\alpha_1) + s(\beta_1) c(\theta_1) \kappa_f c(\alpha_1) & ...\\
+  -c(\theta_1) \kappa_f s(\alpha_1) +s(\beta_1) s(\theta_1) \kappa_f c(\alpha_1) & ...\\
+  c(\beta_1) \kappa_f c(\alpha_1) & ...
+\end{bmatrix} \, ,$
+\endgroup}\\\\
+is the $6 \times n$ allocation matrix and $c(\cdot)$ and $s(\cdot)$ represent the
+cosine and sine operator respectively.
+
+\subsubsection{Static allocation}
+\label{sec:allocation}
+The optimization engine has to compute the maximal reachable force and torque in
+a large number of direction. So to compute that in a reasonable times in
+\citep{kamel_voliro:_2018} an approach to transform the non-linear allocation matrix
+into a static allocation matrix, which renders the problem of inverse kinematic
+linear. To do the system in \Cref{force_eq} is rewritten as
+
+\begin{equation}
+  \label{static_force_eq}
+    \begin{bmatrix}
+      M_B \\
+      F_B
+    \end{bmatrix} \ = \
+    A_{static}F_{dec}
+    \, .
+\end{equation}
+Where $F_{dec}$ is the decomposed force vector defined as follow
+\begin{equation}
+  \label{f_dec}
+    F_{dec} \ = \
+    \begin{pmatrix}
+      F_{h,1} \\
+      F_{v,1} \\
+      ... \\
+      F_{h,n} \\
+      F_{v,n}
+    \end{pmatrix} \, ,
+\end{equation}
+
+with $F_{v,1}\ = \ \kappa_f cos(\alpha_i)$ the vertical force produced by the i-th
+propeller and $F_{h,1}\ = \ \kappa_f sin(\alpha_i)$ the horizontal force produced
+by the i-th propeller. And the static matrix defined as\\\\
+\centerline{\begingroup
+    \fontsize{9pt}{11pt}\selectfont
+$A_{static} \ = \
+\begin{bmatrix}
+      -\kappa_f L s(\beta_1) c(\theta_1) +c_1\kappa_m s(\theta_1)  &
+      + \kappa_f L s(\theta_1) +c_1 \kappa_m c(\theta_1) s(\beta_1)  & ... & ...\\
+      -\kappa_f L s(\beta_1) s(\theta_1) - c_1 \kappa_m c(\theta_1) &
+      -\kappa_f L c(\theta_1) +c_1 \kappa_m s(\beta_1) s(\theta_1)  & ... & ...\\
+      -L \kappa_f c(\beta_1) & c_1 \kappa_m c(\beta_1)  & ... & ...\\
+      s(\theta_1) \kappa_f & s(\beta_1) c(\theta_1) \kappa_f & ... & ...\\
+      -c(\theta_1) \kappa_f  & s(\beta_1) s(\theta_1) \kappa_f & ... & ...\\
+      0 & c(\beta_1) \kappa_f  & ... & ...
+\end{bmatrix}\, ,$
+\endgroup}\\\\
+a $6 \times 2n$ matrix that is invariant for all drone design. Using the Moore-Penrose
+pseudo invers we can easily get the invers kinematic as follow
+
+\begin{equation}
+  \label{inverse_kin}
+  F_{dec}  \ = \ A_{static}^{\dagger}
+    \begin{bmatrix}
+      M_{des} \\
+      F_{des}
+    \end{bmatrix}
+    \, .
+\end{equation}
+
+Which returns the decomposed force vector for a desired force and torque. Finding
+the tilting angles and propellers rotation speed required to attain this desired
+force and torque is then pretty straightforward
+
+\begin{equation}
+  \label{decomposition}
+  \begin{cases}
+    w_i^2 = \frac{1}{\kappa_f} \sqrt{F_{v,i}^2 + F_{h,i}^2} \\
+    \alpha_i = atan2(F_{h,i},F_{v,i})
+  \end{cases}\, .
+\end{equation}
 
 \section{Optimization problem}
 \label{sec:optimization_problem}
-Define morphology optimization problem
+The following section focuses on the optimization problem that the engine has to
+solve in order to obtain a MAV design that is optimal. The criteria that make
+this design optimal are also discused.
+
+\subsubsection{Problem statement}
+\label{sec:problem}
+ The minimization problem is stated as follow
+
+ \begin{equation}
+   \label{opt_pb}
+   \begin{aligned}
+    & \underset{x}{\text{arg min}}
+    & & f(x) &\text{subject to} &
+    \begin{cases}
+      c(x) \leq 0 \\
+      ceq(x) = 0 \\
+      A\cdot x \leq 0 \\
+      Aeq \cdot x = 0 \\
+      lb \leq x \leq ub
+    \end{cases}
+    \end{aligned}\, .
+ \end{equation}
+
+\subsubsection{Cost Functions}
+\label{sec:cost_functions}
+
+\subsubsection{Solver}
+\label{sec:solver}
 
 \section{Optimization tool}
 \label{sec:optimization_tool}
-Show resulting optimization tool.
+
+\subsubsection{User Guide}
+\label{sec:user_guide}
+
+\subsubsection{Outcome}
+\label{sec:outcome}
+
+\subsubsection{Limitations}
+\label{sec:limitations}
 
 \section{Simulation Approach}
 \label{sec:control_approach}
