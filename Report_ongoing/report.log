@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  4 SEP 2018 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  5 SEP 2018 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,24 +1359,6 @@ LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
 (/home/luca/git/Master_Thesis/Report_ongoing/report.aux
 
-LaTeX Warning: Label `sec:assumptions' multiply defined.
-
-
-LaTeX Warning: Label `sec:assumptions@cref' multiply defined.
-
-
-LaTeX Warning: Label `sec:assumptions' multiply defined.
-
-
-LaTeX Warning: Label `sec:assumptions@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:hexacopter' multiply defined.
-
-
-LaTeX Warning: Label `fig:hexacopter@cref' multiply defined.
-
-
 LaTeX Warning: Label `sec:hexa_copter' multiply defined.
 
 
@@ -1614,21 +1596,21 @@ l.84 \cleardoublepage
 sc.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/hexacopter.png>]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/method.tex
 Chapter 2.
-<images/drone_design.jpg, id=257, 728.7225pt x 596.2275pt>
+<images/drone_design.jpg, id=256, 728.7225pt x 596.2275pt>
 File: images/drone_design.jpg Graphic file (type jpg)
 
 <use images/drone_design.jpg>
 Package pdftex.def Info: images/drone_design.jpg used on input line 20.
 (pdftex.def)             Requested size: 108.4061pt x 88.69334pt.
 
-<images/drone_design1.jpg, id=258, 789.95125pt x 694.595pt>
+<images/drone_design1.jpg, id=257, 789.95125pt x 694.595pt>
 File: images/drone_design1.jpg Graphic file (type jpg)
 
 <use images/drone_design1.jpg>
 Package pdftex.def Info: images/drone_design1.jpg used on input line 25.
 (pdftex.def)             Requested size: 108.4061pt x 95.31367pt.
 
-<images/drone_design2.jpg, id=259, 1297.84875pt x 1030.85126pt>
+<images/drone_design2.jpg, id=258, 1297.84875pt x 1030.85126pt>
 File: images/drone_design2.jpg Graphic file (type jpg)
 
 <use images/drone_design2.jpg>
@@ -1640,13 +1622,16 @@ Package pdftex.def Info: images/drone_design2.jpg used on input line 30.
  </home/luca/git/Master_Thesis/Report_ongoing/images/drone_design.jpg> </home/l
 uca/git/Master_Thesis/Report_ongoing/images/drone_design1.jpg> </home/luca/git/
 Master_Thesis/Report_ongoing/images/drone_design2.jpg>] <images/tilt_model.png,
- id=276, 875.27pt x 626.34pt>
+ id=281, 875.27pt x 626.34pt>
 File: images/tilt_model.png Graphic file (type png)
 
 <use images/tilt_model.png>
-Package pdftex.def Info: images/tilt_model.png used on input line 64.
-(pdftex.def)             Requested size: 108.4061pt x 77.56595pt.
-) [4 </home/luca/git/Master_Thesis/Report_ongoing/images/tilt_model.png>]
+Package pdftex.def Info: images/tilt_model.png used on input line 103.
+(pdftex.def)             Requested size: 180.67499pt x 129.28934pt.
+ [4 </home/luca/git/Master_Thesis/Report_ongoing/images/tilt_model.png>]) [5] [
+6
+
+]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/optimization_results.tex
 Chapter 3.
 
@@ -1702,33 +1687,32 @@ Overfull \hbox (117.83806pt too wide) in paragraph at lines 49--60
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [5
-
-
-] [6]
-(/home/luca/git/Master_Thesis/Report_ongoing/chapters/simulation_results.tex
-Chapter 4.
 ) [7
 
-
-] [8
-
-] (/home/luca/git/Master_Thesis/Report_ongoing/chapters/conclusion.tex
-Chapter 5.
+] [8]
+(/home/luca/git/Master_Thesis/Report_ongoing/chapters/simulation_results.tex
+Chapter 4.
 ) [9
+
 
 ] [10
 
-] (/home/luca/git/Master_Thesis/Report_ongoing/report.bbl) [11
+] (/home/luca/git/Master_Thesis/Report_ongoing/chapters/conclusion.tex
+Chapter 5.
+) [11
+
+] [12
+
+] (/home/luca/git/Master_Thesis/Report_ongoing/report.bbl) [13
 
 ]
-[12
+[14
 
 ] (/home/luca/git/Master_Thesis/Report_ongoing/chapters/appendix_uml.tex
 Appendix A.
-) [13
+) [15
 
-] [14
+] [16
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
@@ -1745,10 +1729,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 22494 strings out of 493029
- 427216 string characters out of 6136235
+ 22520 strings out of 493029
+ 427553 string characters out of 6136235
  520089 words of memory out of 5000000
- 25442 multiletter control sequences out of 15000+600000
+ 25460 multiletter control sequences out of 15000+600000
  14788 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,15n,65p,436b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1769,11 +1753,11 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
 
-Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (22 pa
-ges, 1897804 bytes).
+Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (24 pa
+ges, 1909269 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
  290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
