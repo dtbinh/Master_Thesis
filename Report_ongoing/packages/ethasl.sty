@@ -12,7 +12,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Colors
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \usepackage{color}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 
@@ -96,7 +95,7 @@
 \renewcommand{\maketitle}{
 
 \pagestyle{empty}
- 
+
 \begin{center}
 \hspace{0.02\textwidth}
 \parbox[c][\textheight][t]{0.97\textwidth}{
@@ -158,11 +157,11 @@
 \hspace*{-3.3cm}
 \begin{tabular}{p{8cm}p{6cm}p{4cm}}
 \ifingerman
- 		{\bf Betreut von:} 
+ 		{\bf Betreut von:}
 	\else
- 		{\bf Supervised by:} 
+ 		{\bf Supervised by:}
 	\fi
-	& & 
+	& &
 	\ifingerman
  		\ifstudentB
  			{\bf Autoren: }
@@ -181,13 +180,13 @@
 	\if \@supervisionC \else \@supervisionC\fi & & \if \@studentC \else \@studentC\fi
 \end{tabular}
 
-% title	
-\vspace{-18cm}	
+% title
+\vspace{-18cm}
 {\Huge \bf \@title \par}
 
 % subtitle
-\if \@subtitle 
-\else 
+\if \@subtitle
+\else
 	\vspace{1cm}
 	\huge \@subtitle
 \fi

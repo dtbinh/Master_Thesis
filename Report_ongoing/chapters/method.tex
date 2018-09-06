@@ -9,8 +9,8 @@ These parameters are defined as:
 \begin{itemize}
 \item $\beta$  (angles formed by the arms with the horizontal plane see \Cref{fig:drone_design})
 \item $\theta$ (angles formed by the arms in the horizontal plane see \Cref{fig:drone_design})
-\item L (arm length)
-\item n (number of propeller)
+\item $L$ (arm length)
+\item $n$ (number of propeller)
 \end{itemize}
 
 \begin{figure}[h]
@@ -36,7 +36,7 @@ MAV ($n = 4$, $\beta = [30, 30, 30, 30] [^{\circ}]$, $\theta = [22, 22, 22, 22]
 \end{figure}
 
 To solve the problem an optimization engine is developed with
-Matlab$^\textrm{\textregistered}$. This tool returns the aforementioned
+MATLAB$^\textrm{\textregistered}$. This tool returns the aforementioned
 parameters along with other information on the corresponding MAV design.
 The interesting drone designs outputted by the tool are then simulated on
 Gazebo\footnote{An open source robot simulator \citep{noauthor_gazebo_nodate}.}
@@ -54,6 +54,15 @@ In the following part, a dynamical model for a general design of MAV is presente
 Such a modelisation is much needed to mathematiacally optimize the morphology of
 a MAV. This model is inspired from the models presented in
 \citep{kamel_voliro:_2018} and \citep{ryll_modeling_2012}.
+
+\subsubsection{Assumptions}
+\label{sec:assumptions}
+In this model the first assumption is that the MAV is composed of n+1 rigid bodies:
+one for each propeller unit $P_i$ and one for the body B. Then, it is considered that
+the thrust is produced by irreversible fixed-pitch motor-propeller actuators. Finally,
+only the aerodynamic forces and torques that are responsible for the MAV actuation
+are considered, all the second order effects and disturbances are neglected and
+also the airflow interactions between the different rotors are neglected.
 
 \subsubsection{Initial Definitions}
 \label{sec:definitions}
@@ -101,19 +110,10 @@ n is the number of propellers.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{images/tilt_model.png}
+  \includegraphics[width=0.4\textwidth]{images/tilt_model.png}
   \caption{Representation of the i-th tilting arm \citep{ryll_modeling_2012}.}
   \label{fig:tilt_model}
 \end{figure}
-
-\subsubsection{Assumptions}
-\label{sec:assumptions}
-In this model the first assumption is that the MAV is composed of n+1 rigid bodies:
-one for each propeller unit $P_i$ and one for the body B. Then, it is considered that
-the thrust is produced by irreversible fixed-pitch motor-propeller actuators. Finally,
-only the aerodynamic forces and torques that are responsible for the MAV actuation
-are considered, all the second order effects and disturbances are neglected and
-also the airflow interactions between the different rotors are neglected.
 
 \subsubsection{Equations of motion}
 \label{sec:equations}
@@ -211,7 +211,7 @@ The optimization engine has to compute the maximal reachable force and torque in
 a large number of direction. So to compute that in a reasonable times in
 \citep{kamel_voliro:_2018} an approach to transform the non-linear allocation matrix
 into a static allocation matrix, which renders the problem of inverse kinematic
-linear. To do the system in \Cref{force_eq} is rewritten as
+linear. To do so, the system in \Cref{force_eq} is rewritten as
 
 \begin{equation}
   \label{static_force_eq}
@@ -252,8 +252,8 @@ $A_{static} \ = \
       0 & c(\beta_1) \kappa_f  & ... & ...
 \end{bmatrix}\, ,$
 \endgroup}\\\\
-a $6 \times 2n$ matrix that is invariant for all drone design. Using the Moore-Penrose
-pseudo invers we can easily get the invers kinematic as follow
+a $6 \times 2n$ matrix that is invariant for a drone design. Using the Moore-Penrose
+pseudo inverse we can easily get the inverse kinematic as follow
 
 \begin{equation}
   \label{inverse_kin}
@@ -281,32 +281,95 @@ force and torque is then pretty straightforward
 \label{sec:optimization_problem}
 The following section focuses on the optimization problem that the engine has to
 solve in order to obtain a MAV design that is optimal. The criteria that make
-this design optimal are also discused.
+this design optimal are also discussed.
 
 \subsubsection{Problem statement}
 \label{sec:problem}
- The minimization problem is stated as follow
+ The optimization problem is stated as follow
 
- \begin{equation}
-   \label{opt_pb}
-   \begin{aligned}
-    & \underset{x}{\text{arg min}}
+\begin{equation}
+  \label{opt_pb}
+  \begin{aligned}
+    & \underset{x}{\text{arg max}}
     & & f(x) &\text{subject to} &
     \begin{cases}
       c(x) \leq 0 \\
       ceq(x) = 0 \\
       A\cdot x \leq 0 \\
       Aeq \cdot x = 0 \\
-      lb \leq x \leq ub
+      lb \leq x \leq ub\, ,
     \end{cases}
-    \end{aligned}\, .
- \end{equation}
+  \end{aligned}
+\end{equation}
+
+where $f(x)$ is the cost function, $x$ the argument vector, $c(x)$
+the non-linear inequality constraint vector, $ceq(x)$ the non-linear equality
+constraint vector, $A$ the linear inequality constraint matrix, $Aeq$ the linear
+equality constraint matrix, $lb$ the lower bound vector of the arguments ($x$)
+and $ub$ the upper bound vector.\\
+Once the optimization problem solved, the output is the optimal argument vector
+$x^*$ that maximizes the cost function $f(x)$. In our case the argument vector
+$x$ is composed of the MAV's morphology parameters ($\beta$, $\theta$, $L$, $n$)
+and cost functions are the subject of next section.
 
 \subsubsection{Cost Functions}
 \label{sec:cost_functions}
+As stated in \Cref{sec:introduction} the aim of the project is to obtain a multi-rotor
+design that is omni-directional. Therefore, it is the heart of the problem to
+define meaningful cost functions for the optimization problem, which when
+solved would return parameters for an omni-directional drone. In this section
+the few cost functions that capture at best the omni-directionality are described.\\
+The first, and also one of the more meaningful cost function consists in maximizing
+the minimal attainable force and the minimal attainable torque that the MAV can
+produce in any direction. It makes sense because on of the definition of
+omni-directionality  is defined as the drone capacity to accelerate instantaneously
+in every directions. In order to do that the MAV has to have high minimal attainable
+force and torque, hence this cost function. It turns out this cost function is also
+computationally quite lighter than the other. Indeed, as when the multi-rotor apply a
+force or torque in the direction parallel to one of its arm, the propeller on this arm
+is perfectly unable to produce any force or torque in this direction. This is due to
+the fact that no matter what the tilting angle for this propeller is, the thrust it
+produces is parallel to the arm direction (see \Cref{fig:tilt_model}). Therefore,
+the minimal attainable forces and torques for the drone are in the direction where
+it looses a propeller, i.e. the arm directions. So instead of optimizing the force
+and torque in a large number of direction, it is enough for this cost function to
+optimize the force and torque in $n$ directions.\\
+The second cost function consist in maximizing the minimal attainable force
+and the minimal attainable torque that the MAV can produce in any direction
+and minimizing the MAV’s inertia. It is the same as the first cost function, but
+the last term is added in order to have an easier drone to control and thus put
+a criterion on the controllability.\\
+The next cost function is designed to maximize the volume of the reachable
+force and torque space. The force and torque spaces are two polyhedron formed
+by the drone’s attainable forces and torques in every directions (see \Cref{fig:tool_outputa}
+and \Cref{fig:tool_outputb}). The idea behind this cost function is to have the
+biggest task space for the drone and hence increase the MAV’s ability to navigate
+in any orientation and to any
+position. This cost function is computationally heavy, because in order to have
+precise polyhedrons for the different spaces, the forces and torques has to be
+computed in 7490 directions.\\
+After that a cost function that maximize the force, the torque and the hover
+efficiency in all directions. The aim of this cost function
+is to maximize the agility of the MAV for good disturbance rejection. Moreover,
+the term that maximizes the hover efficiency is designed to give the drone design
+the ability to perform manipulation efficiently in any orientation. Solving the
+optimization problem for this cost function can also be computationally heavy
+depending on how many directions you choose to represent “All directions”.\\
+The last cost function maximizes the force and the torque in one defined
+direction d. It is mostly designed to test the optimization engine as it is
+computationally light and given specific directions the optimal design is
+pretty straightforward. For instance if you maximize the force in the $e_z$
+direction for a 4-rotor MAV, the expected optimal solution would be a standard
+quadcopter.
+In the presented cost functions the multi-rotor model described in
+\Cref{sec:modeling_mav} is implemented in MATLAB$^\textrm{\textregistered}$
+to compute the different forces and torques in the different directions.
 
 \subsubsection{Solver}
 \label{sec:solver}
+In order to solve the previously described optimization problems, the tool uses
+MATLAB$^\textrm{\textregistered}$ function fmincon, with different algorithm.
+The one showing the quickest convergence and the best results being the sequential quadratic programming (sqp).
 
 \section{Optimization tool}
 \label{sec:optimization_tool}
@@ -314,8 +377,39 @@ this design optimal are also discused.
 \subsubsection{User Guide}
 \label{sec:user_guide}
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/gui.png}
+  \caption{MAV morphology optimization tool GUI.}
+  \label{fig:gui}
+\end{figure}
+
 \subsubsection{Outcome}
 \label{sec:outcome}
+
+\begin{figure}[!h]
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/n=4_force.jpg}
+    \caption{Force space.} \label{fig:tool_outputa}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/n=4_torque.jpg}
+    \caption{Torque space.} \label{fig:tool_outputb}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/n=4_hover.jpg}
+    \caption{Hover efficiency.} \label{fig:tool_outputc}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/n=4_model.jpg}
+    \caption{MAV representation.} \label{fig:tool_outputd}
+  \end{subfigure}
+  \caption{Example of what is outputted by the optimization engine.}
+  \label{fig:tool_output}
+\end{figure}
 
 \subsubsection{Limitations}
 \label{sec:limitations}
