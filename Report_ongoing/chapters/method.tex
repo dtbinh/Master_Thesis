@@ -30,8 +30,8 @@ These parameters are defined as:
   \includegraphics[width=\textwidth]{images/drone_design2.jpg}
 \end{minipage}
 \caption{Quadcopter to illustrate the parameters that define the morphology of an
-MAV ($n = 4$, $\beta = [30, 30, 30, 30] [^{\circ}]$, $\theta = [22, 22, 22, 22]
-[^{\circ}]$, and $L = 0.4 [m]$).}
+MAV ($n = 4$, $\beta\ =\ [30, 30, 30, 30]\ [^{\circ}]$, $\theta\ =\ [22, 22, 22, 22]\
+[^{\circ}]$, and $L\ =\ 0.4\ [m]$).}
 \label{fig:drone_design}
 \end{figure}
 
@@ -39,7 +39,7 @@ To solve the problem an optimization engine is developed with
 MATLAB$^\textrm{\textregistered}$. This tool returns the aforementioned
 parameters along with other information on the corresponding MAV design.
 The interesting drone designs outputted by the tool are then simulated on
-Gazebo\footnote{An open source robot simulator \citep{noauthor_gazebo_nodate}.}
+Gazebo$^\textrm{\textregistered}$\footnote{An open source robot simulator \citep{noauthor_gazebo_nodate}.}
 and the control of the different models is achieved using a Robotic Operating
 System\footnote{An open source collection of software that help developers to
 create robot applications \citep{rostutorials}.} (ROS) node.\\
@@ -110,7 +110,7 @@ n is the number of propellers.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.4\textwidth]{images/tilt_model.png}
+  \includegraphics[width=0.5\textwidth]{images/tilt_model.png}
   \caption{Representation of the i-th tilting arm \citep{ryll_modeling_2012}.}
   \label{fig:tilt_model}
 \end{figure}
@@ -188,8 +188,7 @@ that can be rewritten
 \end{equation}
 
 Where $W = [w_1^2,\ w_2^2,\ ...,\ w_n^2]$ and\\\\
-\centerline{\begingroup
-    \fontsize{9pt}{11pt}\selectfont
+\resizebox{\textwidth}{!}{
 $A(\alpha) \ = \
 \begin{bmatrix}
   (-\kappa_f L s(\beta_1) c(\theta_1) +c_1\kappa_m s(\theta_1)) s(\alpha_1)
@@ -201,7 +200,7 @@ $A(\alpha) \ = \
   -c(\theta_1) \kappa_f s(\alpha_1) +s(\beta_1) s(\theta_1) \kappa_f c(\alpha_1) & ...\\
   c(\beta_1) \kappa_f c(\alpha_1) & ...
 \end{bmatrix} \, ,$
-\endgroup}\\\\
+}\\\\
 is the $6 \times n$ allocation matrix and $c(\cdot)$ and $s(\cdot)$ represent the
 cosine and sine operator respectively.
 
@@ -238,8 +237,7 @@ Where $F_{dec}$ is the decomposed force vector defined as follow
 with $F_{v,1}\ = \ \kappa_f cos(\alpha_i)$ the vertical force produced by the i-th
 propeller and $F_{h,1}\ = \ \kappa_f sin(\alpha_i)$ the horizontal force produced
 by the i-th propeller. And the static matrix defined as\\\\
-\centerline{\begingroup
-    \fontsize{9pt}{11pt}\selectfont
+\resizebox{\textwidth}{!}{
 $A_{static} \ = \
 \begin{bmatrix}
       -\kappa_f L s(\beta_1) c(\theta_1) +c_1\kappa_m s(\theta_1)  &
@@ -251,7 +249,7 @@ $A_{static} \ = \
       -c(\theta_1) \kappa_f  & s(\beta_1) s(\theta_1) \kappa_f & ... & ...\\
       0 & c(\beta_1) \kappa_f  & ... & ...
 \end{bmatrix}\, ,$
-\endgroup}\\\\
+}\\\\
 a $6 \times 2n$ matrix that is invariant for a drone design. Using the Moore-Penrose
 pseudo inverse we can easily get the inverse kinematic as follow
 
@@ -310,7 +308,7 @@ and $ub$ the upper bound vector.\\
 Once the optimization problem solved, the output is the optimal argument vector
 $x^*$ that maximizes the cost function $f(x)$. In our case the argument vector
 $x$ is composed of the MAV's morphology parameters ($\beta$, $\theta$, $L$, $n$)
-and cost functions are the subject of next section.
+and the cost functions are the subject of next section.
 
 \subsubsection{Cost Functions}
 \label{sec:cost_functions}
@@ -344,49 +342,66 @@ force and torque space. The force and torque spaces are two polyhedron formed
 by the drone’s attainable forces and torques in every directions (see \Cref{fig:tool_outputa}
 and \Cref{fig:tool_outputb}). The idea behind this cost function is to have the
 biggest task space for the drone and hence increase the MAV’s ability to navigate
-in any orientation and to any
-position. This cost function is computationally heavy, because in order to have
-precise polyhedrons for the different spaces, the forces and torques has to be
-computed in 7490 directions.\\
+in any orientation and to any position. This cost function is computationally heavy,
+because in order to have precise polyhedrons for the different spaces, the forces and
+torques has to be computed in 7490 directions.\\
 After that a cost function that maximize the force, the torque and the hover
 efficiency in all directions. The aim of this cost function
 is to maximize the agility of the MAV for good disturbance rejection. Moreover,
 the term that maximizes the hover efficiency is designed to give the drone design
 the ability to perform manipulation efficiently in any orientation. Solving the
 optimization problem for this cost function can also be computationally heavy
-depending on how many directions you choose to represent “All directions”.\\
+depending on how many directions you choose to represent “all directions”.\\
 The last cost function maximizes the force and the torque in one defined
 direction d. It is mostly designed to test the optimization engine as it is
 computationally light and given specific directions the optimal design is
-pretty straightforward. For instance if you maximize the force in the $e_z$
-direction for a 4-rotor MAV, the expected optimal solution would be a standard
-quadcopter.
+pretty straightforward. For instance if you maximize the force in the $Z$
+direction for a 4-rotor MAV, the expected optimal solution would be a traditional
+quad-copter.
 In the presented cost functions the multi-rotor model described in
 \Cref{sec:modeling_mav} is implemented in MATLAB$^\textrm{\textregistered}$
 to compute the different forces and torques in the different directions.
 
 \subsubsection{Solver}
 \label{sec:solver}
-In order to solve the previously described optimization problems, the tool uses
+To solve the problem in \Cref{opt_pb}, the tool uses
 MATLAB$^\textrm{\textregistered}$ function fmincon, with different algorithm.
-The one showing the quickest convergence and the best results being the sequential quadratic programming (sqp).
+The one showing the quickest convergence and the best results being the sequential
+quadratic programming (sqp) algorithm.
 
 \section{Optimization tool}
 \label{sec:optimization_tool}
-
+As explained before, an optimization engine or tool has been developed to perform
+the design optimization of the drone and return information on the resulting design.
+In this section the tool is showed and its working principle is explained.
 \subsubsection{User Guide}
 \label{sec:user_guide}
+To use the tool the graphical user interface (GUI) represented in \Cref{fig:gui}
+first has to be opened. Then, the parameters to optimize have to be selected. The
+choice is between optimizing just $\beta$ angles, or $\beta$ angles with other
+selected parameters (see \Cref{fig:gui}). Afterwards, the design parameters that
+are not selected for the optimization have to be specified. For instance, if the arm
+length is not to optimize,  the user has to specify an arm length. To solve the
+optimization the sqp algorithm needs an initial solution. Hence, an initial solution
+is expected from the user. Then the cost function has to be chosen from the list
+(see \Cref{fig:gui}). Finally, in order to obtain a result the user only needs to
+push the “start optimization” button.
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=1.0\textwidth]{images/gui.png}
+  \includegraphics[width=0.85\textwidth]{images/gui.png}
   \caption{MAV morphology optimization tool GUI.}
   \label{fig:gui}
 \end{figure}
 
 \subsubsection{Outcome}
 \label{sec:outcome}
-
+Apart from the optimal design parameters ($\beta$, $\theta$, $L$ and $n$), the
+optimization tool returns a MATLAB$^\textrm{\textregistered}$ plot containing
+the attainable force space, the attainable torque space, the hover efficiency in
+every orientation and a schematic of the MAV’s design (see \Cref{fig:tool_output}).
+It is important to note that the force and torque space and the hover efficiency
+diagram are all represented in the drone’s body frame.
 \begin{figure}[!h]
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\linewidth]{images/n=4_force.jpg}
@@ -411,8 +426,73 @@ The one showing the quickest convergence and the best results being the sequenti
   \label{fig:tool_output}
 \end{figure}
 
+Along with the design parameters and the figure the optimization engine also
+returns information on the drone capabilities called metrics. These metrics are
+listed in \Cref{tab:tab_metrics}.
+
+\begin{table}[!h]
+\begin{center}
+ \caption{List of the metrics returned by the optimization tool.}\vspace{1ex}
+ \label{tab:tab_metrics}
+ \resizebox{\textwidth}{!}{
+ \begin{tabular}{|l||c|c|c|c|c|c|}
+   \hline
+   Metrics: & Minimal & Maximal & Mean & MAD & Task space volume & Task space surface\\ \hline \hline
+   Force: & $[N]$ & $[N]$ & $[N]$ & $[N]$ & $[N^3]$ & $[N^2]$\\
+   Torque: & $[Nm]$ & $[Nm]$ & $[Nm]$ & $[Nm]$ & $[N^3m^3]$ & $[N^2m^2]$\\
+   Hover efficiency: & $[\%]$ & $[\%]$ & $[\%]$ & $[\%]$ & - & -\\
+   \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
 \subsubsection{Limitations}
 \label{sec:limitations}
+Due to the non-linearity of the cost functions and the fact that the algorithms
+available in MATLAB$^\textrm{\textregistered}$ only guarantee convergence
+to local optima, the solution returned by the engine is strongly dependent to the
+chosen initial solution. And also the more parameters wants to be optimized the
+more the algorithms get stuck in local optima.
 
 \section{Simulation Approach}
 \label{sec:control_approach}
+As said before, a few of the optimal designs are tested in simulation on
+Gazebo$^\textrm{\textregistered}$. In order to be simulated on
+Gazebo$^\textrm{\textregistered}$ a robot model, which is represented
+in a Unified Robot Description Format\footnote{Format based on XML used
+to represent robot models in ROS} (URDF) file, is first launched on
+Gazebo$^\textrm{\textregistered}$. In the mean time, a ROS node to control
+the robot’s joints is also launched and the simulation can then properly start
+(see \Cref{fig:sim_gazebo}).
+So as to simulate the chosen optimal MAV designs, they first have to be
+modeled in URDF files. Once that done, the ROS node responsible for the
+control of the MAV, that is referred to as the control node, has to be built.
+Luckily, during this work the access to Voiro’s control node was granted
+ \citep{kamel_voliro:_2018}. Therefore, to properly control the different
+design of MAV obtained, only a few changes are needed on Voliro’s control
+node. First, the controller node has to be generalized for a n-rotor drone (
+opposed to a 6-rotor drone for Voliro). Then, the static allocation matrix
+(which is how Voliro transforms a desired angular and linear acceleration into
+desired motor speeds and rotor tilting angles)
+has to be generalized to a n-rotor MAV with an arbitrary arm orientation.
+Finally, the arbitrary arm orientation can cause a center of mass (CoM)
+offset. An additional angular acceleration thus has to be added to the desired
+angular acceleration, in order to compensate for the CoM offset. This
+angular acceleration is calculated as follow
+
+\begin{equation}
+  \label{com_offset}
+	\dot{\omega}_{CoM} = -I_B^{-1}(R_{CoM}\times m\ddot{p}_{des})\, ,
+\end{equation}
+
+where $R_{CoM}$ is the CoM position vector and $\ddot{p}_{des}$ the desired
+linear acceleration.\\
+Once all these changes done, the MAV model can be controlled in
+Gazebo$^\textrm{\textregistered}$ as it can be seen in \Cref{fig:sim_gazebo}).
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/sim_gazebo.png}
+  \caption{MAV design successfully launched and controlled in Gazebo$^\textrm{\textregistered}$.}
+  \label{fig:sim_gazebo}
+\end{figure}

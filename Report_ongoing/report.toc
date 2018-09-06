@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2.1}Modelisation of MAVs}{4}{section.2.1}
 \contentsline {subsubsection}{Assumptions}{4}{section*.11}
 \contentsline {subsubsection}{Initial Definitions}{4}{section*.12}
-\contentsline {subsubsection}{Equations of motion}{5}{section*.14}
+\contentsline {subsubsection}{Equations of motion}{4}{section*.14}
 \contentsline {subsubsection}{Static allocation}{5}{section*.15}
 \contentsline {section}{\numberline {2.2}Optimization problem}{6}{section.2.2}
 \contentsline {subsubsection}{Problem statement}{6}{section*.16}
@@ -13,9 +13,9 @@
 \contentsline {subsubsection}{Solver}{7}{section*.18}
 \contentsline {section}{\numberline {2.3}Optimization tool}{8}{section.2.3}
 \contentsline {subsubsection}{User Guide}{8}{section*.19}
-\contentsline {subsubsection}{Outcome}{8}{section*.21}
-\contentsline {subsubsection}{Limitations}{8}{section*.23}
-\contentsline {section}{\numberline {2.4}Simulation Approach}{8}{section.2.4}
+\contentsline {subsubsection}{Outcome}{9}{section*.21}
+\contentsline {subsubsection}{Limitations}{9}{section*.24}
+\contentsline {section}{\numberline {2.4}Simulation Approach}{10}{section.2.4}
 \contentsline {chapter}{\numberline {3}Optimization Results}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Even Designs}{11}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Platonic Solids}{11}{subsection.3.1.1}
@@ -35,5 +35,5 @@
 \contentsline {section}{\numberline {5.1}Summary/Achieved}{15}{section.5.1}
 \contentsline {section}{\numberline {5.2}Improvements}{15}{section.5.2}
 \contentsline {section}{\numberline {5.3}Further Developement}{15}{section.5.3}
-\contentsline {chapter}{Bibliography}{17}{chapter*.25}
+\contentsline {chapter}{Bibliography}{17}{chapter*.27}
 \contentsline {chapter}{\numberline {A}UML: Activity Diagram}{19}{appendix.A}
