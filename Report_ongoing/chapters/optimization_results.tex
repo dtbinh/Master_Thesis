@@ -53,40 +53,131 @@ and $\beta_{PS}$).
 
 \subsection{Quad-copter}
 \label{sec:quad_copter}
+Design 1: $\beta_{arm}\ =\ [35.26^{\circ}, -35.26^{\circ}, 35.26^{\circ}, -35.26^{\circ}]$.\\
+Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.49^{\circ}]$.
 
 \begin{figure}[!h]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.4\textwidth}
     \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
-    \caption{$\beta\ =\ [35.26^{\circ}, -35.26^{\circ}, 35.26^{\circ},
-    -35.26^{\circ}]$.} \label{fig:Quadcopter_resulta}
+    \caption{Optimal Quad-copter design 1} \label{fig:Quadcopter_resulta}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.35\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_tetrahedron.jpg}
-    \caption{Within a tetrahedron.} \label{fig:Quadcopter_resultb}
+    \caption{Design 1 in a tetrahedron.} \label{fig:Quadcopter_resultb}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
+    \caption{Optimal Quad-copter design 2.} \label{fig:Quadcopter_resultc}
   \end{subfigure}}
-  \caption{Schematic of the design obtained for the Quadcopter.}
+  \caption{Schematic of the optimal designs obtained for the Quad-copter.}
   \label{fig:Quadcopter_result}
 \end{figure}
 
 \begin{figure}[!h]
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
-    \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
-    \caption{$\beta\ =\ [35.26^{\circ}, -35.26^{\circ}, 35.26^{\circ},
-    -35.26^{\circ}]$.} \label{fig:Quadcopter_deisgn1}
+    \includegraphics[width=\linewidth]{images/Quad_design_1_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:deisgn1_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.6\textwidth}
-    \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
-    \caption{$\beta\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ},
-    -35.49^{\circ}]$.} \label{fig:Quadcopter_deisgn2}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Quad_design_1_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:deisgn1_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Quad_design_1_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:deisgn1_hspace}
   \end{subfigure}}
-  \caption{Schematic of the design obtained for the Quadcopter.}
-  \label{fig:Quadcopter_equivalent}
+  \caption{Representation of the capacity of Design 1.}
+  \label{fig:Quadcopter1_spaces}
 \end{figure}
+
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+    \includegraphics[width=\linewidth]{images/Quad_design_2_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:deisgn2_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Quad_design_2_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:deisgn2_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Quad_design_2_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:deisgn2_hspace}
+  \end{subfigure}}
+  \caption{Representation of the capacity of Design 2.}
+  \label{fig:Quadcopter2_spaces}
+\end{figure}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between two optimal design force-wise.}\vspace{1ex}
+ \label{tab:tab_Quad_compare_force}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \hline
+ Quad-copter & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
+ & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
+ Design 1 & 23.23 & 28.37 & 26.87 & 0.86 & 81'710 & 9'326\\
+ Design 2 & 23.19 & 28.56 & 26.87 & 0.86 & 81'683 & 9'345\\
+ \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between two optimal design torque-wise.}\vspace{1ex}
+ \label{tab:tab_Quad_compare_torque}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \hline
+ Quad-copter & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
+ & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
+ Design 1 & 11.65 & 14.23 & 13.47 & 0.43 & 10'300 & 2'348\\
+ Design 2 & 11.62 & 14.32 & 13.47 & 0.43 & 10'298 & 2'355\\
+ \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between two optimal design hover-wise.}\vspace{1ex}
+ \label{tab:tab_Quad_compare_hover}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
+ \hline
+  Quad-copter & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
+  & $MAD(H_{eff})\ [\%]$\\ \hline
+  Design 1 & 81.65 & 94.73 & 87.1 & 2.6\\
+  Design 2 & 81.11 & 95.18 & 87.03 & 2.63\\
+ \hline
+\end{tabular}}
+\end{center}
+\end{table}
 
 \subsection{Hexa-copter}
 \label{sec:hexa_copter}
+Optimal hexa-copter: $\beta_{arm}\ =\ [35.26^{\circ}, -35.26^{\circ}
+, 35.26^{\circ}, -35.26^{\circ}, 35.26^{\circ}, -35.26^{\circ}]$.\\
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+    \includegraphics[width=\linewidth]{images/Hexacopter.jpg}
+    \caption{Optimal Hexa-copter} \label{fig:Hexacopter_resulta}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Hexa_octahedron.jpg}
+    \caption{Hexa-copter in an octahedron.} \label{fig:Hexacopter_resultb}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\linewidth]{images/Voliro.jpg}
+    \caption{Voliro's design for comparison.} \label{fig:Hexacopter_resultc}
+  \end{subfigure}}
+  \caption{Schematic of the optimal designs obtained for the Hexa-copter.}
+  \label{fig:Hexacopter_result}
+\end{figure}
 
 \subsection{Octa-copter}
 \label{sec:octa_copter}
@@ -110,28 +201,3 @@ Show tricopter.
 %\label{sec:einleitung}
 \section{Results when n is an Optimization Parameter}
 \label{sec:result_n}
-
-$F_{min} = 34.74, F_{max} = 42.55 , M_{min} = 17.42,  M_{max} = 21.34,  H_{eff,min} = 81.65\%,  H_{eff,max} = 100\%$\\
-$F_{min} = 26.6, F_{max} = 52.11 , M_{min} = 15.1,  M_{max} = 26.13,  H_{eff,min} = 75\%,  H_{eff,max} = 100\%$\\
-Design 1: $F_{min} = 23.18, F_{max} = 28.56 , M_{min} = 11.61,  M_{max} = 14.3,  H_{eff,min} = 81.11\%,  H_{eff,max} = 95.2\%$\\
-Design 2: $F_{min} = 23.22, F_{max} = 28.37 , M_{min} = 11.65,  M_{max} = 14.23,  H_{eff,min} = 81.65\%, H_{eff,max} = 94.73\%$\\
-$F_{min} = 44.7, F_{max} = 58.8 , M_{min} = 22.4,  M_{max} = 29.5,  H_{eff,min} = 81.78\%,  H_{eff,max} = 96.65\%$\\
-$F_{min} = 46.46, F_{max} = 56.73 , M_{min} = 23.3,  M_{max} = 28.45,  H_{eff,min} = 81.64\%, H_{eff,max} = 94.77\%$\\
-
-\begin{table}[h]
-\begin{center}
- \caption{Comparison between the different number of propellers.}\vspace{1ex}
- \label{tab:tabnefz}
- \begin{tabular}{l|ccccccccc}
- \hline
- MAV Design & $F_{min} [N]$ & $F_{max} [N]$ & $F_{mean} [N]$ & $M_{min} [Nm]$ & $M_{max} [Nm]$ & $M_{mean} [Nm]$ & $H_{eff,mean} [\%]$ \\ \hline \hline
- Tri-copter  & 17.17 & 21.21 & 17.95 & 8.61 & 10.64 & 9 & 85.46\\
- Quad-copter & 23.22 & 28.37 & 26.87 & 11.65 & 14.23 & 13.47& 87.1 \\
- Penta-copter  & 28.95 & 35.46 & 29.4 & 14.52 & 17.78 & 14.74 & 85.35\\
- Hexa-copter  & 34.74 & 42.55 & 39.52 & 17.42 & 21.34 & 19.82 & 88.9\\
- Hepta-copter  & 39.96 & 49.44 & 47.2 & 20.04 & 24.8 & 23.66 & 91.1\\
- Octa-copter  & 44.7 & 58.8 & 53.95 & 22.4 & 29.48 & 27.06 & 91.42\\
- \hline
- \end{tabular}
-\end{center}
-\end{table}

@@ -14,19 +14,19 @@ tasks such as camera motion for the film industry \citep{kamel_voliro:_2018} or
 bridge inspection where huge resources (i.e. cranes and large man-power)
 are needed. The ultimate goal would be for a drone to be able to interact with
 its surrounding and apply forces to it, in order to perform maintenance where
-human can not access, or to do construction work in harsh environments. \\
+humans can not access, or to do construction work in harsh environments. \\
 To perform these tasks, an MAV has to be able to hover in any orientation, and for a
 proper disturbance rejection while manipulating, the drone must have the potential
 to accelerate instantaneously in any direction. Hence, the MAV has to be able to
 decouple its orientation and position control. A drone that has a decoupled
 force and torque control is referred to as an omni-directional MAV. \\
 The problem of overcoming the under-actuation and achieving omni-directionality
-is not straightforward. To address this problem, several MAV’s designs have been
+is not straightforward. To address this problem, several MAV designs have been
 presented over the past years. For instance, in \citep{kamel_voliro:_2018}, Voliro
 (name of the vehicle) is based on a traditional hexa-copter (see \Cref{fig:voliro}).
 The omni-directionality issue is addressed by adding motors to rotate the
 thrusters around their arm axis, thus allowing a control not only of the thrust
-produced by each propeller, but also on the orientation of this thrust. This
+produced by each propeller, but also of the orientation of this thrust. This
 tilting rotor system allows for decoupling the control of position and orientation.
 By using a control scheme based on an allocation technique, the system provides
 very good maneuverability.
@@ -72,7 +72,7 @@ optimize the fixed tilting angles depending on the desired trajectory.
 Yet, nothing in the literature is found about the morphology optimization
 of MAVs with tilting rotors. Hence the need for the present research project.
 The aim of this thesis is thus to design a morphology optimization problem for
-a tilt rotor MAV that accounts for the different factors that influence the
+a tilt-rotor MAV that accounts for the different factors that influence the
 morphology such as:
 
 \begin{itemize}
@@ -81,10 +81,10 @@ morphology such as:
 \item Controlability
 \end{itemize}
 
-To reach this goal the chosen approach is to build an optimization engine that solves
+To reach this goal the chosen approach is to build an optimization tool that solves
 the optimization problem and returns different MAV designs. The most interesting
 designs are then tested in simulation.\\
-In this report the methods used to build the optimization engine and to simulate
-the results are discussed. Afterwards, the results returned by the engine are shown
+In this report the methods used to build the optimization tool and to simulate
+the results are discussed. Afterwards, the results returned by the tool are shown
 and compared based on different criteria. Finally, the results gathered during
 the simulation phase are also covered.

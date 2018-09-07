@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  7 SEP 2018 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  7 SEP 2018 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -635,6 +635,14 @@ Package graphics Info: Driver file: pdftex.def on input line 95.
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks17
+\float@box=\box52
+\@float@everytoks=\toks18
+\@floatcapt=\box53
+)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
@@ -652,17 +660,18 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen119
 \caption@hangindent=\dimen120
 )
-\c@ContinuedFloat=\count107
+\c@ContinuedFloat=\count108
+Package caption Info: float package is loaded.
 )
-\c@subfigure=\count108
-\c@subtable=\count109
+\c@subfigure=\count109
+\c@subtable=\count110
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count110
+\c@NAT@ctr=\count111
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -676,19 +685,19 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen128
 \cmidrulekern=\dimen129
 \defaultaddspace=\dimen130
-\@cmidla=\count111
-\@cmidlb=\count112
+\@cmidla=\count112
+\@cmidlb=\count113
 \@aboverulesep=\dimen131
 \@belowrulesep=\dimen132
-\@thisruleclass=\count113
-\@lastruleclass=\count114
+\@thisruleclass=\count114
+\@lastruleclass=\count115
 \@thisrulewidth=\dimen133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen134
 \extrarowheight=\dimen135
-\NC@list=\toks17
+\NC@list=\toks19
 \extratabsurround=\skip56
 \backup@length=\skip57
 )
@@ -697,11 +706,11 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks18
+\everycr=\toks20
 \minrowclearance=\skip58
 )
-Package color Info: Redefining color black on input line 40.
-Package color Info: Redefining color white on input line 41.
+Package color Info: Redefining color black on input line 43.
+Package color Info: Redefining color white on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
@@ -713,7 +722,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks21
 \ex@=\dimen137
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -723,41 +732,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count115
+\inf@bad=\count116
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count116
-\leftroot@=\count117
+\uproot@=\count117
+\leftroot@=\count118
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count118
-\DOTSCASE@=\count119
+\classnum@=\count119
+\DOTSCASE@=\count120
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
+\Mathstrutbox@=\box54
+\strutbox@=\box55
 \big@size=\dimen139
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count120
-\c@MaxMatrixCols=\count121
+\macc@depth=\count121
+\c@MaxMatrixCols=\count122
 \dotsspace@=\muskip10
-\c@parentequation=\count122
-\dspbrk@lvl=\count123
-\tag@help=\toks20
-\row@=\count124
-\column@=\count125
-\maxfields@=\count126
-\andhelp@=\toks21
+\c@parentequation=\count123
+\dspbrk@lvl=\count124
+\tag@help=\toks22
+\row@=\count125
+\column@=\count126
+\maxfields@=\count127
+\andhelp@=\toks23
 \eqnshift@=\dimen140
 \alignsep@=\dimen141
 \tagshift@=\dimen142
 \tagwidth@=\dimen143
 \totwidth@=\dimen144
 \lineht@=\dimen145
-\@envbody=\toks22
+\@envbody=\toks24
 \multlinegap=\skip60
 \multlinetaggap=\skip61
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
@@ -853,26 +862,26 @@ Package: units 1998/08/04 v0.9b Typesetting units
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count127
+\c@r@tfl@t=\count128
 \rotFPtop=\skip65
 \rotFPbot=\skip66
-\rot@float@box=\box54
-\rot@mess@toks=\toks24
+\rot@float@box=\box56
+\rot@mess@toks=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count128
-\calc@Bcount=\count129
+\calc@Acount=\count129
+\calc@Bcount=\count130
 \calc@Adimen=\dimen146
 \calc@Bdimen=\dimen147
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count130
+\calc@Ccount=\count131
 \calc@Cskip=\skip69
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -891,10 +900,10 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box55
-\AM@toc@title=\toks25
-\c@AM@survey=\count131
-\AM@templatesizebox=\box56
+\AM@pagebox=\box57
+\AM@toc@title=\toks27
+\c@AM@survey=\count132
+\AM@templatesizebox=\box58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgfgantt/pgfgantt.sty
 Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
@@ -903,13 +912,13 @@ Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
+\pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen150
 \pgfutil@tempdimb=\dimen151
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box57
+\pgfutil@abb=\box59
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -924,12 +933,12 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks29
+\pgfkeys@tmptoks=\toks31
 ))
 \pgf@x=\dimen152
 \pgf@y=\dimen153
@@ -941,13 +950,13 @@ ex
 \pgf@yc=\dimen159
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count132
-\c@pgf@countb=\count133
-\c@pgf@countc=\count134
-\c@pgf@countd=\count135
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
+\c@pgf@counta=\count133
+\c@pgf@countb=\count134
+\c@pgf@countc=\count135
+\c@pgf@countd=\count136
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -963,8 +972,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count136
-\pgfsyssoftpath@bigbuffer@items=\count137
+\pgfsyssoftpath@smallbuffer@items=\count137
+\pgfsyssoftpath@bigbuffer@items=\count138
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -995,11 +1004,11 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen160
-\pgfmath@count=\count138
-\pgfmath@box=\box58
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@count=\count139
+\pgfmath@box=\box60
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -1019,7 +1028,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count139
+\c@pgfmathroundto@lastzeros=\count140
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -1054,10 +1063,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box59
-\pgf@hbox=\box60
-\pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count140
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count141
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -1090,7 +1099,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen184
-\pgf@sys@shading@range@num=\count141
+\pgf@sys@shading@range@num=\count142
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1098,7 +1107,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box62
+\pgfexternal@startupbox=\box64
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1114,7 +1123,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box63
+\pgfnodeparttextbox=\box65
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
@@ -1138,8 +1147,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen187
 \pgffor@skip=\dimen188
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1147,7 +1156,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count142
+\pgf@plot@mark@count=\count143
 \pgfplotmarksize=\dimen189
 )
 \tikz@lastx=\dimen190
@@ -1156,22 +1165,22 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen193
 \tikzleveldistance=\dimen194
 \tikzsiblingdistance=\dimen195
-\tikz@figbox=\box64
-\tikz@figbox@bg=\box65
-\tikz@tempbox=\box66
-\tikz@tempbox@bg=\box67
-\tikztreelevel=\count143
-\tikznumberofchildren=\count144
-\tikznumberofcurrentchild=\count145
-\tikz@fig@count=\count146
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count144
+\tikznumberofchildren=\count145
+\tikznumberofcurrentchild=\count146
+\tikz@fig@count=\count147
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count147
-\pgfmatrixcurrentcolumn=\count148
-\pgf@matrix@numberofcolumns=\count149
+\pgfmatrixcurrentrow=\count148
+\pgfmatrixcurrentcolumn=\count149
+\pgf@matrix@numberofcolumns=\count150
 )
-\tikz@expandcount=\count150
+\tikz@expandcount=\count151
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1189,8 +1198,8 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box68
-\pgf@layerboxsaved@background=\box69
+\pgf@layerbox@background=\box70
+\pgf@layerboxsaved@background=\box71
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
@@ -1221,22 +1230,22 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
 File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count151
+\pgfcalendarcurrentjulian=\count152
 ))
-\gtt@currentline=\count152
-\gtt@lasttitleline=\count153
-\gtt@currgrid=\count154
-\gtt@chartwidth=\count155
-\gtt@lasttitleslot=\count156
-\gtt@elementid=\count157
-\gtt@today@slot=\count158
-\gtt@startjulian=\count159
-\gtt@endjulian=\count160
-\gtt@calendar@slots=\count161
-\gtt@calendar@weeknumber=\count162
-\gtt@calendar@startofweek=\count163
-\gtt@left@slot=\count164
-\gtt@right@slot=\count165
+\gtt@currentline=\count153
+\gtt@lasttitleline=\count154
+\gtt@currgrid=\count155
+\gtt@chartwidth=\count156
+\gtt@lasttitleslot=\count157
+\gtt@elementid=\count158
+\gtt@today@slot=\count159
+\gtt@startjulian=\count160
+\gtt@endjulian=\count161
+\gtt@calendar@slots=\count162
+\gtt@calendar@weeknumber=\count163
+\gtt@calendar@startofweek=\count164
+\gtt@left@slot=\count165
+\gtt@right@slot=\count166
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -1286,15 +1295,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen197
-\Hy@linkcounter=\count166
-\Hy@pagecounter=\count167
+\Hy@linkcounter=\count167
+\Hy@pagecounter=\count168
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count168
+\Hy@SavedSpaceFactor=\count169
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1306,7 +1315,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count169
+\c@Hy@tempcnt=\count170
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -1314,7 +1323,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen198
-\Fld@menulength=\count170
+\Fld@menulength=\count171
 \Field@Width=\dimen199
 \Fld@charsize=\dimen256
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1326,17 +1335,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count171
-\c@Item=\count172
-\c@Hfootnote=\count173
+\Hy@abspage=\count172
+\c@Item=\count173
+\c@Hfootnote=\count174
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count174
-\c@bookmark@seq@number=\count175
+\Fld@listcount=\count175
+\c@bookmark@seq@number=\count176
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -1359,32 +1368,7 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
-(/home/luca/git/Master_Thesis/Report_ongoing/report.aux
-
-LaTeX Warning: Label `force_eq' multiply defined.
-
-
-LaTeX Warning: Label `force_eq@cref' multiply defined.
-
-
-LaTeX Warning: Label `sec:hexa_copter' multiply defined.
-
-
-LaTeX Warning: Label `sec:hexa_copter@cref' multiply defined.
-
-
-LaTeX Warning: Label `sec:hepta_copter' multiply defined.
-
-
-LaTeX Warning: Label `sec:hepta_copter@cref' multiply defined.
-
-
-LaTeX Warning: Label `sec:octa_copter' multiply defined.
-
-
-LaTeX Warning: Label `sec:octa_copter@cref' multiply defined.
-
-)
+(/home/luca/git/Master_Thesis/Report_ongoing/report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1401,7 +1385,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 27.
@@ -1410,17 +1395,17 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
+\scratchcounter=\count177
 \scratchdimen=\dimen257
-\scratchbox=\box70
-\nofMPsegments=\count177
-\nofMParguments=\count178
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count179
+\scratchbox=\box72
+\nofMPsegments=\count178
+\nofMParguments=\count179
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count180
 \MPscratchDim=\dimen258
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count181
+\makeMPintoPDFobject=\count182
+\everyMPtoPDFconversion=\toks41
 )
 \symgns@font=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
@@ -1454,7 +1439,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box71
+\AtBeginShipoutBox=\box73
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
@@ -1473,7 +1458,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count182
+\c@section@level=\count183
 )
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
@@ -1494,7 +1479,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/eth_logo.pdf, id=127, 8857.09pt x 2400.97pt>
+<images/eth_logo.pdf, id=131, 8857.09pt x 2400.97pt>
 File: images/eth_logo.pdf Graphic file (type pdf)
  <use images/eth_logo.pdf>
 Package pdftex.def Info: images/eth_logo.pdf used on input line 46.
@@ -1503,7 +1488,7 @@ Package pdftex.def Info: images/eth_logo.pdf used on input line 46.
 Overfull \vbox (10.27916pt too high) detected at line 46
  []
 
-<images/asl_logo.pdf, id=128, 429.605pt x 196.735pt>
+<images/asl_logo.pdf, id=132, 429.605pt x 196.735pt>
 File: images/asl_logo.pdf Graphic file (type pdf)
  <use images/asl_logo.pdf>
 Package pdftex.def Info: images/asl_logo.pdf used on input line 46.
@@ -1572,7 +1557,7 @@ quette . pdf$[]\OT1/cmr/m/n/10 ). The
 ])
 [6] (/home/luca/git/Master_Thesis/Report_ongoing/chapters/introduction.tex
 Chapter 1.
-<images/voliro.png, id=230, 1144.275pt x 783.92876pt>
+<images/voliro.png, id=235, 1144.275pt x 783.92876pt>
 File: images/voliro.png Graphic file (type png)
  <use images/voliro.png>
 Package pdftex.def Info: images/voliro.png used on input line 36.
@@ -1589,13 +1574,13 @@ l.46
 
 
  </home/luca/git/Master_Thesis/Report_ongoing/images/voliro.png>]
-<images/idsc.jpg, id=244, 1025.8325pt x 685.56125pt>
+<images/idsc.jpg, id=249, 1025.8325pt x 685.56125pt>
 File: images/idsc.jpg Graphic file (type jpg)
  <use images/idsc.jpg>
 Package pdftex.def Info: images/idsc.jpg used on input line 49.
 (pdftex.def)             Requested size: 144.53778pt x 96.58464pt.
 
-<images/hexacopter.png, id=250, 1075.01625pt x 628.3475pt>
+<images/hexacopter.png, id=255, 1075.01625pt x 628.3475pt>
 File: images/hexacopter.png Graphic file (type png)
 
 <use images/hexacopter.png>
@@ -1610,33 +1595,39 @@ l.83 \cleardoublepage
 sc.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/hexacopter.png>]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/method.tex
 Chapter 2.
-<images/drone_design.jpg, id=264, 728.7225pt x 596.2275pt>
+<images/drone_design.jpg, id=269, 1219.55624pt x 956.57375pt>
 File: images/drone_design.jpg Graphic file (type jpg)
 
 <use images/drone_design.jpg>
 Package pdftex.def Info: images/drone_design.jpg used on input line 20.
-(pdftex.def)             Requested size: 108.4061pt x 88.69334pt.
+(pdftex.def)             Requested size: 108.4061pt x 85.0224pt.
 
-<images/drone_design1.jpg, id=265, 789.95125pt x 694.595pt>
+<images/drone_design1.jpg, id=270, 905.3825pt x 787.94376pt>
 File: images/drone_design1.jpg Graphic file (type jpg)
 
 <use images/drone_design1.jpg>
 Package pdftex.def Info: images/drone_design1.jpg used on input line 25.
-(pdftex.def)             Requested size: 108.4061pt x 95.31367pt.
+(pdftex.def)             Requested size: 108.4061pt x 94.34477pt.
 
-<images/drone_design2.jpg, id=266, 1297.84875pt x 1030.85126pt>
+<images/drone_design2.jpg, id=271, 1444.39626pt x 995.72pt>
 File: images/drone_design2.jpg Graphic file (type jpg)
 
 <use images/drone_design2.jpg>
 Package pdftex.def Info: images/drone_design2.jpg used on input line 30.
-(pdftex.def)             Requested size: 108.4061pt x 86.1033pt.
- [3
+(pdftex.def)             Requested size: 108.4061pt x 74.72136pt.
+
+Overfull \hbox (2.7874pt too wide) in paragraph at lines 38--50
+[]\OT1/cmr/m/n/10 To solve the prob-lem, an op-ti-miza-tion soft-ware or tool i
+s de-vel-oped with MATLAB$[]$.
+ []
+
+[3
 
 
  </home/luca/git/Master_Thesis/Report_ongoing/images/drone_design.jpg> </home/l
 uca/git/Master_Thesis/Report_ongoing/images/drone_design1.jpg> </home/luca/git/
-Master_Thesis/Report_ongoing/images/drone_design2.jpg>] <images/tilt_model.png,
- id=289, 875.27pt x 626.34pt>
+Master_Thesis/Report_ongoing/images/drone_design2.jpg>]
+<images/tilt_model.png, id=294, 875.27pt x 626.34pt>
 File: images/tilt_model.png Graphic file (type png)
 
 <use images/tilt_model.png>
@@ -1666,158 +1657,199 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--255
 
  []
 
-[6] [7] <images/gui.png, id=350, 1108.14pt x 1348.03625pt>
+[6] [7] <images/gui.png, id=355, 1108.14pt x 1348.03625pt>
 File: images/gui.png Graphic file (type png)
 
 <use images/gui.png>
 Package pdftex.def Info: images/gui.png used on input line 392.
 (pdftex.def)             Requested size: 307.14969pt x 373.64224pt.
- <images/n=4_force.jpg, id=352, 655.44875pt x 456.70625pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/n=4_force.jpg, id=357, 655.44875pt x 456.70625pt>
 File: images/n=4_force.jpg Graphic file (type jpg)
 
 <use images/n=4_force.jpg>
 Package pdftex.def Info: images/n=4_force.jpg used on input line 407.
 (pdftex.def)             Requested size: 173.44644pt x 120.85236pt.
 
-<images/n=4_torque.jpg, id=353, 606.265pt x 421.575pt>
+<images/n=4_torque.jpg, id=358, 606.265pt x 421.575pt>
 File: images/n=4_torque.jpg Graphic file (type jpg)
 
 <use images/n=4_torque.jpg>
 Package pdftex.def Info: images/n=4_torque.jpg used on input line 412.
 (pdftex.def)             Requested size: 173.44644pt x 120.60684pt.
 
-<images/n=4_hover.jpg, id=354, 694.595pt x 499.8675pt>
+<images/n=4_hover.jpg, id=359, 694.595pt x 499.8675pt>
 File: images/n=4_hover.jpg Graphic file (type jpg)
 
 <use images/n=4_hover.jpg>
 Package pdftex.def Info: images/n=4_hover.jpg used on input line 417.
 (pdftex.def)             Requested size: 173.44644pt x 124.82164pt.
 
-<images/n=4_model.jpg, id=355, 659.46375pt x 530.98375pt>
+<images/n=4_model.jpg, id=360, 659.46375pt x 530.98375pt>
 File: images/n=4_model.jpg Graphic file (type jpg)
 
 <use images/n=4_model.jpg>
 Package pdftex.def Info: images/n=4_model.jpg used on input line 422.
 (pdftex.def)             Requested size: 173.44644pt x 139.64864pt.
 
-Underfull \vbox (badness 1264) has occurred while \output is active []
 
- [8 </home/luca/git/Master_Thesis/Report_ongoing/images/gui.png>] [9 </home/luc
-a/git/Master_Thesis/Report_ongoing/images/n=4_force.jpg> </home/luca/git/Master
-_Thesis/Report_ongoing/images/n=4_torque.jpg> </home/luca/git/Master_Thesis/Rep
-ort_ongoing/images/n=4_hover.jpg> </home/luca/git/Master_Thesis/Report_ongoing/
-images/n=4_model.jpg>] <images/sim_gazebo.png, id=375, 600.2425pt x 503.8825pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]
+Underfull \vbox (badness 6944) has occurred while \output is active []
+
+ [9 </home/luca/git/Master_Thesis/Report_ongoing/images/gui.png>]
+<images/sim_gazebo.png, id=381, 600.2425pt x 503.8825pt>
 File: images/sim_gazebo.png Graphic file (type png)
 
 <use images/sim_gazebo.png>
 Package pdftex.def Info: images/sim_gazebo.png used on input line 495.
 (pdftex.def)             Requested size: 180.67499pt x 151.66566pt.
-) [10 </home/luca/git/Master_Thesis/Report_ongoing/images/sim_gazebo.png>]
+) [10 </home/luca/git/Master_Thesis/Report_ongoing/images/n=4_force.jpg> </home
+/luca/git/Master_Thesis/Report_ongoing/images/n=4_torque.jpg> </home/luca/git/M
+aster_Thesis/Report_ongoing/images/n=4_hover.jpg> </home/luca/git/Master_Thesis
+/Report_ongoing/images/n=4_model.jpg> </home/luca/git/Master_Thesis/Report_ongo
+ing/images/sim_gazebo.png>]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/optimization_results.tex
 Chapter 3.
-<images/tetrahedron.jpg, id=388, 861.2175pt x 1001.7425pt>
+<images/tetrahedron.jpg, id=393, 861.2175pt x 1001.7425pt>
 File: images/tetrahedron.jpg Graphic file (type jpg)
 
 <use images/tetrahedron.jpg>
 Package pdftex.def Info: images/tetrahedron.jpg used on input line 31.
 (pdftex.def)             Requested size: 79.49744pt x 92.46101pt.
 
-<images/octahedron.jpg, id=389, 962.59625pt x 995.72pt>
+<images/octahedron.jpg, id=394, 962.59625pt x 995.72pt>
 File: images/octahedron.jpg Graphic file (type jpg)
 
 <use images/octahedron.jpg>
 Package pdftex.def Info: images/octahedron.jpg used on input line 36.
 (pdftex.def)             Requested size: 97.56604pt x 100.91486pt.
- <images/cube.jpg, id=390, 1260.71pt x 1302.8675pt>
+ <images/cube.jpg, id=395, 1260.71pt x 1302.8675pt>
 File: images/cube.jpg Graphic file (type jpg)
 
 <use images/cube.jpg>
 Package pdftex.def Info: images/cube.jpg used on input line 41.
 (pdftex.def)             Requested size: 93.949pt x 97.07468pt.
 
-<images/Quadcopter.jpg, id=391, 801.99625pt x 817.0525pt>
+<images/Quadcopter.jpg, id=396, 1154.3125pt x 1023.825pt>
 File: images/Quadcopter.jpg Graphic file (type jpg)
 
 <use images/Quadcopter.jpg>
-Package pdftex.def Info: images/Quadcopter.jpg used on input line 67.
-(pdftex.def)             Requested size: 198.74359pt x 202.46735pt.
+Package pdftex.def Info: images/Quadcopter.jpg used on input line 73.
+(pdftex.def)             Requested size: 144.53778pt x 128.19652pt.
 
-<images/Quad_tetrahedron.jpg, id=392, 753.81625pt x 761.84625pt>
+<images/Quad_tetrahedron.jpg, id=397, 839.135pt x 763.85374pt>
 File: images/Quad_tetrahedron.jpg Graphic file (type jpg)
 
 <use images/Quad_tetrahedron.jpg>
-Package pdftex.def Info: images/Quad_tetrahedron.jpg used on input line 67.
-(pdftex.def)             Requested size: 180.67499pt x 182.59108pt.
+Package pdftex.def Info: images/Quad_tetrahedron.jpg used on input line 73.
+(pdftex.def)             Requested size: 126.4747pt x 115.12091pt.
+
+<images/Quadcopter2.jpg, id=398, 1125.20375pt x 794.97pt>
+File: images/Quadcopter2.jpg Graphic file (type jpg)
+
+<use images/Quadcopter2.jpg>
+Package pdftex.def Info: images/Quadcopter2.jpg used on input line 73.
+(pdftex.def)             Requested size: 162.60638pt x 114.87346pt.
  [11
 
 
  </home/luca/git/Master_Thesis/Report_ongoing/images/tetrahedron.jpg> </home/lu
 ca/git/Master_Thesis/Report_ongoing/images/octahedron.jpg> </home/luca/git/Mast
 er_Thesis/Report_ongoing/images/cube.jpg>]
-File: images/Quadcopter.jpg Graphic file (type jpg)
-<use images/Quadcopter.jpg>
-Package pdftex.def Info: images/Quadcopter.jpg used on input line 83.
-(pdftex.def)             Requested size: 198.74359pt x 202.46735pt.
+<images/Quad_design_1_fspace.jpg, id=406, 679.53876pt x 416.55624pt>
+File: images/Quad_design_1_fspace.jpg Graphic file (type jpg)
 
-<images/Quadcopter2.jpg, id=400, 808.01875pt x 676.5275pt>
-File: images/Quadcopter2.jpg Graphic file (type jpg)
+<use images/Quad_design_1_fspace.jpg>
+Package pdftex.def Info: images/Quad_design_1_fspace.jpg used on input line 91.
 
-<use images/Quadcopter2.jpg>
-Package pdftex.def Info: images/Quadcopter2.jpg used on input line 83.
-(pdftex.def)             Requested size: 216.8122pt x 181.52933pt.
+(pdftex.def)             Requested size: 198.74359pt x 121.8279pt.
 
-Overfull \hbox (34.9303pt too wide) in paragraph at lines 114--120
-$\OML/cmm/m/it/10 F[] \OT1/cmr/m/n/10 = 34\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 74\
-OML/cmm/m/it/10 ; F[] \OT1/cmr/m/n/10 = 42\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 55\
-OML/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 17\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 42\
-OML/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 21\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 34\
-OML/cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 = 81\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 65%
-\OML/cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 =
- []
+<images/Quad_design_1_tspace.jpg, id=407, 663.47874pt x 427.5975pt>
+File: images/Quad_design_1_tspace.jpg Graphic file (type jpg)
 
+<use images/Quad_design_1_tspace.jpg>
+Package pdftex.def Info: images/Quad_design_1_tspace.jpg used on input line 91.
 
-Overfull \hbox (12.15245pt too wide) in paragraph at lines 114--120
-\OML/cmm/m/it/10 F[] \OT1/cmr/m/n/10 = 26\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6\OM
-L/cmm/m/it/10 ; F[] \OT1/cmr/m/n/10 = 52\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 11\OM
-L/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 15\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1\OML
-/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 26\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 13\OML
-/cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 = 75%\OML/cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 
-=
- []
+(pdftex.def)             Requested size: 180.67499pt x 116.43808pt.
 
+<images/Quad_design_1_hspace.jpg, id=408, 626.34pt x 417.56pt>
+File: images/Quad_design_1_hspace.jpg Graphic file (type jpg)
 
-Overfull \hbox (14.93024pt too wide) in paragraph at lines 114--120
-\OML/cmm/m/it/10 F[] \OT1/cmr/m/n/10 = 44\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 7\OM
-L/cmm/m/it/10 ; F[] \OT1/cmr/m/n/10 = 58\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 8\OML
-/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 22\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4\OML/
-cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 29\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/c
-mm/m/it/10 ; H[] \OT1/cmr/m/n/10 = 81\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 78%\OML/
-cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 =
- []
+<use images/Quad_design_1_hspace.jpg>
+Package pdftex.def Info: images/Quad_design_1_hspace.jpg used on input line 91.
 
+(pdftex.def)             Requested size: 162.60638pt x 108.40375pt.
 
-Overfull \hbox (29.93028pt too wide) in paragraph at lines 114--120
-\OML/cmm/m/it/10 F[] \OT1/cmr/m/n/10 = 46\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 46\O
-ML/cmm/m/it/10 ; F[] \OT1/cmr/m/n/10 = 56\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 73\O
-ML/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 23\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3\OM
-L/cmm/m/it/10 ; M[] \OT1/cmr/m/n/10 = 28\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 45\OM
-L/cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 = 81\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 64%\O
-ML/cmm/m/it/10 ; H[] \OT1/cmr/m/n/10 =
- []
+<images/Quad_design_2_fspace.jpg, id=409, 672.5125pt x 416.55624pt>
+File: images/Quad_design_2_fspace.jpg Graphic file (type jpg)
+
+<use images/Quad_design_2_fspace.jpg>
+Package pdftex.def Info: images/Quad_design_2_fspace.jpg used on input line 109
+.
+(pdftex.def)             Requested size: 198.74359pt x 123.09912pt.
+
+<images/Quad_design_2_tspace.jpg, id=410, 643.40375pt x 429.605pt>
+File: images/Quad_design_2_tspace.jpg Graphic file (type jpg)
+
+<use images/Quad_design_2_tspace.jpg>
+Package pdftex.def Info: images/Quad_design_2_tspace.jpg used on input line 109
+.
+(pdftex.def)             Requested size: 180.67499pt x 120.636pt.
+
+<images/Quad_design_2_hspace.jpg, id=411, 636.3775pt x 408.52625pt>
+File: images/Quad_design_2_hspace.jpg Graphic file (type jpg)
+
+<use images/Quad_design_2_hspace.jpg>
+Package pdftex.def Info: images/Quad_design_2_hspace.jpg used on input line 109
+.
+(pdftex.def)             Requested size: 162.60638pt x 104.38164pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--120
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Hexacopter.jpg, id=412, 1204.5pt x 1147.28625pt>
+File: images/Hexacopter.jpg Graphic file (type jpg)
+
+<use images/Hexacopter.jpg>
+Package pdftex.def Info: images/Hexacopter.jpg used on input line 177.
+(pdftex.def)             Requested size: 198.74359pt x 189.29405pt.
+
+<images/Hexa_octahedron.jpg, id=413, 868.24374pt x 832.10875pt>
+File: images/Hexa_octahedron.jpg Graphic file (type jpg)
+
+<use images/Hexa_octahedron.jpg>
+Package pdftex.def Info: images/Hexa_octahedron.jpg used on input line 177.
+(pdftex.def)             Requested size: 180.67499pt x 173.14818pt.
+
+<images/Voliro.jpg, id=414, 1324.95pt x 919.435pt>
+File: images/Voliro.jpg Graphic file (type jpg)
+ <use images/Voliro.jpg>
+Package pdftex.def Info: images/Voliro.jpg used on input line 177.
+(pdftex.def)             Requested size: 252.94388pt x 175.5222pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12 </home/luca/git/Master_Thesis/Report_ongoing/images/Quadcopter.jpg> </home/
 luca/git/Master_Thesis/Report_ongoing/images/Quad_tetrahedron.jpg> </home/luca/
-git/Master_Thesis/Report_ongoing/images/Quadcopter2.jpg>]
-Overfull \hbox (117.83806pt too wide) in paragraph at lines 125--136
- [] 
- []
-
-) [13] [14
+git/Master_Thesis/Report_ongoing/images/Quadcopter2.jpg> </home/luca/git/Master
+_Thesis/Report_ongoing/images/Quad_design_1_fspace.jpg> </home/luca/git/Master_
+Thesis/Report_ongoing/images/Quad_design_1_tspace.jpg> </home/luca/git/Master_T
+hesis/Report_ongoing/images/Quad_design_1_hspace.jpg> </home/luca/git/Master_Th
+esis/Report_ongoing/images/Quad_design_2_fspace.jpg> </home/luca/git/Master_The
+sis/Report_ongoing/images/Quad_design_2_tspace.jpg> </home/luca/git/Master_Thes
+is/Report_ongoing/images/Quad_design_2_hspace.jpg>]) [13 </home/luca/git/Master
+_Thesis/Report_ongoing/images/Hexacopter.jpg> </home/luca/git/Master_Thesis/Rep
+ort_ongoing/images/Hexa_octahedron.jpg> </home/luca/git/Master_Thesis/Report_on
+going/images/Voliro.jpg>] [14
 
 ]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/simulation_results.tex
@@ -1842,34 +1874,40 @@ Chapter 5.
 ] [20
 
 ]
-(/home/luca/git/Master_Thesis/Report_ongoing/chapters/appendix_uml.tex
-Appendix A.
-) [21
+(/home/luca/git/Master_Thesis/Report_ongoing/chapters/acknowledgements.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 4--112
+
+ []
+
+[21
 
 ] [22
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+(/home/luca/git/Master_Thesis/Report_ongoing/chapters/appendix_uml.tex
+Appendix A.
+) [23
+
+] [24
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
  (/home/luca/git/Master_Thesis/Report_ongoing/report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: B6C3144BF46F8A157CB15BF910298F5E;1800.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+(rerunfilecheck)             Checksum: AC205D9D84F9D7909A604765A1A73C82;1854.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 23643 strings out of 493029
- 448915 string characters out of 6136235
- 546511 words of memory out of 5000000
- 26533 multiletter control sequences out of 15000+600000
- 16953 words of font info for 63 fonts, out of 8000000 for 9000
+ 23783 strings out of 493029
+ 452306 string characters out of 6136235
+ 547736 words of memory out of 5000000
+ 26654 multiletter control sequences out of 15000+600000
+ 15087 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,15n,65p,602b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,15n,65p,602b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -1877,24 +1915,21 @@ t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (30 pa
-ges, 3125556 bytes).
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (32 pa
+ges, 4342338 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
- 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 477 compressed objects within 5 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
