@@ -2,7 +2,7 @@
 \label{sec:method}
 As explained in \Cref{sec:introduction} the aim of this work is to find a drone
 design that is the result of an optimization problem, which tends to maximize the
-MAV's omni-directionality, flight efficiency and controllability. To do so it is
+MAV's omni-directionality, flight efficiency and controllability. To do so, it is
 important to first state what are the parameters that define the design of an MAV.
 These parameters are defined as:
 
@@ -35,11 +35,11 @@ MAV ($n = 4$, $\beta\ =\ [30, 30, 30, 30]\ [^{\circ}]$, $\theta\ =\ [22, 22, 22,
 \label{fig:drone_design}
 \end{figure}
 
-To solve the problem an optimization engine is developed with
+To solve the problem, an optimization engine is developed with
 MATLAB$^\textrm{\textregistered}$. This tool returns the aforementioned
 parameters along with other information on the corresponding MAV design.
 The interesting drone designs outputted by the tool are then simulated on
-Gazebo$^\textrm{\textregistered}$\footnote{An open source robot simulator \citep{noauthor_gazebo_nodate}.}
+Gazebo$^\textrm{\textregistered}$\footnote{An open source robot simulation software \citep{noauthor_gazebo_nodate}.}
 and the control of the different models is achieved using a Robotic Operating
 System\footnote{An open source collection of software that help developers to
 create robot applications \citep{rostutorials}.} (ROS) node.\\
@@ -57,7 +57,7 @@ a MAV. This model is inspired from the models presented in
 
 \subsubsection{Assumptions}
 \label{sec:assumptions}
-In this model the first assumption is that the MAV is composed of n+1 rigid bodies:
+In this model, the first assumption is that the MAV is composed of n+1 rigid bodies:
 one for each propeller unit $P_i$ and one for the body B. Then, it is considered that
 the thrust is produced by irreversible fixed-pitch motor-propeller actuators. Finally,
 only the aerodynamic forces and torques that are responsible for the MAV actuation
@@ -315,12 +315,12 @@ and the cost functions are the subject of next section.
 As stated in \Cref{sec:introduction} the aim of the project is to obtain a multi-rotor
 design that is omni-directional. Therefore, it is the heart of the problem to
 define meaningful cost functions for the optimization problem, which when
-solved would return parameters for an omni-directional drone. In this section
+solved would return parameters for an omni-directional drone. In this section,
 the few cost functions that capture at best the omni-directionality are described.\\
 The first, and also one of the more meaningful cost function consists in maximizing
 the minimal attainable force and the minimal attainable torque that the MAV can
-produce in any direction. It makes sense because on of the definition of
-omni-directionality  is defined as the drone capacity to accelerate instantaneously
+produce in any direction. It makes sense because the
+omni-directionality is defined as the drone capacity to accelerate instantaneously
 in every directions. In order to do that the MAV has to have high minimal attainable
 force and torque, hence this cost function. It turns out this cost function is also
 computationally quite lighter than the other. Indeed, as when the multi-rotor apply a
@@ -345,8 +345,8 @@ biggest task space for the drone and hence increase the MAV’s ability to navig
 in any orientation and to any position. This cost function is computationally heavy,
 because in order to have precise polyhedrons for the different spaces, the forces and
 torques has to be computed in 7490 directions.\\
-After that a cost function that maximize the force, the torque and the hover
-efficiency in all directions. The aim of this cost function
+Another cost function that maximize the force, the torque and the hover
+efficiency in all directions is developed. The aim of this cost function
 is to maximize the agility of the MAV for good disturbance rejection. Moreover,
 the term that maximizes the hover efficiency is designed to give the drone design
 the ability to perform manipulation efficiently in any orientation. Solving the
@@ -355,12 +355,12 @@ depending on how many directions you choose to represent “all directions”.\\
 The last cost function maximizes the force and the torque in one defined
 direction d. It is mostly designed to test the optimization engine as it is
 computationally light and given specific directions the optimal design is
-pretty straightforward. For instance if you maximize the force in the $Z$
+pretty straightforward. For instance, if you maximize the force in the $Z$
 direction for a 4-rotor MAV, the expected optimal solution would be a traditional
 quad-copter.
-In the presented cost functions the multi-rotor model described in
-\Cref{sec:modeling_mav} is implemented in MATLAB$^\textrm{\textregistered}$
-to compute the different forces and torques in the different directions.
+The presented cost functions use the multi-rotor model described in
+\Cref{sec:modeling_mav} to compute the different forces and torques in the
+different directions.
 
 \subsubsection{Solver}
 \label{sec:solver}
@@ -376,7 +376,7 @@ the design optimization of the drone and return information on the resulting des
 In this section the tool is showed and its working principle is explained.
 \subsubsection{User Guide}
 \label{sec:user_guide}
-To use the tool the graphical user interface (GUI) represented in \Cref{fig:gui}
+To use the tool, the graphical user interface (GUI) represented in \Cref{fig:gui}
 first has to be opened. Then, the parameters to optimize have to be selected. The
 choice is between optimizing just $\beta$ angles, or $\beta$ angles with other
 selected parameters (see \Cref{fig:gui}). Afterwards, the design parameters that
@@ -467,7 +467,7 @@ the robot’s joints is also launched and the simulation can then properly start
 So as to simulate the chosen optimal MAV designs, they first have to be
 modeled in URDF files. Once that done, the ROS node responsible for the
 control of the MAV, that is referred to as the control node, has to be built.
-Luckily, during this work the access to Voiro’s control node was granted
+The access to Voliro’s control node was luckily granted during this work
  \citep{kamel_voliro:_2018}. Therefore, to properly control the different
 design of MAV obtained, only a few changes are needed on Voliro’s control
 node. First, the controller node has to be generalized for a n-rotor drone (

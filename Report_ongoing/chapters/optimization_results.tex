@@ -1,12 +1,55 @@
 \chapter{Optimization Results}
 \label{sec:optimization_results}
-Show results produced by the engine.
+This chapter focuses on showing and analyzing the most interesting MAV designs
+outputted by the optimization tool. A short digression on platonic solid is first
+needed to properly analyse the results. The optimal designs with an even number
+of propellers are then described. Afterwards, the designs with an odd number of
+propellers are shown. A comparison of the different optimal drone design is then
+proposed. Finally, a few results of optimizations performed with the number of
+propeller as an argument are presented.
+
+\section{Platonic Solids}
+\label{sec:platonic_solids}
+Platonic solids are five regular and convex polyhedrons named after the
+ancient Greek philosopher Plato to honor his memory \citep{noauthor_platonic_2018}.
+The five platonic solids are:
+\begin{itemize}
+\item The tetrahedron composed of four faces and four vertices (see \Cref{fig:tetrahedron}).
+\item The octahedron composed of eight faces and six vertices (see \Cref{fig:octahedron}).
+\item The cube composed of six faces and eight vertices (see \Cref{fig:cube}).
+\item The icosahedron composed of twenty faces and twelve vertices.
+\item The dodecahedron composed of twelve faces and twenty vertices.
+\end{itemize}
+There is a angle that can be found at least in the
+first three platonic solids. This angle is found between the horizontal plane and
+the vertices of the polyhedron (see \Cref{fig:platonic_solid}). To ensure simplicity,
+in the rest of this work this angle will be referred to as the platonic solids angle
+and $\beta_{PS}$).
+
+\begin{figure}[!h]
+  \begin{subfigure}[b]{0.22\textwidth}
+    \includegraphics[width=\linewidth]{images/tetrahedron.jpg}
+    \caption{Tetrahedron.} \label{fig:tetrahedron}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.27\textwidth}
+    \includegraphics[width=\linewidth]{images/octahedron.jpg}
+    \caption{Octahedron.} \label{fig:octahedron}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.26\textwidth}
+    \includegraphics[width=\linewidth]{images/cube.jpg}
+    \caption{Cube.} \label{fig:cube}
+  \end{subfigure}
+  \caption{The first three platonic solids $\big(\cos(\beta_{PS}) = \sqrt{\frac{2}{3}}
+  =>  \beta_{PS} \simeq 35.26^{\circ}\big)\, .$}
+  \label{fig:platonic_solid}
+\end{figure}
+
+
 
 \section{Even Designs}
 \label{sec:even_designs}
-
-\subsection{Platonic Solids}
-\label{sec:platonic_solids}
 
 \subsection{Quad-copter}
 \label{sec:quad_copter}
@@ -34,7 +77,9 @@ Show tricopter.
 \label{sec:comparison}
 %\chapter{Einleitung}
 %\label{sec:einleitung}
-$\cos(\beta) = \sqrt(\frac{2}{3}) =>  \beta = 35.26^{\circ} $ \\
+\section{Results when n is an Optimization Parameter}
+\label{sec:result_n}
+
 $F_{min} = 34.74, F_{max} = 42.55 , M_{min} = 17.42,  M_{max} = 21.34,  H_{eff,min} = 81.65\%,  H_{eff,max} = 100\%$\\
 $F_{min} = 26.6, F_{max} = 52.11 , M_{min} = 15.1,  M_{max} = 26.13,  H_{eff,min} = 75\%,  H_{eff,max} = 100\%$\\
 Design 1: $F_{min} = 23.18, F_{max} = 28.56 , M_{min} = 11.61,  M_{max} = 14.3,  H_{eff,min} = 81.11\%,  H_{eff,max} = 95.2\%$\\

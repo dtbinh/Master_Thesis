@@ -17,16 +17,17 @@
 \contentsline {subsubsection}{Limitations}{9}{section*.24}
 \contentsline {section}{\numberline {2.4}Simulation Approach}{10}{section.2.4}
 \contentsline {chapter}{\numberline {3}Optimization Results}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Even Designs}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Platonic Solids}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Quad-copter}{11}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Hexa-copter}{11}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Octa-copter}{11}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Odd Designs}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Tri-copter}{11}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Penta-copter}{11}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Hepta-copter}{11}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Comparison of Different Designs}{11}{section.3.3}
+\contentsline {section}{\numberline {3.1}Platonic Solids}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Even Designs}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Quad-copter}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Hexa-copter}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Octa-copter}{12}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Odd Designs}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Tri-copter}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Penta-copter}{12}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Hepta-copter}{12}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{12}{section.3.4}
+\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{12}{section.3.5}
 \contentsline {chapter}{\numberline {4}Simulation Results}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hexa-copter}{13}{section.4.1}
 \contentsline {section}{\numberline {4.2}Hepta-copter}{13}{section.4.2}
@@ -35,5 +36,5 @@
 \contentsline {section}{\numberline {5.1}Summary/Achieved}{15}{section.5.1}
 \contentsline {section}{\numberline {5.2}Improvements}{15}{section.5.2}
 \contentsline {section}{\numberline {5.3}Further Developement}{15}{section.5.3}
-\contentsline {chapter}{Bibliography}{17}{chapter*.27}
+\contentsline {chapter}{Bibliography}{17}{chapter*.28}
 \contentsline {chapter}{\numberline {A}UML: Activity Diagram}{19}{appendix.A}
