@@ -1,8 +1,8 @@
 \chapter{Optimization Results}
 \label{sec:optimization_results}
 This chapter focuses on showing and analyzing the most interesting MAV designs
-outputted by the optimization tool. A short digression on platonic solid is first
-needed to properly analyse the results. The optimal designs with an even number
+produced by the optimization tool. A short digression on platonic solid is first
+needed in order to properly analyze the results. The optimal designs with an even number
 of propellers are then described. Afterwards, the designs with an odd number of
 propellers are shown. A comparison of the different optimal drone design is then
 proposed. Finally, a few results of optimizations performed with the number of
@@ -13,18 +13,19 @@ propeller as an argument are presented.
 Platonic solids are five regular and convex polyhedrons named after the
 ancient Greek philosopher Plato to honor his memory \citep{noauthor_platonic_2018}.
 The five platonic solids are:
-\begin{itemize}
+{\small\begin{itemize}
 \item The tetrahedron composed of four faces and four vertices (see \Cref{fig:tetrahedron}).
 \item The octahedron composed of eight faces and six vertices (see \Cref{fig:octahedron}).
 \item The cube composed of six faces and eight vertices (see \Cref{fig:cube}).
 \item The icosahedron composed of twenty faces and twelve vertices.
 \item The dodecahedron composed of twelve faces and twenty vertices.
-\end{itemize}
+\end{itemize}}
 There is a angle that can be found at least in the
 first three platonic solids. This angle is found between the horizontal plane and
-the vertices of the polyhedron (see \Cref{fig:platonic_solid}). To ensure simplicity,
+the vertices of the polyhedron (see \Cref{fig:platonic_solid}). This angle find itself
+in some of the obtained results. So in order to ensure simplicity,
 in the rest of this work this angle will be referred to as the platonic solids angle
-and $\beta_{PS}$).
+($\beta_{PS}$).
 
 \begin{figure}[!h]
   \begin{subfigure}[b]{0.22\textwidth}
@@ -42,99 +43,123 @@ and $\beta_{PS}$).
     \caption{Cube.} \label{fig:cube}
   \end{subfigure}
   \caption{The first three platonic solids $\big(\cos(\beta_{PS}) = \sqrt{\frac{2}{3}}
-  =>  \beta_{PS} \simeq 35.26^{\circ}\big)\, .$}
+  \rightarrow \beta_{PS} \simeq 35.26^{\circ}\big)\, .$}
   \label{fig:platonic_solid}
 \end{figure}
 
-
-
 \section{Even Designs}
 \label{sec:even_designs}
-
 \subsection{Quad-copter}
 \label{sec:quad_copter}
-Design 1:
-\begin{itemize}
-  \item $n\ =\ 4$
-  \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$
-  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ}]$
-  \item $L\ =\ 0.5\ [m]$
-\end{itemize}
+The first MAV morphology presented is obtained when optimizing to find
+$\beta_{arm}$ and $\theta_{arm}$, with as fixed design parameters $n\ =\ 4$
+and $L\ =\ 0.5\ [m]$ and as an initial solution $\beta_{arm,0} \ =\ [0^{\circ},
+\  0^{\circ},\  0^{\circ},\ 0^{\circ}]$ and $\theta_{arm,0}\ =\
+[0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ}]$. As a cost function for the
+optimization problem, the cost function that maximizes the minimal attainable
+force and the minimal attainable torque that the MAV can produce in any direction
+and that minimizes the inertia of the drone is used. The result is depicted in
+\Cref{fig:Quadcopter_1} and has the following features:
 
-Design 2:
-\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 4$
   \item $\beta_{arm}\ =\ [-32.42^{\circ},\  -35.49^{\circ},\  -35.44^{\circ},\  -35.49^{\circ}]$
   \item $\theta_{arm}\ =\ [-0.99^{\circ},\  -1.88^{\circ},\  -2.26^{\circ},\  -2.94^{\circ}]$
   \item $L\ =\ 0.5\ [m]$
-\end{itemize}
-
-
+\end{itemize}}
+It is noticeable that the $\theta_{arm}$ tend towards zero and that the $\beta_{arm}$
+tend towards the platonic solid angle $\beta_{PS}$. However, the design has not totally
+converged. This is due to the fact that the optimization tool has, as mentioned in
+\Cref{sec:limitations}, found a local minimum before reaching the global one,
+which seems to be when the drone has the arms equally distributed in the horizontal
+plane ($\theta_{arm}$ = 0) and forming the platonic solid angle with the same horizontal
+plane ($\beta_{arm}\ =\ \beta_{PS}$). So as to verify this, the second
+design is obtained when performing the same optimization as before with a slight
+change, which consists in choosing as initial solution $\beta_{arm,0} \ =\
+[35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$. The result is
+depicted in \Cref{fig:Quadcopter_1} and has the following features:
+{\small\begin{itemize}
+  \item $n\ =\ 4$
+  \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$
+  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}}
+After optimization the second design is the same as the initial solution. This means
+that the initially chosen design is optimal and it is very likely a global optimum
+as when starting the optimization from different initial solution it converges to it.
+It is interesting to note that the four propellers of the second design form the four
+vertices of a tetrahedron (see \Cref{fig:Quadcopter_2_tetra}).
 \begin{figure}[!h]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.4\textwidth}
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
+    \caption{Design 1.} \label{fig:Quadcopter_1}
+  \end{subfigure}
+\hspace*{\fill} % separation between the subfigures
+\begin{subfigure}[b]{0.4\textwidth}
     \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
-    \caption{Optimal quad-copter design 1} \label{fig:Quadcopter_resulta}
+    \caption{Design 2} \label{fig:Quadcopter_2}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.35\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_tetrahedron.jpg}
-    \caption{Design 1 in a tetrahedron.} \label{fig:Quadcopter_resultb}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
-    \caption{Optimal quad-copter design 2.} \label{fig:Quadcopter_resultc}
+    \caption{Design 2 in a tetrahedron.} \label{fig:Quadcopter_2_tetra}
   \end{subfigure}}
   \caption{Schematic of the optimal designs obtained for the Quad-copter.}
   \label{fig:Quadcopter_result}
 \end{figure}
 
+It is important to understand that for the tool, the designs with all the arms
+on the same side as the first, or the designs with distributed arms as
+the second, are equivalent. Even with slightly different arm angles magnitudes
+between the two designs, when comparing \Cref{fig:Quadcopter1_spaces}with
+\Cref{fig:Quadcopter2_spaces} and when comparing the different metrics
+in \Cref{tab:tab_Quad_compare_force}, \Cref{tab:tab_Quad_compare_torque} and
+\Cref{tab:tab_Quad_compare_hover}
 \begin{figure}[!h]
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_design_1_fspace.jpg}
+    \includegraphics[width=\linewidth]{images/Quad_design_2_fspace.jpg}
     \caption{Attainable force space.} \label{fig:deisgn1_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_design_1_tspace.jpg}
+    \includegraphics[width=\linewidth]{images/Quad_design_2_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:deisgn1_tspace}
   \end{subfigure}
   \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_design_1_hspace.jpg}
+    \includegraphics[width=\linewidth]{images/Quad_design_2_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:deisgn1_hspace}
   \end{subfigure}}
-  \caption{Representation of the capacities of Design 1.}
+  \caption{Visual representation of the abilities of Design 1.}
   \label{fig:Quadcopter1_spaces}
 \end{figure}
-
 \begin{figure}[!h]
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_design_2_fspace.jpg}
+    \includegraphics[width=\linewidth]{images/Quad_design_1_fspace.jpg}
     \caption{Attainable force space.} \label{fig:deisgn2_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_design_2_tspace.jpg}
+    \includegraphics[width=\linewidth]{images/Quad_design_1_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:deisgn2_tspace}
   \end{subfigure}
   \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_design_2_hspace.jpg}
+    \includegraphics[width=\linewidth]{images/Quad_design_1_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:deisgn2_hspace}
   \end{subfigure}}
-  \caption{Representation of the capacities of Design 2.}
+  \caption{Visual representation of the abilities of Design 2.}
   \label{fig:Quadcopter2_spaces}
 \end{figure}
 
 \begin{table}[!h]
 \begin{center}
- \caption{Comparison between the two designs' force capabilities.}\vspace{1ex}
+ \caption{Comparing the force capabilities of the designs.}\vspace{1ex}
  \label{tab:tab_Quad_compare_force}
  \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
  \hline
  Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
  & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
- Design 1 & 23.23 & 28.37 & 26.87 & 0.86 & 81'710 & 9'326\\
- Design 2 & 23.19 & 28.56 & 26.87 & 0.86 & 81'683 & 9'345\\
+  1 & 23.19 & 28.56 & 26.87 & 0.86 & 81'683 & 9'345\\
+  2 & 23.23 & 28.37 & 26.87 & 0.86 & 81'710 & 9'326\\
  \hline
  \end{tabular}}
 \end{center}
@@ -142,14 +167,14 @@ Design 2:
 
 \begin{table}[!h]
 \begin{center}
- \caption{Comparison between the two designs' torque capabilities.}\vspace{1ex}
+ \caption{Comparing the torque capabilities of the designs .}\vspace{1ex}
  \label{tab:tab_Quad_compare_torque}
  \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
  \hline
  Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
  & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
- Design 1 & 11.65 & 14.23 & 13.47 & 0.43 & 10'300 & 2'348\\
- Design 2 & 11.62 & 14.32 & 13.47 & 0.43 & 10'298 & 2'355\\
+ 1 & 11.62 & 14.32 & 13.47 & 0.43 & 10'298 & 2'355\\
+ 2 & 11.65 & 14.23 & 13.47 & 0.43 & 10'300 & 2'348\\
  \hline
  \end{tabular}}
 \end{center}
@@ -157,14 +182,14 @@ Design 2:
 
 \begin{table}[!h]
 \begin{center}
- \caption{Comparison between the two designs' hover capabilities.}\vspace{1ex}
+ \caption{Comparing the hover efficiency of the designs.}\vspace{1ex}
  \label{tab:tab_Quad_compare_hover}
  \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
  \hline
   Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
   & $MAD(H_{eff})\ [\%]$\\ \hline
-  Design 1 & 81.65 & 94.73 & 87.1 & 2.6\\
-  Design 2 & 81.11 & 95.18 & 87.03 & 2.63\\
+  1 & 81.11 & 95.18 & 87.03 & 2.63\\
+  2 & 81.65 & 94.73 & 87.1 & 2.6\\
  \hline
 \end{tabular}}
 \end{center}

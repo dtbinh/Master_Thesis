@@ -22,20 +22,21 @@
 \contentsline {subsection}{\numberline {3.2.1}Quad-copter}{12}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Hexa-copter}{13}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Octa-copter}{14}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Odd Designs}{15}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Tri-copter}{15}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}Odd Designs}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Tri-copter}{16}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Penta-copter}{16}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Hepta-copter}{17}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{18}{section.3.4}
-\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{18}{section.3.5}
-\contentsline {chapter}{\numberline {4}Simulation Results}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hexa-copter}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hepta-copter}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}Octa-copter}{21}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Summary/Achieved}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Improvements}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}Further Developement}{23}{section.5.3}
-\contentsline {chapter}{Bibliography}{25}{chapter*.58}
-\contentsline {chapter}{Acknowledgements}{27}{chapter*.59}
-\contentsline {chapter}{\numberline {A}UML: Activity Diagram}{29}{appendix.A}
+\contentsline {subsection}{\numberline {3.3.3}Hepta-copter}{18}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{20}{section.3.4}
+\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{20}{section.3.5}
+\contentsline {chapter}{\numberline {4}Simulation Results}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Tri-copter}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hexa-copter}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Hepta-copter}{23}{section.4.3}
+\contentsline {section}{\numberline {4.4}Octa-copter}{23}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary/Achieved}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Improvements}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}Further Developement}{25}{section.5.3}
+\contentsline {chapter}{Bibliography}{27}{chapter*.58}
+\contentsline {chapter}{Acknowledgements}{29}{chapter*.59}
+\contentsline {chapter}{\numberline {A}UML: Activity Diagram}{31}{appendix.A}
