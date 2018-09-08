@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2.1}Modelisation of MAVs}{4}{section.2.1}
 \contentsline {subsubsection}{Assumptions}{4}{section*.11}
 \contentsline {subsubsection}{Initial Definitions}{4}{section*.12}
-\contentsline {subsubsection}{Equations of motion}{4}{section*.14}
+\contentsline {subsubsection}{Equations of motion}{5}{section*.14}
 \contentsline {subsubsection}{Static allocation}{5}{section*.15}
 \contentsline {section}{\numberline {2.2}Optimization problem}{6}{section.2.2}
 \contentsline {subsubsection}{Problem statement}{6}{section*.16}
@@ -13,29 +13,29 @@
 \contentsline {subsubsection}{Solver}{7}{section*.18}
 \contentsline {section}{\numberline {2.3}Optimization tool}{8}{section.2.3}
 \contentsline {subsubsection}{User Guide}{8}{section*.19}
-\contentsline {subsubsection}{Outcome}{8}{section*.21}
-\contentsline {subsubsection}{Limitations}{8}{section*.24}
-\contentsline {section}{\numberline {2.4}Simulation Approach}{8}{section.2.4}
+\contentsline {subsubsection}{Outcome}{9}{section*.21}
+\contentsline {subsubsection}{Limitations}{10}{section*.24}
+\contentsline {section}{\numberline {2.4}Simulation Approach}{10}{section.2.4}
 \contentsline {chapter}{\numberline {3}Optimization Results}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Platonic Solids}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Even Designs}{12}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Quad-copter}{12}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Hexa-copter}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Octa-copter}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Octa-copter}{14}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Odd Designs}{15}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Tri-copter}{15}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Penta-copter}{15}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Hepta-copter}{15}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{15}{section.3.4}
-\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{15}{section.3.5}
-\contentsline {chapter}{\numberline {4}Simulation Results}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hexa-copter}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hepta-copter}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Octa-copter}{17}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Summary/Achieved}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Improvements}{19}{section.5.2}
-\contentsline {section}{\numberline {5.3}Further Developement}{19}{section.5.3}
-\contentsline {chapter}{Bibliography}{21}{chapter*.42}
-\contentsline {chapter}{Acknowledgements}{23}{chapter*.43}
-\contentsline {chapter}{\numberline {A}UML: Activity Diagram}{25}{appendix.A}
+\contentsline {subsection}{\numberline {3.3.2}Penta-copter}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Hepta-copter}{18}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{18}{section.3.4}
+\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{19}{section.3.5}
+\contentsline {chapter}{\numberline {4}Simulation Results}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hexa-copter}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hepta-copter}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Octa-copter}{21}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary/Achieved}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Improvements}{23}{section.5.2}
+\contentsline {section}{\numberline {5.3}Further Developement}{23}{section.5.3}
+\contentsline {chapter}{Bibliography}{25}{chapter*.57}
+\contentsline {chapter}{Acknowledgements}{27}{chapter*.58}
+\contentsline {chapter}{\numberline {A}UML: Activity Diagram}{29}{appendix.A}
