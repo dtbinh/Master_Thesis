@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  7 SEP 2018 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  8 SEP 2018 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,7 +1368,26 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
-(/home/luca/git/Master_Thesis/Report_ongoing/report.aux)
+(/home/luca/git/Master_Thesis/Report_ongoing/report.aux
+
+LaTeX Warning: Label `tab:tab_Hexa_compare_force' multiply defined.
+
+
+LaTeX Warning: Label `tab:tab_Hexa_compare_force@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:tab_Hexa_compare_torque' multiply defined.
+
+
+LaTeX Warning: Label `tab:tab_Hexa_compare_torque@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:tab_Hexa_compare_hover' multiply defined.
+
+
+LaTeX Warning: Label `tab:tab_Hexa_compare_hover@cref' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1385,8 +1404,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 27.
@@ -1734,62 +1752,62 @@ File: images/cube.jpg Graphic file (type jpg)
 <use images/cube.jpg>
 Package pdftex.def Info: images/cube.jpg used on input line 41.
 (pdftex.def)             Requested size: 93.949pt x 97.07468pt.
-
-<images/Quadcopter.jpg, id=396, 1154.3125pt x 1023.825pt>
-File: images/Quadcopter.jpg Graphic file (type jpg)
-
-<use images/Quadcopter.jpg>
-Package pdftex.def Info: images/Quadcopter.jpg used on input line 73.
-(pdftex.def)             Requested size: 144.53778pt x 128.19652pt.
-
-<images/Quad_tetrahedron.jpg, id=397, 839.135pt x 763.85374pt>
-File: images/Quad_tetrahedron.jpg Graphic file (type jpg)
-
-<use images/Quad_tetrahedron.jpg>
-Package pdftex.def Info: images/Quad_tetrahedron.jpg used on input line 73.
-(pdftex.def)             Requested size: 126.4747pt x 115.12091pt.
-
-<images/Quadcopter2.jpg, id=398, 1125.20375pt x 794.97pt>
-File: images/Quadcopter2.jpg Graphic file (type jpg)
-
-<use images/Quadcopter2.jpg>
-Package pdftex.def Info: images/Quadcopter2.jpg used on input line 73.
-(pdftex.def)             Requested size: 162.60638pt x 114.87346pt.
  [11
 
 
  </home/luca/git/Master_Thesis/Report_ongoing/images/tetrahedron.jpg> </home/lu
 ca/git/Master_Thesis/Report_ongoing/images/octahedron.jpg> </home/luca/git/Mast
 er_Thesis/Report_ongoing/images/cube.jpg>]
+<images/Quadcopter.jpg, id=403, 1154.3125pt x 1023.825pt>
+File: images/Quadcopter.jpg Graphic file (type jpg)
+
+<use images/Quadcopter.jpg>
+Package pdftex.def Info: images/Quadcopter.jpg used on input line 87.
+(pdftex.def)             Requested size: 144.53778pt x 128.19652pt.
+
+<images/Quad_tetrahedron.jpg, id=404, 839.135pt x 763.85374pt>
+File: images/Quad_tetrahedron.jpg Graphic file (type jpg)
+
+<use images/Quad_tetrahedron.jpg>
+Package pdftex.def Info: images/Quad_tetrahedron.jpg used on input line 87.
+(pdftex.def)             Requested size: 126.4747pt x 115.12091pt.
+
+<images/Quadcopter2.jpg, id=405, 1125.20375pt x 794.97pt>
+File: images/Quadcopter2.jpg Graphic file (type jpg)
+
+<use images/Quadcopter2.jpg>
+Package pdftex.def Info: images/Quadcopter2.jpg used on input line 87.
+(pdftex.def)             Requested size: 162.60638pt x 114.87346pt.
+
 <images/Quad_design_1_fspace.jpg, id=406, 679.53876pt x 416.55624pt>
 File: images/Quad_design_1_fspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_1_fspace.jpg>
-Package pdftex.def Info: images/Quad_design_1_fspace.jpg used on input line 91.
-
+Package pdftex.def Info: images/Quad_design_1_fspace.jpg used on input line 105
+.
 (pdftex.def)             Requested size: 198.74359pt x 121.8279pt.
 
 <images/Quad_design_1_tspace.jpg, id=407, 663.47874pt x 427.5975pt>
 File: images/Quad_design_1_tspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_1_tspace.jpg>
-Package pdftex.def Info: images/Quad_design_1_tspace.jpg used on input line 91.
-
+Package pdftex.def Info: images/Quad_design_1_tspace.jpg used on input line 105
+.
 (pdftex.def)             Requested size: 180.67499pt x 116.43808pt.
 
 <images/Quad_design_1_hspace.jpg, id=408, 626.34pt x 417.56pt>
 File: images/Quad_design_1_hspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_1_hspace.jpg>
-Package pdftex.def Info: images/Quad_design_1_hspace.jpg used on input line 91.
-
+Package pdftex.def Info: images/Quad_design_1_hspace.jpg used on input line 105
+.
 (pdftex.def)             Requested size: 162.60638pt x 108.40375pt.
 
 <images/Quad_design_2_fspace.jpg, id=409, 672.5125pt x 416.55624pt>
 File: images/Quad_design_2_fspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_2_fspace.jpg>
-Package pdftex.def Info: images/Quad_design_2_fspace.jpg used on input line 109
+Package pdftex.def Info: images/Quad_design_2_fspace.jpg used on input line 123
 .
 (pdftex.def)             Requested size: 198.74359pt x 123.09912pt.
 
@@ -1797,7 +1815,7 @@ Package pdftex.def Info: images/Quad_design_2_fspace.jpg used on input line 109
 File: images/Quad_design_2_tspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_2_tspace.jpg>
-Package pdftex.def Info: images/Quad_design_2_tspace.jpg used on input line 109
+Package pdftex.def Info: images/Quad_design_2_tspace.jpg used on input line 123
 .
 (pdftex.def)             Requested size: 180.67499pt x 120.636pt.
 
@@ -1805,7 +1823,7 @@ Package pdftex.def Info: images/Quad_design_2_tspace.jpg used on input line 109
 File: images/Quad_design_2_hspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_2_hspace.jpg>
-Package pdftex.def Info: images/Quad_design_2_hspace.jpg used on input line 109
+Package pdftex.def Info: images/Quad_design_2_hspace.jpg used on input line 123
 .
 (pdftex.def)             Requested size: 162.60638pt x 104.38164pt.
 
@@ -1815,26 +1833,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Hexacopter.jpg, id=412, 1204.5pt x 1147.28625pt>
-File: images/Hexacopter.jpg Graphic file (type jpg)
-
-<use images/Hexacopter.jpg>
-Package pdftex.def Info: images/Hexacopter.jpg used on input line 177.
-(pdftex.def)             Requested size: 198.74359pt x 189.29405pt.
-
-<images/Hexa_octahedron.jpg, id=413, 868.24374pt x 832.10875pt>
-File: images/Hexa_octahedron.jpg Graphic file (type jpg)
-
-<use images/Hexa_octahedron.jpg>
-Package pdftex.def Info: images/Hexa_octahedron.jpg used on input line 177.
-(pdftex.def)             Requested size: 180.67499pt x 173.14818pt.
-
-<images/Voliro.jpg, id=414, 1324.95pt x 919.435pt>
-File: images/Voliro.jpg Graphic file (type jpg)
- <use images/Voliro.jpg>
-Package pdftex.def Info: images/Voliro.jpg used on input line 177.
-(pdftex.def)             Requested size: 252.94388pt x 175.5222pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1843,35 +1841,131 @@ luca/git/Master_Thesis/Report_ongoing/images/Quad_tetrahedron.jpg> </home/luca/
 git/Master_Thesis/Report_ongoing/images/Quadcopter2.jpg> </home/luca/git/Master
 _Thesis/Report_ongoing/images/Quad_design_1_fspace.jpg> </home/luca/git/Master_
 Thesis/Report_ongoing/images/Quad_design_1_tspace.jpg> </home/luca/git/Master_T
-hesis/Report_ongoing/images/Quad_design_1_hspace.jpg> </home/luca/git/Master_Th
-esis/Report_ongoing/images/Quad_design_2_fspace.jpg> </home/luca/git/Master_The
-sis/Report_ongoing/images/Quad_design_2_tspace.jpg> </home/luca/git/Master_Thes
-is/Report_ongoing/images/Quad_design_2_hspace.jpg>]) [13 </home/luca/git/Master
-_Thesis/Report_ongoing/images/Hexacopter.jpg> </home/luca/git/Master_Thesis/Rep
-ort_ongoing/images/Hexa_octahedron.jpg> </home/luca/git/Master_Thesis/Report_on
-going/images/Voliro.jpg>] [14
+hesis/Report_ongoing/images/Quad_design_1_hspace.jpg>]
+<images/Hexacopter.jpg, id=419, 1204.5pt x 1147.28625pt>
+File: images/Hexacopter.jpg Graphic file (type jpg)
+
+<use images/Hexacopter.jpg>
+Package pdftex.def Info: images/Hexacopter.jpg used on input line 207.
+(pdftex.def)             Requested size: 198.74359pt x 189.29405pt.
+
+<images/Hexa_octahedron.jpg, id=420, 868.24374pt x 832.10875pt>
+File: images/Hexa_octahedron.jpg Graphic file (type jpg)
+
+<use images/Hexa_octahedron.jpg>
+Package pdftex.def Info: images/Hexa_octahedron.jpg used on input line 207.
+(pdftex.def)             Requested size: 180.67499pt x 173.14818pt.
+
+<images/Voliro.jpg, id=421, 1324.95pt x 919.435pt>
+File: images/Voliro.jpg Graphic file (type jpg)
+ <use images/Voliro.jpg>
+Package pdftex.def Info: images/Voliro.jpg used on input line 207.
+(pdftex.def)             Requested size: 252.94388pt x 175.5222pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Hexa_fspace.jpg, id=422, 626.34pt x 426.59375pt>
+File: images/Hexa_fspace.jpg Graphic file (type jpg)
+
+<use images/Hexa_fspace.jpg>
+Package pdftex.def Info: images/Hexa_fspace.jpg used on input line 225.
+(pdftex.def)             Requested size: 198.74359pt x 135.36064pt.
+
+<images/Hexa_tspace.jpg, id=423, 668.4975pt x 443.6575pt>
+File: images/Hexa_tspace.jpg Graphic file (type jpg)
+
+<use images/Hexa_tspace.jpg>
+Package pdftex.def Info: images/Hexa_tspace.jpg used on input line 225.
+(pdftex.def)             Requested size: 180.67499pt x 119.9042pt.
+
+<images/Hexa_hspace.jpg, id=424, 639.38875pt x 408.52625pt>
+File: images/Hexa_hspace.jpg Graphic file (type jpg)
+
+<use images/Hexa_hspace.jpg>
+Package pdftex.def Info: images/Hexa_hspace.jpg used on input line 225.
+(pdftex.def)             Requested size: 162.60638pt x 103.89542pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Voliro_fspace.jpg, id=425, 626.34pt x 417.56pt>
+File: images/Voliro_fspace.jpg Graphic file (type jpg)
+
+<use images/Voliro_fspace.jpg>
+Package pdftex.def Info: images/Voliro_fspace.jpg used on input line 243.
+(pdftex.def)             Requested size: 198.74359pt x 132.49417pt.
+
+<images/Voliro_tspace.jpg, id=426, 604.2575pt x 415.5525pt>
+File: images/Voliro_tspace.jpg Graphic file (type jpg)
+
+<use images/Voliro_tspace.jpg>
+Package pdftex.def Info: images/Voliro_tspace.jpg used on input line 243.
+(pdftex.def)             Requested size: 180.67499pt x 124.24821pt.
+
+<images/Voliro_hspace.jpg, id=427, 649.42625pt x 409.53pt>
+File: images/Voliro_hspace.jpg Graphic file (type jpg)
+
+<use images/Voliro_hspace.jpg>
+Package pdftex.def Info: images/Voliro_hspace.jpg used on input line 243.
+(pdftex.def)             Requested size: 162.60638pt x 102.53847pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_2_fspace.jp
+g> </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_2_tspace.jpg
+> </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_2_hspace.jpg>
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 </home/luca/git/Master_Thesis/Report_ongoing/images/Hexacopter.jpg> </home
+/luca/git/Master_Thesis/Report_ongoing/images/Hexa_octahedron.jpg> </home/luca/
+git/Master_Thesis/Report_ongoing/images/Voliro.jpg> </home/luca/git/Master_Thes
+is/Report_ongoing/images/Hexa_fspace.jpg> </home/luca/git/Master_Thesis/Report_
+ongoing/images/Hexa_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/im
+ages/Hexa_hspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Volir
+o_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_tspace
+.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_hspace.jpg>]) 
+[15]
+[16
 
 ]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/simulation_results.tex
 Chapter 4.
-) [15
+) [17
 
-] [16
+] [18
 
 ]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/conclusion.tex
 Chapter 5.
-) [17
+) [19
 
-] [18
+] [20
 
 ] (/home/luca/git/Master_Thesis/Report_ongoing/report.bbl
 ** WARNING: IEEEtranN.bst: No hyphenation pattern has been
 ** loaded for the language `fr'. Using the pattern for
 ** the default language instead.
-) [19
+) [21
 
-] [20
+] [22
 
 ]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/acknowledgements.tex)
@@ -1879,16 +1973,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--112
 
  []
 
-[21
+[23
 
-] [22
+] [24
 
 ]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/appendix_uml.tex
 Appendix A.
-) [23
+) [25
 
-] [24
+] [26
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
@@ -1897,17 +1991,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: AC205D9D84F9D7909A604765A1A73C82;1854.
+(rerunfilecheck)             Checksum: 13D031EB834F12C2D3C2D529D6BA88C1;1854.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 23783 strings out of 493029
- 452306 string characters out of 6136235
- 547736 words of memory out of 5000000
- 26654 multiletter control sequences out of 15000+600000
+ 23857 strings out of 493029
+ 454031 string characters out of 6136235
+ 557736 words of memory out of 5000000
+ 26712 multiletter control sequences out of 15000+600000
  15087 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,15n,65p,602b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,15n,65p,602b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -1925,11 +2023,11 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 frm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (32 pa
-ges, 4342338 bytes).
+Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (34 pa
+ges, 4878817 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 122 named destinations out of 1000 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

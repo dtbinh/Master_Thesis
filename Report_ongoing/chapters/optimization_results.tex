@@ -53,13 +53,27 @@ and $\beta_{PS}$).
 
 \subsection{Quad-copter}
 \label{sec:quad_copter}
-Design 1: $\beta_{arm}\ =\ [35.26^{\circ}, -35.26^{\circ}, 35.26^{\circ}, -35.26^{\circ}]$.\\
-Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.49^{\circ}]$.
+Design 1:
+\begin{itemize}
+  \item $n\ =\ 4$
+  \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$
+  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}
+
+Design 2:
+\begin{itemize}
+  \item $n\ =\ 4$
+  \item $\beta_{arm}\ =\ [-32.42^{\circ},\  -35.49^{\circ},\  -35.44^{\circ},\  -35.49^{\circ}]$
+  \item $\theta_{arm}\ =\ [-0.99^{\circ},\  -1.88^{\circ},\  -2.26^{\circ},\  -2.94^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}
+
 
 \begin{figure}[!h]
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.4\textwidth}
     \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
-    \caption{Optimal Quad-copter design 1} \label{fig:Quadcopter_resulta}
+    \caption{Optimal quad-copter design 1} \label{fig:Quadcopter_resulta}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.35\textwidth}
@@ -69,7 +83,7 @@ Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.45\textwidth}
     \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
-    \caption{Optimal Quad-copter design 2.} \label{fig:Quadcopter_resultc}
+    \caption{Optimal quad-copter design 2.} \label{fig:Quadcopter_resultc}
   \end{subfigure}}
   \caption{Schematic of the optimal designs obtained for the Quad-copter.}
   \label{fig:Quadcopter_result}
@@ -113,11 +127,11 @@ Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.
 
 \begin{table}[!h]
 \begin{center}
- \caption{Comparison between two optimal design force-wise.}\vspace{1ex}
+ \caption{Comparison between the two designs' force capabilities.}\vspace{1ex}
  \label{tab:tab_Quad_compare_force}
  \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
  \hline
- Quad-copter & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
+ Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
  & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
  Design 1 & 23.23 & 28.37 & 26.87 & 0.86 & 81'710 & 9'326\\
  Design 2 & 23.19 & 28.56 & 26.87 & 0.86 & 81'683 & 9'345\\
@@ -128,11 +142,11 @@ Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.
 
 \begin{table}[!h]
 \begin{center}
- \caption{Comparison between two optimal design torque-wise.}\vspace{1ex}
+ \caption{Comparison between the two designs' torque capabilities.}\vspace{1ex}
  \label{tab:tab_Quad_compare_torque}
  \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
  \hline
- Quad-copter & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
+ Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
  & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
  Design 1 & 11.65 & 14.23 & 13.47 & 0.43 & 10'300 & 2'348\\
  Design 2 & 11.62 & 14.32 & 13.47 & 0.43 & 10'298 & 2'355\\
@@ -143,11 +157,11 @@ Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.
 
 \begin{table}[!h]
 \begin{center}
- \caption{Comparison between two optimal design hover-wise.}\vspace{1ex}
+ \caption{Comparison between the two designs' hover capabilities.}\vspace{1ex}
  \label{tab:tab_Quad_compare_hover}
  \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
  \hline
-  Quad-copter & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
+  Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
   & $MAD(H_{eff})\ [\%]$\\ \hline
   Design 1 & 81.65 & 94.73 & 87.1 & 2.6\\
   Design 2 & 81.11 & 95.18 & 87.03 & 2.63\\
@@ -158,12 +172,28 @@ Design 2: $\beta_{arm}\ =\ [-32.42^{\circ}, -35.49^{\circ}, -35.44^{\circ}, -35.
 
 \subsection{Hexa-copter}
 \label{sec:hexa_copter}
-Optimal hexa-copter: $\beta_{arm}\ =\ [35.26^{\circ}, -35.26^{\circ}
-, 35.26^{\circ}, -35.26^{\circ}, 35.26^{\circ}, -35.26^{\circ}]$.\\
+
+Optimal hexa-copter:
+\begin{itemize}
+  \item $n\ =\ 4$
+  \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ},\
+                          35.26^{\circ},\  -35.26^{\circ}]$
+  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ},\ 0^{\circ},\  0^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}
+
+Voliro:
+\begin{itemize}
+  \item $n\ =\ 4$
+  \item $\beta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ},\ 0^{\circ},\  0^{\circ}]$
+  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ},\ 0^{\circ},\  0^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}
+
 \begin{figure}[!h]
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
     \includegraphics[width=\linewidth]{images/Hexacopter.jpg}
-    \caption{Optimal Hexa-copter} \label{fig:Hexacopter_resulta}
+    \caption{Optimal hexa-copter} \label{fig:Hexacopter_resulta}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.5\textwidth}
@@ -175,12 +205,138 @@ Optimal hexa-copter: $\beta_{arm}\ =\ [35.26^{\circ}, -35.26^{\circ}
     \includegraphics[width=\linewidth]{images/Voliro.jpg}
     \caption{Voliro's design for comparison.} \label{fig:Hexacopter_resultc}
   \end{subfigure}}
-  \caption{Schematic of the optimal designs obtained for the Hexa-copter.}
+  \caption{Schematic of the differnt possible designs for an Hexa-copter.}
   \label{fig:Hexacopter_result}
 \end{figure}
 
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+    \includegraphics[width=\linewidth]{images/Hexa_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:hexa_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Hexa_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:hexa_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Hexa_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:hexa_hspace}
+  \end{subfigure}}
+  \caption{Representation of the capacity of the optimal hexa-copter.}
+  \label{fig:Hexacopter_spaces}
+\end{figure}
+
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+    \includegraphics[width=\linewidth]{images/Voliro_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:voliro_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Voliro_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:voliro_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Voliro_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:voliro_hspace}
+  \end{subfigure}}
+  \caption{Representation of the capacity of Voliro.}
+  \label{fig:Voliro_spaces}
+\end{figure}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between the two designs' force capabilities.}\vspace{1ex}
+ \label{tab:tab_Hexa_compare_force}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \hline
+ Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
+ & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
+ Optimal hexa-copter & 34.74 & 42.55 & 39.52 & 2.21 & 267'010 & 20'922\\
+ Voliro & 26.6 & 52.11 & 37.77 & 4.33 & 244'293 & 20'170\\
+ \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between the two designs' torque capabilities.}\vspace{1ex}
+ \label{tab:tab_Hexa_compare_torque}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \hline
+ Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
+ & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
+ Optimal hexa-copter & 17.42 & 21.34 & 19.82 & 1.1 & 33'687 & 5'230\\
+ Voliro & 15.09 & 26.13 & 18.94 & 2.17 & 30'788 & 5'121\\
+ \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between two designs' hover capabilities.}\vspace{1ex}
+ \label{tab:tab_Hexa_compare_hover}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
+ \hline
+  Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
+  & $MAD(H_{eff})\ [\%]$\\ \hline
+  Optimal hexa-copter & 81.65 & 100 & 88.92 & 4.43\\
+  Voliro & 75 & 100 & 84.21 & 5.35\\
+ \hline
+\end{tabular}}
+\end{center}
+\end{table}
+
 \subsection{Octa-copter}
 \label{sec:octa_copter}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between the two designs' force capabilities.}\vspace{1ex}
+ \label{tab:tab_Hexa_compare_force}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \hline
+ Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
+ & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
+ Optimal hexa-copter &  &  &  &  &  & \\
+ Voliro &  &  &  &  &  & \\
+ \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between the two designs' torque capabilities.}\vspace{1ex}
+ \label{tab:tab_Hexa_compare_torque}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \hline
+ Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
+ & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
+ Optimal hexa-copter &  &  &  &  &  & \\
+ Voliro &  &  &  &  &  & \\
+ \hline
+ \end{tabular}}
+\end{center}
+\end{table}
+
+\begin{table}[!h]
+\begin{center}
+ \caption{Comparison between two designs' hover capabilities.}\vspace{1ex}
+ \label{tab:tab_Hexa_compare_hover}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
+ \hline
+  Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
+  & $MAD(H_{eff})\ [\%]$\\ \hline
+  Optimal hexa-copter &  &  &  & \\
+  Voliro &  &  &  & \\
+ \hline
+\end{tabular}}
+\end{center}
+\end{table}
 
 \section{Odd Designs}
 \label{sec:odd_designs}
