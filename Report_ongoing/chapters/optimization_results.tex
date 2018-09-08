@@ -426,6 +426,18 @@ Optimal tri-copter:
 \end{itemize}
 
 \begin{figure}[!h]
+  \resizebox{\textwidth}{!}{
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/Tricopter.jpg}
+    \caption{Design representation.} \label{fig:Tricopter_visual}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/Tri_hspace.jpg}
+    \caption{Hover efficiency space.} \label{fig:Tricopter_hspace}
+  \end{subfigure}
+  }
+  \hspace*{\fill} % separation between the subfigures
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.45\textwidth}
     \includegraphics[width=\linewidth]{images/Tri_fspace.jpg}
     \caption{Force space.} \label{fig:Tricopter_fspace}
@@ -435,47 +447,9 @@ Optimal tri-copter:
     \includegraphics[width=\linewidth]{images/Tri_tspace.jpg}
     \caption{Torque space.} \label{fig:Tricopter_tspace}
   \end{subfigure}}
-  \hspace*{\fill} % separation between the subfigures
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[width=\linewidth]{images/Tri_hspace.jpg}
-    \caption{Hover efficiency space.} \label{fig:Tricopter_hspace}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[width=\linewidth]{images/Tricopter.jpg}
-    \caption{Design representation.} \label{fig:Tricopter_visual}
-  \end{subfigure}}
   \caption{Visual representation of the optimal tri-copter capabilities.}
   \label{fig:Tricopter_result}
 \end{figure}
-
-\begin{table}[!h]
- \caption{Information on the optimal tri-copter.}\vspace{1ex}
- \label{tab:tab_Tri_metrics}
- \begin{center}
- \resizebox{\textwidth}{!}{\begin{tabular}{|cccccc|}
- \hline
- $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
- & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
- 17.37 & 21.27 & 19.73 & 1.1 & 33'217 & 5'313\\
- \hline
- \end{tabular}}
- \resizebox{\textwidth}{!}{\begin{tabular}{|cccccc|}
- \hline
- $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
- & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
- 8.7 & 10.67 & 9.87 & 0.56 & 4'158 & 1'379\\
- \hline
- \end{tabular}}
- {\tiny\begin{tabular}{|cccc|}
- \hline
-  $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
-  & $MAD(H_{eff})\ [\%]$\\ \hline
-  81.65 & 99 & 87.22 & 4.42\\
- \hline
-\end{tabular}}
-\end{center}
-\end{table}
 
 \subsection{Penta-copter}
 \label{sec:penta_copter}
@@ -497,12 +471,12 @@ Standard penta-copter:
 \begin{figure}[!h]
   \begin{subfigure}[b]{0.4\textwidth}
     \includegraphics[width=\linewidth]{images/Pentacopter_odd.jpg}
-    \caption{Optimal hexa-copter.} \label{fig:Pentacopter_odd}
+    \caption{Optimal penta-copter.} \label{fig:Pentacopter_odd}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Pentacopter_standard.jpg}
-    \caption{Hexa-copter standard.} \label{fig:Pentacopter_standard}
+    \caption{Penta-copter standard.} \label{fig:Pentacopter_standard}
   \end{subfigure}
   \caption{Schematic of different possible designs for a Penta-copter.}
   \label{fig:Pentacopter_result}
@@ -516,7 +490,7 @@ Standard penta-copter:
  \hline
  Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
  & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
- Design 1 & 26.03 & 36.22 & 33.69 & 1.39 & 160'333 & 14'626\\
+ Optimal & 26.03 & 36.22 & 33.69 & 1.39 & 160'333 & 14'626\\
  Standard & 26.24 & 43.42 & 31.93 & 3.25 & 146'006 & 14'137\\
  \hline
  \end{tabular}}
@@ -553,99 +527,201 @@ Standard penta-copter:
 \end{center}
 \end{table}
 
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:penta_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:penta_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:penta_hspace}
+  \end{subfigure}}
+  \caption{Representation of the capacities of the optimal penta-copter.}
+  \label{fig:Pentacopter_spaces}
+\end{figure}
+
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_standard_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:penta_standard_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_standard_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:penta_standard_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_standard_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:penta_standard_hspace}
+  \end{subfigure}}
+  \caption{Representation of the capacities of the standard penta-copter.}
+  \label{fig:penta_standard_spaces}
+\end{figure}
+
 \subsection{Hepta-copter}
 \label{sec:hepta_copter}
-\begin{table}[!h]
-\begin{center}
- \caption{Comparison between the two designs' force capabilities.}\vspace{1ex}
- \label{tab:tab_hepta_compare_force}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
- \hline
- Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
- & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
- Optimal hepta-copter &  &  &  &  &  & \\
- Standard hepta-copter &  &  &  &  &  & \\
- \hline
- \end{tabular}}
-\end{center}
-\end{table}
+Optimal hepta-copter:
+\begin{itemize}
+  \item $n\ =\ 7$
+  \item $\beta_{arm}\ =\ [35.26^{\circ},\  35.26^{\circ},\  35.26^{\circ},\  35.26^{\circ},\
+                          35.26^{\circ},\  35.26^{\circ},\  35.26^{\circ}]$
+  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ},\
+                            0^{\circ},\  0^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}
 
-\begin{table}[!h]
-\begin{center}
- \caption{Comparison between the two designs' torque capabilities.}\vspace{1ex}
- \label{tab:tab_hepta_compare_torque}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
- \hline
- Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
- & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
- Optimal hepta-copter &  &  &  &  &  & \\
- Standard hepta-copter &  &  &  &  &  & \\
- \hline
- \end{tabular}}
-\end{center}
-\end{table}
-
-\begin{table}[!h]
-\begin{center}
- \caption{Comparison between two designs' hover capabilities.}\vspace{1ex}
- \label{tab:tab_hepta_compare_hover}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
- \hline
-  Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
-  & $MAD(H_{eff})\ [\%]$\\ \hline
-  Optimal hepta-copter &  &  &  &  \\
-  Standard hepta-copter &  &  &  &  \\
- \hline
-\end{tabular}}
-\end{center}
-\end{table}
+\begin{figure}[!h]
+  \begin{center}
+    \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.4\textwidth}
+      \includegraphics[width=\linewidth]{images/Heptacopter.jpg}
+      \caption{Hover efficiency space.} \label{fig:Heptacopter_hspace}
+    \end{subfigure}
+    \hspace*{\fill} % separation between the subfigures
+    \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{images/Heptacopter_standard.jpg}
+      \caption{Hover efficiency space.} \label{fig:Heptacopter_hspace}
+    \end{subfigure}}
+    \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
+      \includegraphics[width=\linewidth]{images/Hepta_opt_hspace.jpg}
+      \caption{Optimal design hover efficiency space.} \label{fig:Hepta_opt_hspace}
+    \end{subfigure}
+    \hspace*{\fill} % separation between the subfigures
+    \begin{subfigure}[b]{0.5\textwidth}
+      \includegraphics[width=\linewidth]{images/Hepta_hspace.jpg}
+      \caption{Standard design hover efficiency space.} \label{fig:Hepta_hspace}
+    \end{subfigure}}
+    \caption{Visual representation of the optimal Hepta-copter capabilities.}
+    \label{fig:Heptacopter_result}
+  \end{center}
+\end{figure}
 
 \section{Comparison of Different Designs}
 \label{sec:comparison}
+\begin{figure}[!h]
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Tricopter.jpg}
+    \caption{Tri-copter.} \label{fig:comp_tri}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
+    \caption{Quad-copter.} \label{fig:comp_quad}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Pentacopter.jpg}
+    \caption{Penta-copter.} \label{fig:comp_penta}
+  \end{subfigure}}
+  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Hexacopter.jpg}
+    \caption{Hexa-copter.} \label{fig:comp_hexa}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Heptacopter.jpg}
+    \caption{Hepta-copter.} \label{fig:comp_hepta}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{images/Octacopter.jpg}
+    \caption{Octa-copter.} \label{fig:comp_octo}
+  \end{subfigure}}
+  \caption{Representation of all the optimal designs.}
+  \label{fig:Compare_all_regular_designs}
+\end{figure}
 \begin{table}[!h]
-\begin{center}
- \caption{Comparison between the two designs' force capabilities.}\vspace{1ex}
- \label{tab:tab_all_compare_force}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
- \hline
- Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
- & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
- Optimal octa-copter &  &  &  &  &  & \\
- Omnicopter &  &  &  &  &  & \\
- \hline
- \end{tabular}}
-\end{center}
+  \begin{center}
+   \caption{Comparison between all the different optimal designs' force capabilities.}\vspace{1ex}
+   \label{tab:tab_all_compare_force}
+   \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+     \hline
+     Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
+     & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
+     Tri-copter &  17.37 & 21.27 & 19.73 & 1.1 & 33'217 & 5'313\\
+     Quad-copter & 23.23 & 28.37 & 26.87 & 0.86 & 81'710 & 9'326\\
+     Penta-copter & 28.95 & 35.46 & 29.39 & 0.46 & 107'463 & 11'130\\
+     Hexa-copter & 34.74 & 42.55 & 39.52 & 2.21 & 267'010 & 20'922\\
+     Hepta-copter & 39.96 & 49.44 & 47.18 & 0.96 & 447'344 & 28'929\\
+     Octa-copter & 44.7 & 58.78 & 53.95 & 0.94 & 669'339 & 37'625\\
+     \hline
+   \end{tabular}}
+  \end{center}
 \end{table}
 
 \begin{table}[!h]
-\begin{center}
- \caption{Comparison between the two designs' torque capabilities.}\vspace{1ex}
- \label{tab:tab_all_compare_torque}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
- \hline
- Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
- & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
- Optimal octa-copter &  &  &  &  &  & \\
- Omnicopter &  &  &  &  &  & \\
- \hline
- \end{tabular}}
-\end{center}
+  \begin{center}
+   \caption{Comparison between all the different optimal designs' torque capabilities.}\vspace{1ex}
+   \label{tab:tab_all_compare_torque}
+   \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+     \hline
+     Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
+     & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
+     Tri-copter & 8.7 & 10.67 & 9.87 & 0.56 & 4'158 & 1'379\\
+     Quad-copter & 11.65 & 14.23 & 13.47 & 0.43 & 10'300 & 2'348\\
+     Penta-copter & 14.52 & 17.78 & 14.74 & 0.23 & 13'555 & 2'800\\
+     Hexa-copter & 17.42 & 21.34 & 19.82 & 1.1 & 33'687 & 5'230\\
+     Hepta-copter & 20.04 & 24.8 & 23.66 & 0.48 & 56'403 & 7'304\\
+     Octa-copter & 22.4 & 29.48 & 27 & 0.47 & 84'417 & 9'463\\
+     \hline
+   \end{tabular}}
+  \end{center}
 \end{table}
 
 \begin{table}[!h]
-\begin{center}
- \caption{Comparison between two designs' hover capabilities.}\vspace{1ex}
- \label{tab:tab_all_compare_hover}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
- \hline
-  Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
-  & $MAD(H_{eff})\ [\%]$\\ \hline
-  Optimal octa-copter &  &  &  &  \\
-  Omnicopter &  &  &  &  \\
- \hline
-\end{tabular}}
-\end{center}
+  \begin{center}
+   \caption{Comparison between all the different optimal designs' hover capabilities.}\vspace{1ex}
+   \label{tab:tab_all_compare_hover}
+     \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
+       \hline
+        Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
+        & $MAD(H_{eff})\ [\%]$\\ \hline
+        Tri-copter & 81.65 & 99 & 87.22 & 4.42\\
+        Quads-copter & 81.65 & 94.73 & 87.1 & 2.6\\
+        Penta-copter & 81.65 & 91.43 & 85.35 & 1.49\\
+        Hexa-copter & 81.65 & 100 & 88.92 & 4.43\\
+        Hepta-copter & 80.88 & 95.23 & 91.1 & 2.4 \\
+        Octa-copter & 81.78 & 96.65 & 91.42 & 2.7\\
+       \hline
+    \end{tabular}}
+  \end{center}
 \end{table}
 
 \section{Results when n is an Optimization Parameter}
 \label{sec:result_n}
+
+Optimal n-copter sqp algorithm:
+\begin{itemize}
+  \item $n\ =\ 3$
+  \item $\beta_{arm}\ =\ [36^{\circ},\  36^{\circ},\  36^{\circ}]$
+  \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ}]$
+  \item $L\ =\ 0.4\ [m]$
+\end{itemize}
+
+Optimal n-copter genetic algorithm:
+\begin{itemize}
+  \item $n\ =\ 7$
+  \item $\beta_{arm}\ =\ [10.13^{\circ},\  -3.73^{\circ},\  -49.51^{\circ},\  49.76^{\circ},\
+                          -56.67^{\circ},\  47.03^{\circ},\  -17.86^{\circ}]$
+  \item $\theta_{arm}\ =\ [-18.93^{\circ},\  -9.51^{\circ},\  1.22^{\circ},\  12.93^{\circ},\  13.58^{\circ},\
+                            13.07^{\circ},\  -26.33^{\circ}]$
+  \item $L\ =\ 0.5\ [m]$
+\end{itemize}
+
+\begin{figure}[!h]
+  \begin{center}
+    \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
+      \includegraphics[width=\linewidth]{images/opt_n_ga.jpg}
+      \caption{Hover efficiency space.} \label{fig:opt_n_ga}
+    \end{subfigure}
+    \hspace*{\fill} % separation between the subfigures
+    \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{images/opt_n_sqp.jpg}
+      \caption{Sqp algorithm.} \label{fig:opt_n_sqp}
+    \end{subfigure}}
+    \caption{Visual representation of the optimal n-copter designs.}
+    \label{fig:opt_n_result}
+  \end{center}
+\end{figure}

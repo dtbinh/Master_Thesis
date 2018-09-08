@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  8 SEP 2018 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  8 SEP 2018 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,7 +1368,20 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
-(/home/luca/git/Master_Thesis/Report_ongoing/report.aux)
+(/home/luca/git/Master_Thesis/Report_ongoing/report.aux
+
+LaTeX Warning: Label `fig:Heptacopter_hspace' multiply defined.
+
+
+LaTeX Warning: Label `fig:Heptacopter_hspace@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Heptacopter_hspace' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:Heptacopter_hspace@cref' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1385,8 +1398,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 27.
@@ -2013,35 +2025,40 @@ oing/images/Octa_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/image
 s/Octa_hspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnicopt
 er_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnicopter_t
 space.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnicopter_hspac
-e.jpg>] <images/Tri_fspace.jpg, id=468, 671.50874pt x 409.53pt>
-File: images/Tri_fspace.jpg Graphic file (type jpg)
-
-<use images/Tri_fspace.jpg>
-Package pdftex.def Info: images/Tri_fspace.jpg used on input line 437.
-(pdftex.def)             Requested size: 162.60638pt x 99.16405pt.
-
-<images/Tri_tspace.jpg, id=469, 652.4375pt x 420.57124pt>
-File: images/Tri_tspace.jpg Graphic file (type jpg)
-
-<use images/Tri_tspace.jpg>
-Package pdftex.def Info: images/Tri_tspace.jpg used on input line 437.
-(pdftex.def)             Requested size: 144.53778pt x 93.1677pt.
-
-<images/Tri_hspace.jpg, id=470, 622.325pt x 423.5825pt>
-File: images/Tri_hspace.jpg Graphic file (type jpg)
-
-<use images/Tri_hspace.jpg>
-Package pdftex.def Info: images/Tri_hspace.jpg used on input line 447.
-(pdftex.def)             Requested size: 144.53778pt x 98.3785pt.
-
-<images/Tricopter.jpg, id=471, 790.955pt x 688.5725pt>
+e.jpg>] <images/Tricopter.jpg, id=468, 790.955pt x 688.5725pt>
 File: images/Tricopter.jpg Graphic file (type jpg)
 
 <use images/Tricopter.jpg>
-Package pdftex.def Info: images/Tricopter.jpg used on input line 447.
+Package pdftex.def Info: images/Tricopter.jpg used on input line 439.
 (pdftex.def)             Requested size: 144.53778pt x 125.8289pt.
 
-Overfull \hbox (2.24667pt too wide) in paragraph at lines 429--448
+<images/Tri_hspace.jpg, id=469, 622.325pt x 423.5825pt>
+File: images/Tri_hspace.jpg Graphic file (type jpg)
+
+<use images/Tri_hspace.jpg>
+Package pdftex.def Info: images/Tri_hspace.jpg used on input line 439.
+(pdftex.def)             Requested size: 144.53778pt x 98.3785pt.
+
+<images/Tri_fspace.jpg, id=470, 671.50874pt x 409.53pt>
+File: images/Tri_fspace.jpg Graphic file (type jpg)
+
+<use images/Tri_fspace.jpg>
+Package pdftex.def Info: images/Tri_fspace.jpg used on input line 449.
+(pdftex.def)             Requested size: 162.60638pt x 99.16405pt.
+
+<images/Tri_tspace.jpg, id=471, 652.4375pt x 420.57124pt>
+File: images/Tri_tspace.jpg Graphic file (type jpg)
+
+<use images/Tri_tspace.jpg>
+Package pdftex.def Info: images/Tri_tspace.jpg used on input line 449.
+(pdftex.def)             Requested size: 144.53778pt x 93.1677pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--450
+[][]
+ []
+
+
+Overfull \hbox (2.25552pt too wide) in paragraph at lines 429--450
 |  [] 
  []
 
@@ -2052,14 +2069,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: images/Pentacopter_odd.jpg Graphic file (type jpg)
 
 <use images/Pentacopter_odd.jpg>
-Package pdftex.def Info: images/Pentacopter_odd.jpg used on input line 499.
+Package pdftex.def Info: images/Pentacopter_odd.jpg used on input line 473.
 (pdftex.def)             Requested size: 144.53778pt x 133.91835pt.
 
 <images/Pentacopter_standard.jpg, id=473, 954.56625pt x 680.5425pt>
 File: images/Pentacopter_standard.jpg Graphic file (type jpg)
 
 <use images/Pentacopter_standard.jpg>
-Package pdftex.def Info: images/Pentacopter_standard.jpg used on input line 504
+Package pdftex.def Info: images/Pentacopter_standard.jpg used on input line 478
 .
 (pdftex.def)             Requested size: 180.67499pt x 128.80597pt.
 
@@ -2072,10 +2089,124 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<images/Penta_fspace.jpg, id=474, 728.7225pt x 458.71375pt>
+File: images/Penta_fspace.jpg Graphic file (type jpg)
+
+<use images/Penta_fspace.jpg>
+Package pdftex.def Info: images/Penta_fspace.jpg used on input line 543.
+(pdftex.def)             Requested size: 198.74359pt x 125.10025pt.
+
+<images/Penta_tspace.jpg, id=475, 723.70375pt x 471.7625pt>
+File: images/Penta_tspace.jpg Graphic file (type jpg)
+
+<use images/Penta_tspace.jpg>
+Package pdftex.def Info: images/Penta_tspace.jpg used on input line 543.
+(pdftex.def)             Requested size: 180.67499pt x 117.77477pt.
+
+<images/Penta_hspace.jpg, id=476, 733.74126pt x 495.8525pt>
+File: images/Penta_hspace.jpg Graphic file (type jpg)
+
+<use images/Penta_hspace.jpg>
+Package pdftex.def Info: images/Penta_hspace.jpg used on input line 543.
+(pdftex.def)             Requested size: 162.60638pt x 109.88232pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16]
+<images/Penta_standard_fspace.jpg, id=477, 632.3625pt x 399.4925pt>
+File: images/Penta_standard_fspace.jpg Graphic file (type jpg)
+
+<use images/Penta_standard_fspace.jpg>
+Package pdftex.def Info: images/Penta_standard_fspace.jpg used on input line 56
+1.
+(pdftex.def)             Requested size: 198.74359pt x 125.55429pt.
+
+<images/Penta_standard_tspace.jpg, id=478, 613.29124pt x 419.5675pt>
+File: images/Penta_standard_tspace.jpg Graphic file (type jpg)
+
+<use images/Penta_standard_tspace.jpg>
+Package pdftex.def Info: images/Penta_standard_tspace.jpg used on input line 56
+1.
+(pdftex.def)             Requested size: 180.67499pt x 123.60487pt.
+
+<images/Penta_standard_hspace.jpg, id=479, 625.33624pt x 446.66875pt>
+File: images/Penta_standard_hspace.jpg Graphic file (type jpg)
+
+<use images/Penta_standard_hspace.jpg>
+Package pdftex.def Info: images/Penta_standard_hspace.jpg used on input line 56
+1.
+(pdftex.def)             Requested size: 162.60638pt x 116.14476pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] [17 </home/luca/git/Master_Thesis/Report_ongoing/images/Tricopter.jpg> </h
+ome/luca/git/Master_Thesis/Report_ongoing/images/Tri_hspace.jpg> </home/luca/gi
+t/Master_Thesis/Report_ongoing/images/Tri_fspace.jpg> </home/luca/git/Master_Th
+esis/Report_ongoing/images/Tri_tspace.jpg> </home/luca/git/Master_Thesis/Report
+_ongoing/images/Pentacopter_odd.jpg> </home/luca/git/Master_Thesis/Report_ongoi
+ng/images/Pentacopter_standard.jpg>]
+<images/Heptacopter.jpg, id=496, 831.105pt x 685.56125pt>
+File: images/Heptacopter.jpg Graphic file (type jpg)
+
+<use images/Heptacopter.jpg>
+Package pdftex.def Info: images/Heptacopter.jpg used on input line 588.
+(pdftex.def)             Requested size: 144.53778pt x 119.22183pt.
+
+<images/Heptacopter_standard.jpg, id=497, 1080.035pt x 745.78625pt>
+File: images/Heptacopter_standard.jpg Graphic file (type jpg)
+
+<use images/Heptacopter_standard.jpg>
+Package pdftex.def Info: images/Heptacopter_standard.jpg used on input line 588
+.
+(pdftex.def)             Requested size: 162.60638pt x 112.27278pt.
+
+<images/Hepta_opt_hspace.jpg, id=498, 618.31pt x 416.55624pt>
+File: images/Hepta_opt_hspace.jpg Graphic file (type jpg)
+
+<use images/Hepta_opt_hspace.jpg>
+Package pdftex.def Info: images/Hepta_opt_hspace.jpg used on input line 597.
+(pdftex.def)             Requested size: 180.67499pt x 121.71985pt.
+
+<images/Hepta_hspace.jpg, id=499, 641.39626pt x 411.5375pt>
+File: images/Hepta_hspace.jpg Graphic file (type jpg)
+
+<use images/Hepta_hspace.jpg>
+Package pdftex.def Info: images/Hepta_hspace.jpg used on input line 597.
+(pdftex.def)             Requested size: 180.67499pt x 115.92674pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: images/Tricopter.jpg Graphic file (type jpg)
+<use images/Tricopter.jpg>
+Package pdftex.def Info: images/Tricopter.jpg used on input line 618.
+(pdftex.def)             Requested size: 180.67499pt x 157.28613pt.
+File: images/Quadcopter.jpg Graphic file (type jpg)
+ <use images/Quadcopter.jpg>
+Package pdftex.def Info: images/Quadcopter.jpg used on input line 618.
+(pdftex.def)             Requested size: 180.67499pt x 160.23784pt.
+
+<images/Pentacopter.jpg, id=500, 785.93625pt x 695.59875pt>
+File: images/Pentacopter.jpg Graphic file (type jpg)
+
+<use images/Pentacopter.jpg>
+Package pdftex.def Info: images/Pentacopter.jpg used on input line 618.
+(pdftex.def)             Requested size: 180.67499pt x 159.91005pt.
+File: images/Hexacopter.jpg Graphic file (type jpg)
+ <use images/Hexacopter.jpg>
+Package pdftex.def Info: images/Hexacopter.jpg used on input line 631.
+(pdftex.def)             Requested size: 180.67499pt x 172.08551pt.
+File: images/Heptacopter.jpg Graphic file (type jpg)
+
+<use images/Heptacopter.jpg>
+Package pdftex.def Info: images/Heptacopter.jpg used on input line 631.
+(pdftex.def)             Requested size: 180.67499pt x 149.03514pt.
+File: images/Octacopter.jpg Graphic file (type jpg)
+ <use images/Octacopter.jpg>
+Package pdftex.def Info: images/Octacopter.jpg used on input line 631.
+(pdftex.def)             Requested size: 180.67499pt x 169.15666pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2085,24 +2216,38 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[18 </home/luca/git/Master_Thesis/Report_ongoing/images/Penta_fspace.jpg> </hom
+e/luca/git/Master_Thesis/Report_ongoing/images/Penta_tspace.jpg> </home/luca/gi
+t/Master_Thesis/Report_ongoing/images/Penta_hspace.jpg> </home/luca/git/Master_
+Thesis/Report_ongoing/images/Penta_standard_fspace.jpg> </home/luca/git/Master_
+Thesis/Report_ongoing/images/Penta_standard_tspace.jpg> </home/luca/git/Master_
+Thesis/Report_ongoing/images/Penta_standard_hspace.jpg>]
+Underfull \vbox (badness 4378) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [19 </home/luca/git/Master_Thesis/Report_ongoing/images/Heptacopter.jpg> </hom
+e/luca/git/Master_Thesis/Report_ongoing/images/Heptacopter_standard.jpg> </home
+/luca/git/Master_Thesis/Report_ongoing/images/Hepta_opt_hspace.jpg> </home/luca
+/git/Master_Thesis/Report_ongoing/images/Hepta_hspace.jpg> </home/luca/git/Mast
+er_Thesis/Report_ongoing/images/Pentacopter.jpg>]
+<images/opt_n_ga.jpg, id=515, 973.6375pt x 808.01875pt>
+File: images/opt_n_ga.jpg Graphic file (type jpg)
 
- [17 </home/luca/git/Master_Thesis/Report_ongoing/images/Tri_fspace.jpg> </home
-/luca/git/Master_Thesis/Report_ongoing/images/Tri_tspace.jpg> </home/luca/git/M
-aster_Thesis/Report_ongoing/images/Tri_hspace.jpg> </home/luca/git/Master_Thesi
-s/Report_ongoing/images/Tricopter.jpg> </home/luca/git/Master_Thesis/Report_ong
-oing/images/Pentacopter_odd.jpg> </home/luca/git/Master_Thesis/Report_ongoing/i
-mages/Pentacopter_standard.jpg>]
+<use images/opt_n_ga.jpg>
+Package pdftex.def Info: images/opt_n_ga.jpg used on input line 723.
+(pdftex.def)             Requested size: 180.67499pt x 149.93732pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<images/opt_n_sqp.jpg, id=516, 796.9775pt x 729.72626pt>
+File: images/opt_n_sqp.jpg Graphic file (type jpg)
 
-) [18] [19] [20
-
-]
+<use images/opt_n_sqp.jpg>
+Package pdftex.def Info: images/opt_n_sqp.jpg used on input line 723.
+(pdftex.def)             Requested size: 162.60638pt x 148.88223pt.
+) [20 </home/luca/git/Master_Thesis/Report_ongoing/images/opt_n_ga.jpg> </home/
+luca/git/Master_Thesis/Report_ongoing/images/opt_n_sqp.jpg>]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/simulation_results.tex
 Chapter 4.
 ) [21
+
 
 ] [22
 
@@ -2148,17 +2293,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 87D735947E00AF13C5474C812A5D6464;1854.
+(rerunfilecheck)             Checksum: 9DAE63AA127D33C0FDDBB2EAA202798B;1854.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 24066 strings out of 493029
- 459216 string characters out of 6136235
- 558736 words of memory out of 5000000
- 26885 multiletter control sequences out of 15000+600000
+ 24202 strings out of 493029
+ 462659 string characters out of 6136235
+ 555736 words of memory out of 5000000
+ 27007 multiletter control sequences out of 15000+600000
  15087 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,15n,65p,602b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,15n,65p,602b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -2167,22 +2316,21 @@ s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfrm1000.pfb>
+cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (38 pa
-ges, 6657524 bytes).
+ges, 8055365 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
- 540 compressed objects within 6 object streams
- 153 named destinations out of 1000 (max. 500000)
- 516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 675 PDF objects out of 1000 (max. 8388607)
+ 538 compressed objects within 6 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
