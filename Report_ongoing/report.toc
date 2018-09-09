@@ -22,12 +22,12 @@
 \contentsline {subsection}{\numberline {3.2.1}Quad-copter}{12}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Hexa-copter}{14}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Octa-copter}{15}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Odd Designs}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Tri-copter}{16}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}Odd Designs}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Tri-copter}{17}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Penta-copter}{17}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Hepta-copter}{18}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}Comparison of Different Designs}{19}{section.3.4}
-\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{19}{section.3.5}
+\contentsline {section}{\numberline {3.5}Results when n is an Optimization Parameter}{20}{section.3.5}
 \contentsline {chapter}{\numberline {4}Simulation Results}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Tri-copter}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}Hexa-copter}{23}{section.4.2}
