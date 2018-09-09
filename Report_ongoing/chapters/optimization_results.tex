@@ -60,8 +60,7 @@ optimization problem, the cost function that maximizes the minimal attainable
 force and the minimal attainable torque that the MAV can produce in any direction
 and that minimizes the inertia of the drone is used. The result is depicted in
 \Cref{fig:Quadcopter_1} and has the following features:
-
-{\small\begin{itemize}
+{\footnotesize\begin{itemize}
   \item $n\ =\ 4$
   \item $\beta_{arm}\ =\ [-32.42^{\circ},\  -35.49^{\circ},\  -35.44^{\circ},\  -35.49^{\circ}]$
   \item $\theta_{arm}\ =\ [-0.99^{\circ},\  -1.88^{\circ},\  -2.26^{\circ},\  -2.94^{\circ}]$
@@ -78,7 +77,7 @@ design is obtained when performing the same optimization as before with a slight
 change, which consists in choosing as initial solution $\beta_{arm,0} \ =\
 [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$. The result is
 depicted in \Cref{fig:Quadcopter_1} and has the following features:
-{\small\begin{itemize}
+{\footnotesize\begin{itemize}
   \item $n\ =\ 4$
   \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$
   \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ}]$
@@ -97,7 +96,7 @@ vertices of a tetrahedron (see \Cref{fig:Quadcopter_2_tetra}).
 \hspace*{\fill} % separation between the subfigures
 \begin{subfigure}[b]{0.4\textwidth}
     \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
-    \caption{Design 2} \label{fig:Quadcopter_2}
+    \caption{Design 2.} \label{fig:Quadcopter_2}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.35\textwidth}
@@ -107,25 +106,28 @@ vertices of a tetrahedron (see \Cref{fig:Quadcopter_2_tetra}).
   \caption{Schematic of the optimal designs obtained for the Quad-copter.}
   \label{fig:Quadcopter_result}
 \end{figure}
-
 It is important to understand that for the tool, the designs with all the arms
-on the same side as the first, or the designs with distributed arms as
-the second, are equivalent. Even with slightly different arm angles magnitudes
+on the same side (as design 1), or the designs with distributed arms (as design 2),
+are equivalent. Even with slightly different arm angles’ magnitudes
 between the two designs, when comparing \Cref{fig:Quadcopter1_spaces}with
 \Cref{fig:Quadcopter2_spaces} and when comparing the different metrics
 in \Cref{tab:tab_Quad_compare_force}, \Cref{tab:tab_Quad_compare_torque} and
-\Cref{tab:tab_Quad_compare_hover}
+\Cref{tab:tab_Quad_compare_hover}, one can easily see that the two designs
+propose similar abilities. The main difference is the location of their center of mass
+that the tool does not consider. For instance, second design’s CoM coincide with
+the body origin. Which renders the drone more balanced and thus more controllable.
+
 \begin{figure}[!h]
   \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_design_2_fspace.jpg}
     \caption{Attainable force space.} \label{fig:deisgn1_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.51\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_design_2_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:deisgn1_tspace}
   \end{subfigure}
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.52\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_design_2_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:deisgn1_hspace}
   \end{subfigure}}
@@ -138,58 +140,69 @@ in \Cref{tab:tab_Quad_compare_force}, \Cref{tab:tab_Quad_compare_torque} and
     \caption{Attainable force space.} \label{fig:deisgn2_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.52\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_design_1_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:deisgn2_tspace}
   \end{subfigure}
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Quad_design_1_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:deisgn2_hspace}
   \end{subfigure}}
   \caption{Visual representation of the abilities of Design 2.}
   \label{fig:Quadcopter2_spaces}
 \end{figure}
-
+In the following tables, a comparison between the metrics of the optimal designs
+and the standard quad-copter is proposed. Due to the tilting ability of the rotors,
+the standard design is equally fully-actuated. Even though the force that the standard
+quad-copter design can apply in the $Z$ direction is big, the forces that it can
+apply on its side and in average are much more limited. We also notice that the
+optimal designs proposed by the tool are actually meeting the omni-directionality
+criteria stated in \Cref{sec:cost_functions}. Indeed, compared to the standard
+design, the minimal forces and torques that the optimal designs can apply are high.
+Furthermore, the volumes of the attainable forces and torques are big and shaped
+like spheres, which makes the MAVs dynamical properties nearly invariant to their
+orientation. Therefore it is not an overstatement to say that they are omni-directional.
 \begin{table}[!h]
 \begin{center}
- \caption{Comparing the force capabilities of the designs.}\vspace{1ex}
+ \caption{Force capabilities of the designs.}\vspace{1ex}
  \label{tab:tab_Quad_compare_force}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|c|cccccc|}
  \hline
  Design & $F_{min}\ [N]$ & $F_{max}\ [N]$ & $F_{mean}\ [N]$ & $MAD(F)\ [N]$
  & Force space volume $[N^3]$& Force space surface $[N^2]$\\ \hline
   1 & 23.19 & 28.56 & 26.87 & 0.86 & 81'683 & 9'345\\
   2 & 23.23 & 28.37 & 26.87 & 0.86 & 81'710 & 9'326\\
+  Standard & 17.37 & 34.74 & 24.43 & 3.43 & 65’673 & 8’865\\
  \hline
  \end{tabular}}
 \end{center}
 \end{table}
-
 \begin{table}[!h]
 \begin{center}
- \caption{Comparing the torque capabilities of the designs .}\vspace{1ex}
+ \caption{Torque capabilities of the designs .}\vspace{1ex}
  \label{tab:tab_Quad_compare_torque}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccccc|}
+ \resizebox{\textwidth}{!}{\begin{tabular}{|c|cccccc|}
  \hline
  Design & $M_{min}\ [Nm]$ & $M_{max}\ [Nm]$ & $M_{mean}\ [Nm]$ & $MAD(M)\ [Nm]$
  & Torque space volume $[N^3m^3]$ & Torque space surface $[N^2m^2]$\\ \hline
  1 & 11.62 & 14.32 & 13.47 & 0.43 & 10'298 & 2'355\\
  2 & 11.65 & 14.23 & 13.47 & 0.43 & 10'300 & 2'348\\
+ Standard & 8.7 & 17.42 & 12.25 & 1.72 & 8’284 & 2’219\\
  \hline
  \end{tabular}}
 \end{center}
 \end{table}
-
 \begin{table}[!h]
 \begin{center}
- \caption{Comparing the hover efficiency of the designs.}\vspace{1ex}
+ \caption{Hover efficiency of the designs.}\vspace{1ex}
  \label{tab:tab_Quad_compare_hover}
- \resizebox{\textwidth}{!}{\begin{tabular}{|l|cccc|}
+ {\tiny\begin{tabular}{|c|cccc|}
  \hline
   Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
   & $MAD(H_{eff})\ [\%]$\\ \hline
   1 & 81.11 & 95.18 & 87.03 & 2.63\\
   2 & 81.65 & 94.73 & 87.1 & 2.6\\
+  Standard & 70.7 & 100 & 82.3 & 6.1\\
  \hline
 \end{tabular}}
 \end{center}
