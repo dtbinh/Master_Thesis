@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  9 SEP 2018 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.2)  9 SEP 2018 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1371,20 +1371,7 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
-(/home/luca/git/Master_Thesis/Report_ongoing/report.aux
-
-LaTeX Warning: Label `fig:Heptacopter_hspace' multiply defined.
-
-
-LaTeX Warning: Label `fig:Heptacopter_hspace@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Heptacopter_hspace' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:Heptacopter_hspace@cref' multiply defined.
-
-)
+(/home/luca/git/Master_Thesis/Report_ongoing/report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1401,7 +1388,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 27.
@@ -1494,7 +1482,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/eth_logo.pdf, id=135, 8857.09pt x 2400.97pt>
+<images/eth_logo.pdf, id=127, 8857.09pt x 2400.97pt>
 File: images/eth_logo.pdf Graphic file (type pdf)
  <use images/eth_logo.pdf>
 Package pdftex.def Info: images/eth_logo.pdf used on input line 46.
@@ -1503,7 +1491,7 @@ Package pdftex.def Info: images/eth_logo.pdf used on input line 46.
 Overfull \vbox (10.27916pt too high) detected at line 46
  []
 
-<images/asl_logo.pdf, id=136, 429.605pt x 196.735pt>
+<images/asl_logo.pdf, id=128, 429.605pt x 196.735pt>
 File: images/asl_logo.pdf Graphic file (type pdf)
  <use images/asl_logo.pdf>
 Package pdftex.def Info: images/asl_logo.pdf used on input line 46.
@@ -1572,7 +1560,7 @@ quette . pdf$[]\OT1/cmr/m/n/10 ). The
 ])
 [6] (/home/luca/git/Master_Thesis/Report_ongoing/chapters/introduction.tex
 Chapter 1.
-<images/voliro.png, id=240, 1144.275pt x 783.92876pt>
+<images/voliro.png, id=230, 1144.275pt x 783.92876pt>
 File: images/voliro.png Graphic file (type png)
  <use images/voliro.png>
 Package pdftex.def Info: images/voliro.png used on input line 36.
@@ -1589,13 +1577,13 @@ l.46
 
 
  </home/luca/git/Master_Thesis/Report_ongoing/images/voliro.png>]
-<images/idsc.jpg, id=254, 1025.8325pt x 685.56125pt>
+<images/idsc.jpg, id=244, 1025.8325pt x 685.56125pt>
 File: images/idsc.jpg Graphic file (type jpg)
  <use images/idsc.jpg>
 Package pdftex.def Info: images/idsc.jpg used on input line 49.
 (pdftex.def)             Requested size: 144.53778pt x 96.58464pt.
 
-<images/hexacopter.png, id=260, 1075.01625pt x 628.3475pt>
+<images/hexacopter.png, id=250, 1075.01625pt x 628.3475pt>
 File: images/hexacopter.png Graphic file (type png)
 
 <use images/hexacopter.png>
@@ -1610,21 +1598,21 @@ l.83 \cleardoublepage
 sc.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/hexacopter.png>]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/method.tex
 Chapter 2.
-<images/drone_design.jpg, id=274, 1219.55624pt x 956.57375pt>
+<images/drone_design.jpg, id=264, 1219.55624pt x 956.57375pt>
 File: images/drone_design.jpg Graphic file (type jpg)
 
 <use images/drone_design.jpg>
 Package pdftex.def Info: images/drone_design.jpg used on input line 29.
 (pdftex.def)             Requested size: 180.67499pt x 141.71373pt.
 
-<images/drone_design1.jpg, id=275, 905.3825pt x 787.94376pt>
+<images/drone_design1.jpg, id=265, 905.3825pt x 787.94376pt>
 File: images/drone_design1.jpg Graphic file (type jpg)
 
 <use images/drone_design1.jpg>
 Package pdftex.def Info: images/drone_design1.jpg used on input line 29.
 (pdftex.def)             Requested size: 162.60638pt x 141.51115pt.
 
-<images/drone_design2.jpg, id=276, 1444.39626pt x 995.72pt>
+<images/drone_design2.jpg, id=266, 1444.39626pt x 995.72pt>
 File: images/drone_design2.jpg Graphic file (type jpg)
 
 <use images/drone_design2.jpg>
@@ -1647,7 +1635,7 @@ s de-vel-oped with MATLAB$[]$[][][].
  </home/luca/git/Master_Thesis/Report_ongoing/images/drone_design.jpg> </home/l
 uca/git/Master_Thesis/Report_ongoing/images/drone_design1.jpg> </home/luca/git/
 Master_Thesis/Report_ongoing/images/drone_design2.jpg>]
-<images/tilt_model.png, id=305, 875.27pt x 626.34pt>
+<images/tilt_model.png, id=295, 875.27pt x 626.34pt>
 File: images/tilt_model.png Graphic file (type png)
 
 <use images/tilt_model.png>
@@ -1673,7 +1661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--254
 
  []
 
-[6] [7] <images/gui.png, id=366, 1108.14pt x 1348.03625pt>
+[6] [7] <images/gui.png, id=356, 1108.14pt x 1348.03625pt>
 File: images/gui.png Graphic file (type png)
 
 <use images/gui.png>
@@ -1685,28 +1673,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 397--408
  []
 
 [8 </home/luca/git/Master_Thesis/Report_ongoing/images/gui.png>]
-<images/n=4_force.jpg, id=375, 655.44875pt x 456.70625pt>
+<images/n=4_force.jpg, id=365, 655.44875pt x 456.70625pt>
 File: images/n=4_force.jpg Graphic file (type jpg)
 
 <use images/n=4_force.jpg>
 Package pdftex.def Info: images/n=4_force.jpg used on input line 416.
 (pdftex.def)             Requested size: 173.44644pt x 120.85236pt.
 
-<images/n=4_torque.jpg, id=376, 606.265pt x 421.575pt>
+<images/n=4_torque.jpg, id=366, 606.265pt x 421.575pt>
 File: images/n=4_torque.jpg Graphic file (type jpg)
 
 <use images/n=4_torque.jpg>
 Package pdftex.def Info: images/n=4_torque.jpg used on input line 421.
 (pdftex.def)             Requested size: 173.44644pt x 120.60684pt.
 
-<images/n=4_hover.jpg, id=377, 694.595pt x 499.8675pt>
+<images/n=4_hover.jpg, id=367, 694.595pt x 499.8675pt>
 File: images/n=4_hover.jpg Graphic file (type jpg)
 
 <use images/n=4_hover.jpg>
 Package pdftex.def Info: images/n=4_hover.jpg used on input line 426.
 (pdftex.def)             Requested size: 173.44644pt x 124.82164pt.
 
-<images/n=4_model.jpg, id=378, 659.46375pt x 530.98375pt>
+<images/n=4_model.jpg, id=368, 659.46375pt x 530.98375pt>
 File: images/n=4_model.jpg Graphic file (type jpg)
 
 <use images/n=4_model.jpg>
@@ -1716,7 +1704,7 @@ Package pdftex.def Info: images/n=4_model.jpg used on input line 431.
 uca/git/Master_Thesis/Report_ongoing/images/n=4_torque.jpg> </home/luca/git/Mas
 ter_Thesis/Report_ongoing/images/n=4_hover.jpg> </home/luca/git/Master_Thesis/R
 eport_ongoing/images/n=4_model.jpg>]
-<images/sim_gazebo.png, id=390, 803.0pt x 702.625pt>
+<images/sim_gazebo.png, id=380, 803.0pt x 702.625pt>
 File: images/sim_gazebo.png Graphic file (type png)
 
 <use images/sim_gazebo.png>
@@ -1725,20 +1713,20 @@ Package pdftex.def Info: images/sim_gazebo.png used on input line 504.
 ) [10 </home/luca/git/Master_Thesis/Report_ongoing/images/sim_gazebo.png>]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/optimization_results.tex
 Chapter 3.
-<images/tetrahedron.jpg, id=404, 861.2175pt x 1001.7425pt>
+<images/tetrahedron.jpg, id=394, 861.2175pt x 1001.7425pt>
 File: images/tetrahedron.jpg Graphic file (type jpg)
 
 <use images/tetrahedron.jpg>
 Package pdftex.def Info: images/tetrahedron.jpg used on input line 32.
 (pdftex.def)             Requested size: 79.49744pt x 92.46101pt.
 
-<images/octahedron.jpg, id=405, 962.59625pt x 995.72pt>
+<images/octahedron.jpg, id=395, 962.59625pt x 995.72pt>
 File: images/octahedron.jpg Graphic file (type jpg)
 
 <use images/octahedron.jpg>
 Package pdftex.def Info: images/octahedron.jpg used on input line 37.
 (pdftex.def)             Requested size: 97.56604pt x 100.91486pt.
- <images/cube.jpg, id=406, 1260.71pt x 1302.8675pt>
+ <images/cube.jpg, id=396, 1260.71pt x 1302.8675pt>
 File: images/cube.jpg Graphic file (type jpg)
 
 <use images/cube.jpg>
@@ -1750,419 +1738,387 @@ Package pdftex.def Info: images/cube.jpg used on input line 42.
  </home/luca/git/Master_Thesis/Report_ongoing/images/tetrahedron.jpg> </home/lu
 ca/git/Master_Thesis/Report_ongoing/images/octahedron.jpg> </home/luca/git/Mast
 er_Thesis/Report_ongoing/images/cube.jpg>]
-<images/Quadcopter2.jpg, id=419, 1125.20375pt x 794.97pt>
+<images/Quadcopter2.jpg, id=409, 1125.20375pt x 794.97pt>
 File: images/Quadcopter2.jpg Graphic file (type jpg)
 
 <use images/Quadcopter2.jpg>
 Package pdftex.def Info: images/Quadcopter2.jpg used on input line 112.
 (pdftex.def)             Requested size: 180.67499pt x 127.6466pt.
 
-<images/Quadcopter.jpg, id=420, 1154.3125pt x 1023.825pt>
+<images/Quadcopter.jpg, id=410, 1154.3125pt x 1023.825pt>
 File: images/Quadcopter.jpg Graphic file (type jpg)
 
 <use images/Quadcopter.jpg>
 Package pdftex.def Info: images/Quadcopter.jpg used on input line 112.
 (pdftex.def)             Requested size: 162.60638pt x 144.22499pt.
 
-<images/Quad_tetrahedron.jpg, id=421, 747.79375pt x 751.80875pt>
+<images/Quad_tetrahedron.jpg, id=411, 747.79375pt x 751.80875pt>
 File: images/Quad_tetrahedron.jpg Graphic file (type jpg)
 
 <use images/Quad_tetrahedron.jpg>
 Package pdftex.def Info: images/Quad_tetrahedron.jpg used on input line 112.
 (pdftex.def)             Requested size: 144.53778pt x 145.31155pt.
-
-<images/Quad_design_2_fspace.jpg, id=427, 672.5125pt x 416.55624pt>
+ [12 </home/luca/git/Master_Thesis/Report_ongoing/images/Quadcopter2.jpg> </hom
+e/luca/git/Master_Thesis/Report_ongoing/images/Quadcopter.jpg> </home/luca/git/
+Master_Thesis/Report_ongoing/images/Quad_tetrahedron.jpg>]
+<images/Quad_design_2_fspace.jpg, id=423, 672.5125pt x 416.55624pt>
 File: images/Quad_design_2_fspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_2_fspace.jpg>
-Package pdftex.def Info: images/Quad_design_2_fspace.jpg used on input line 141
+Package pdftex.def Info: images/Quad_design_2_fspace.jpg used on input line 142
 .
-(pdftex.def)             Requested size: 198.74359pt x 123.09912pt.
+(pdftex.def)             Requested size: 195.12656pt x 120.86177pt.
 
-<images/Quad_design_2_tspace.jpg, id=428, 643.40375pt x 429.605pt>
+<images/Quad_design_2_tspace.jpg, id=424, 643.40375pt x 429.605pt>
 File: images/Quad_design_2_tspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_2_tspace.jpg>
-Package pdftex.def Info: images/Quad_design_2_tspace.jpg used on input line 141
+Package pdftex.def Info: images/Quad_design_2_tspace.jpg used on input line 142
 .
 (pdftex.def)             Requested size: 184.2865pt x 123.04832pt.
 
-<images/Quad_design_2_hspace.jpg, id=429, 636.3775pt x 408.52625pt>
+<images/Quad_design_2_hspace.jpg, id=425, 636.3775pt x 408.52625pt>
 File: images/Quad_design_2_hspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_2_hspace.jpg>
-Package pdftex.def Info: images/Quad_design_2_hspace.jpg used on input line 141
+Package pdftex.def Info: images/Quad_design_2_hspace.jpg used on input line 142
 .
 (pdftex.def)             Requested size: 187.90353pt x 120.62016pt.
 
-<images/Quad_design_1_fspace.jpg, id=430, 679.53876pt x 416.55624pt>
+Overfull \hbox (36.13655pt too wide) in paragraph at lines 130--143
+ [] 
+ []
+
+<images/Quad_design_1_fspace.jpg, id=426, 679.53876pt x 416.55624pt>
 File: images/Quad_design_1_fspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_1_fspace.jpg>
-Package pdftex.def Info: images/Quad_design_1_fspace.jpg used on input line 159
+Package pdftex.def Info: images/Quad_design_1_fspace.jpg used on input line 162
 .
 (pdftex.def)             Requested size: 198.74359pt x 121.8279pt.
 
-<images/Quad_design_1_tspace.jpg, id=431, 663.47874pt x 427.5975pt>
+<images/Quad_design_1_tspace.jpg, id=427, 663.47874pt x 427.5975pt>
 File: images/Quad_design_1_tspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_1_tspace.jpg>
-Package pdftex.def Info: images/Quad_design_1_tspace.jpg used on input line 159
+Package pdftex.def Info: images/Quad_design_1_tspace.jpg used on input line 162
 .
 (pdftex.def)             Requested size: 187.90353pt x 121.09665pt.
 
-<images/Quad_design_1_hspace.jpg, id=432, 626.34pt x 417.56pt>
+<images/Quad_design_1_hspace.jpg, id=428, 626.34pt x 417.56pt>
 File: images/Quad_design_1_hspace.jpg Graphic file (type jpg)
 
 <use images/Quad_design_1_hspace.jpg>
-Package pdftex.def Info: images/Quad_design_1_hspace.jpg used on input line 159
+Package pdftex.def Info: images/Quad_design_1_hspace.jpg used on input line 162
 .
 (pdftex.def)             Requested size: 180.67499pt x 120.44577pt.
- [12 </home/luca/git/Master_Thesis/Report_ongoing/images/Quadcopter2.jpg> </hom
-e/luca/git/Master_Thesis/Report_ongoing/images/Quadcopter.jpg> </home/luca/git/
-Master_Thesis/Report_ongoing/images/Quad_tetrahedron.jpg>] [13 </home/luca/git/
-Master_Thesis/Report_ongoing/images/Quad_design_2_fspace.jpg> </home/luca/git/M
-aster_Thesis/Report_ongoing/images/Quad_design_2_tspace.jpg> </home/luca/git/Ma
-ster_Thesis/Report_ongoing/images/Quad_design_2_hspace.jpg> </home/luca/git/Mas
-ter_Thesis/Report_ongoing/images/Quad_design_1_fspace.jpg> </home/luca/git/Mast
-er_Thesis/Report_ongoing/images/Quad_design_1_tspace.jpg> </home/luca/git/Maste
-r_Thesis/Report_ongoing/images/Quad_design_1_hspace.jpg>] <images/Hexacopter.jp
-g, id=454, 1204.5pt x 1147.28625pt>
+
+Overfull \hbox (36.14035pt too wide) in paragraph at lines 150--163
+ [] 
+ []
+
+
+Underfull \vbox (badness 2401) has occurred while \output is active []
+
+ [13 </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_2_fspace.j
+pg> </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_2_tspace.jp
+g> </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_2_hspace.jpg
+> </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_1_fspace.jpg>
+ </home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_1_tspace.jpg> 
+</home/luca/git/Master_Thesis/Report_ongoing/images/Quad_design_1_hspace.jpg>]
+<images/Hexacopter.jpg, id=443, 1204.5pt x 1147.28625pt>
 File: images/Hexacopter.jpg Graphic file (type jpg)
 
 <use images/Hexacopter.jpg>
-Package pdftex.def Info: images/Hexacopter.jpg used on input line 266.
+Package pdftex.def Info: images/Hexacopter.jpg used on input line 268.
 (pdftex.def)             Requested size: 216.8122pt x 206.50261pt.
 
-<images/Hexa_octahedron.jpg, id=455, 993.7125pt x 967.615pt>
+<images/Hexa_octahedron.jpg, id=444, 993.7125pt x 967.615pt>
 File: images/Hexa_octahedron.jpg Graphic file (type jpg)
 
 <use images/Hexa_octahedron.jpg>
-Package pdftex.def Info: images/Hexa_octahedron.jpg used on input line 266.
+Package pdftex.def Info: images/Hexa_octahedron.jpg used on input line 268.
 (pdftex.def)             Requested size: 198.74359pt x 193.51958pt.
 
-<images/Voliro.jpg, id=456, 1324.95pt x 919.435pt>
+<images/Voliro.jpg, id=445, 1324.95pt x 919.435pt>
 File: images/Voliro.jpg Graphic file (type jpg)
  <use images/Voliro.jpg>
-Package pdftex.def Info: images/Voliro.jpg used on input line 266.
+Package pdftex.def Info: images/Voliro.jpg used on input line 268.
 (pdftex.def)             Requested size: 289.08109pt x 200.59279pt.
 
-<images/Hexa_fspace.jpg, id=457, 626.34pt x 426.59375pt>
+<images/Hexa_fspace.jpg, id=446, 626.34pt x 426.59375pt>
 File: images/Hexa_fspace.jpg Graphic file (type jpg)
 
 <use images/Hexa_fspace.jpg>
-Package pdftex.def Info: images/Hexa_fspace.jpg used on input line 284.
+Package pdftex.def Info: images/Hexa_fspace.jpg used on input line 286.
 (pdftex.def)             Requested size: 158.99487pt x 108.28851pt.
 
-<images/Hexa_tspace.jpg, id=458, 668.4975pt x 443.6575pt>
+<images/Hexa_tspace.jpg, id=447, 668.4975pt x 443.6575pt>
 File: images/Hexa_tspace.jpg Graphic file (type jpg)
 
 <use images/Hexa_tspace.jpg>
-Package pdftex.def Info: images/Hexa_tspace.jpg used on input line 284.
+Package pdftex.def Info: images/Hexa_tspace.jpg used on input line 286.
 (pdftex.def)             Requested size: 166.22342pt x 110.3116pt.
 
-<images/Hexa_hspace.jpg, id=459, 639.38875pt x 408.52625pt>
+<images/Hexa_hspace.jpg, id=448, 639.38875pt x 408.52625pt>
 File: images/Hexa_hspace.jpg Graphic file (type jpg)
 
 <use images/Hexa_hspace.jpg>
-Package pdftex.def Info: images/Hexa_hspace.jpg used on input line 284.
+Package pdftex.def Info: images/Hexa_hspace.jpg used on input line 286.
 (pdftex.def)             Requested size: 169.83493pt x 108.51451pt.
 
-<images/Voliro_fspace.jpg, id=460, 626.34pt x 417.56pt>
+<images/Voliro_fspace.jpg, id=449, 626.34pt x 417.56pt>
 File: images/Voliro_fspace.jpg Graphic file (type jpg)
 
 <use images/Voliro_fspace.jpg>
-Package pdftex.def Info: images/Voliro_fspace.jpg used on input line 302.
+Package pdftex.def Info: images/Voliro_fspace.jpg used on input line 304.
 (pdftex.def)             Requested size: 187.90353pt x 125.26895pt.
 
-<images/Voliro_tspace.jpg, id=461, 604.2575pt x 415.5525pt>
+<images/Voliro_tspace.jpg, id=450, 604.2575pt x 415.5525pt>
 File: images/Voliro_tspace.jpg Graphic file (type jpg)
 
 <use images/Voliro_tspace.jpg>
-Package pdftex.def Info: images/Voliro_tspace.jpg used on input line 302.
+Package pdftex.def Info: images/Voliro_tspace.jpg used on input line 304.
 (pdftex.def)             Requested size: 180.67499pt x 124.24821pt.
 
-<images/Voliro_hspace.jpg, id=462, 649.42625pt x 409.53pt>
+<images/Voliro_hspace.jpg, id=451, 649.42625pt x 409.53pt>
 File: images/Voliro_hspace.jpg Graphic file (type jpg)
 
 <use images/Voliro_hspace.jpg>
-Package pdftex.def Info: images/Voliro_hspace.jpg used on input line 302.
+Package pdftex.def Info: images/Voliro_hspace.jpg used on input line 304.
 (pdftex.def)             Requested size: 187.90353pt x 118.49194pt.
- [14
-
- </home/luca/git/Master_Thesis/Report_ongoing/images/Hexacopter.jpg> </home/luc
-a/git/Master_Thesis/Report_ongoing/images/Hexa_octahedron.jpg> </home/luca/git/
-Master_Thesis/Report_ongoing/images/Voliro.jpg> </home/luca/git/Master_Thesis/R
-eport_ongoing/images/Hexa_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongo
-ing/images/Hexa_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images
-/Hexa_hspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_fs
-pace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_tspace.jpg
-> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_hspace.jpg>]
-<images/Octacopter.jpg, id=480, 1134.2375pt x 1061.9675pt>
+ [14 </home/luca/git/Master_Thesis/Report_ongoing/images/Hexacopter.jpg> </home
+/luca/git/Master_Thesis/Report_ongoing/images/Hexa_octahedron.jpg> </home/luca/
+git/Master_Thesis/Report_ongoing/images/Voliro.jpg>] [15 </home/luca/git/Master
+_Thesis/Report_ongoing/images/Hexa_fspace.jpg> </home/luca/git/Master_Thesis/Re
+port_ongoing/images/Hexa_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoi
+ng/images/Hexa_hspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/
+Voliro_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_t
+space.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Voliro_hspace.jp
+g>]
+<images/Octacopter.jpg, id=475, 1134.2375pt x 1061.9675pt>
 File: images/Octacopter.jpg Graphic file (type jpg)
 
 <use images/Octacopter.jpg>
-Package pdftex.def Info: images/Octacopter.jpg used on input line 411.
+Package pdftex.def Info: images/Octacopter.jpg used on input line 415.
 (pdftex.def)             Requested size: 216.8122pt x 202.99124pt.
 
-<images/omnicopter.jpg, id=481, 1009.7725pt x 908.39375pt>
+<images/omnicopter.jpg, id=476, 1009.7725pt x 908.39375pt>
 File: images/omnicopter.jpg Graphic file (type jpg)
 
 <use images/omnicopter.jpg>
-Package pdftex.def Info: images/omnicopter.jpg used on input line 411.
+Package pdftex.def Info: images/omnicopter.jpg used on input line 415.
 (pdftex.def)             Requested size: 216.8122pt x 195.03749pt.
 
-<images/Octa_cube.jpg, id=482, 990.70125pt x 1005.7575pt>
+<images/Octa_cube.jpg, id=477, 990.70125pt x 1005.7575pt>
 File: images/Octa_cube.jpg Graphic file (type jpg)
 
 <use images/Octa_cube.jpg>
-Package pdftex.def Info: images/Octa_cube.jpg used on input line 411.
+Package pdftex.def Info: images/Octa_cube.jpg used on input line 415.
 (pdftex.def)             Requested size: 180.67499pt x 183.4226pt.
 
-<images/Octa_fspace.jpg, id=484, 677.53125pt x 408.52625pt>
+<images/Octa_fspace.jpg, id=479, 677.53125pt x 408.52625pt>
 File: images/Octa_fspace.jpg Graphic file (type jpg)
 
 <use images/Octa_fspace.jpg>
-Package pdftex.def Info: images/Octa_fspace.jpg used on input line 433.
+Package pdftex.def Info: images/Octa_fspace.jpg used on input line 437.
 (pdftex.def)             Requested size: 198.74359pt x 119.83473pt.
 
-<images/Octa_tspace.jpg, id=485, 664.4825pt x 422.57875pt>
+<images/Octa_tspace.jpg, id=480, 664.4825pt x 422.57875pt>
 File: images/Octa_tspace.jpg Graphic file (type jpg)
 
 <use images/Octa_tspace.jpg>
-Package pdftex.def Info: images/Octa_tspace.jpg used on input line 433.
+Package pdftex.def Info: images/Octa_tspace.jpg used on input line 437.
 (pdftex.def)             Requested size: 180.67499pt x 114.89734pt.
 
-<images/Octa_hspace.jpg, id=486, 626.34pt x 436.63126pt>
+<images/Octa_hspace.jpg, id=481, 626.34pt x 436.63126pt>
 File: images/Octa_hspace.jpg Graphic file (type jpg)
 
 <use images/Octa_hspace.jpg>
-Package pdftex.def Info: images/Octa_hspace.jpg used on input line 433.
+Package pdftex.def Info: images/Octa_hspace.jpg used on input line 437.
 (pdftex.def)             Requested size: 162.60638pt x 113.35489pt.
 
-<images/Omnicopter_fspace.jpg, id=487, 691.58376pt x 400.49625pt>
+<images/Omnicopter_fspace.jpg, id=482, 691.58376pt x 400.49625pt>
 File: images/Omnicopter_fspace.jpg Graphic file (type jpg)
 
 <use images/Omnicopter_fspace.jpg>
-Package pdftex.def Info: images/Omnicopter_fspace.jpg used on input line 451.
+Package pdftex.def Info: images/Omnicopter_fspace.jpg used on input line 455.
 (pdftex.def)             Requested size: 198.74359pt x 115.08983pt.
 
-<images/Omnicopter_tspace.jpg, id=488, 668.4975pt x 425.59pt>
+<images/Omnicopter_tspace.jpg, id=483, 668.4975pt x 425.59pt>
 File: images/Omnicopter_tspace.jpg Graphic file (type jpg)
 
 <use images/Omnicopter_tspace.jpg>
-Package pdftex.def Info: images/Omnicopter_tspace.jpg used on input line 451.
+Package pdftex.def Info: images/Omnicopter_tspace.jpg used on input line 455.
 (pdftex.def)             Requested size: 180.67499pt x 115.02122pt.
 
-<images/Omnicopter_hspace.jpg, id=489, 623.32875pt x 404.51125pt>
+<images/Omnicopter_hspace.jpg, id=484, 623.32875pt x 404.51125pt>
 File: images/Omnicopter_hspace.jpg Graphic file (type jpg)
 
 <use images/Omnicopter_hspace.jpg>
-Package pdftex.def Info: images/Omnicopter_hspace.jpg used on input line 451.
+Package pdftex.def Info: images/Omnicopter_hspace.jpg used on input line 455.
 (pdftex.def)             Requested size: 162.60638pt x 105.52226pt.
- [15 </home/luca/git/Master_Thesis/Report_ongoing/images/Octacopter.jpg> </home
-/luca/git/Master_Thesis/Report_ongoing/images/omnicopter.jpg> </home/luca/git/M
-aster_Thesis/Report_ongoing/images/Octa_cube.jpg>] [16 </home/luca/git/Master_T
-hesis/Report_ongoing/images/Octa_fspace.jpg> </home/luca/git/Master_Thesis/Repo
-rt_ongoing/images/Octa_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing
-/images/Octa_hspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Om
-nicopter_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnico
-pter_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnicopter
-_hspace.jpg>]
-<images/Tricopter.jpg, id=511, 790.955pt x 688.5725pt>
-File: images/Tricopter.jpg Graphic file (type jpg)
+ [16
 
-<use images/Tricopter.jpg>
-Package pdftex.def Info: images/Tricopter.jpg used on input line 534.
-(pdftex.def)             Requested size: 144.53778pt x 125.8289pt.
-
-<images/Tri_hspace.jpg, id=512, 622.325pt x 423.5825pt>
-File: images/Tri_hspace.jpg Graphic file (type jpg)
-
-<use images/Tri_hspace.jpg>
-Package pdftex.def Info: images/Tri_hspace.jpg used on input line 534.
-(pdftex.def)             Requested size: 144.53778pt x 98.3785pt.
-
-<images/Tri_fspace.jpg, id=513, 671.50874pt x 409.53pt>
-File: images/Tri_fspace.jpg Graphic file (type jpg)
-
-<use images/Tri_fspace.jpg>
-Package pdftex.def Info: images/Tri_fspace.jpg used on input line 544.
-(pdftex.def)             Requested size: 162.60638pt x 99.16405pt.
-
-<images/Tri_tspace.jpg, id=514, 652.4375pt x 420.57124pt>
-File: images/Tri_tspace.jpg Graphic file (type jpg)
-
-<use images/Tri_tspace.jpg>
-Package pdftex.def Info: images/Tri_tspace.jpg used on input line 544.
-(pdftex.def)             Requested size: 144.53778pt x 93.1677pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--545
-[][]
- []
-
-
-Overfull \hbox (2.25552pt too wide) in paragraph at lines 524--545
-|  [] 
- []
-
-<images/Pentacopter_odd.jpg, id=515, 751.80875pt x 696.6025pt>
+ </home/luca/git/Master_Thesis/Report_ongoing/images/Octacopter.jpg> </home/luc
+a/git/Master_Thesis/Report_ongoing/images/omnicopter.jpg> </home/luca/git/Maste
+r_Thesis/Report_ongoing/images/Octa_cube.jpg> </home/luca/git/Master_Thesis/Rep
+ort_ongoing/images/Octa_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongoin
+g/images/Octa_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/O
+cta_hspace.jpg>] [17 </home/luca/git/Master_Thesis/Report_ongoing/images/Omnico
+pter_fspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnicopter
+_tspace.jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Omnicopter_hsp
+ace.jpg>]
+<images/Pentacopter_odd.jpg, id=507, 751.80875pt x 696.6025pt>
 File: images/Pentacopter_odd.jpg Graphic file (type jpg)
 
 <use images/Pentacopter_odd.jpg>
-Package pdftex.def Info: images/Pentacopter_odd.jpg used on input line 568.
-(pdftex.def)             Requested size: 144.53778pt x 133.91835pt.
+Package pdftex.def Info: images/Pentacopter_odd.jpg used on input line 544.
+(pdftex.def)             Requested size: 162.60638pt x 150.65947pt.
 
-<images/Pentacopter_standard.jpg, id=516, 954.56625pt x 680.5425pt>
+<images/Pentacopter_standard.jpg, id=508, 954.56625pt x 680.5425pt>
 File: images/Pentacopter_standard.jpg Graphic file (type jpg)
 
 <use images/Pentacopter_standard.jpg>
-Package pdftex.def Info: images/Pentacopter_standard.jpg used on input line 573
+Package pdftex.def Info: images/Pentacopter_standard.jpg used on input line 549
 .
-(pdftex.def)             Requested size: 180.67499pt x 128.80597pt.
+(pdftex.def)             Requested size: 198.74359pt x 141.68242pt.
 
-<images/Penta_fspace.jpg, id=517, 728.7225pt x 458.71375pt>
+Overfull \hbox (4.44441pt too wide) in paragraph at lines 543--552
+[][] |  [] 
+ []
+
+<images/Penta_fspace.jpg, id=515, 728.7225pt x 458.71375pt>
 File: images/Penta_fspace.jpg Graphic file (type jpg)
 
 <use images/Penta_fspace.jpg>
-Package pdftex.def Info: images/Penta_fspace.jpg used on input line 638.
-(pdftex.def)             Requested size: 198.74359pt x 125.10025pt.
+Package pdftex.def Info: images/Penta_fspace.jpg used on input line 627.
+(pdftex.def)             Requested size: 180.67499pt x 113.72623pt.
 
-<images/Penta_tspace.jpg, id=518, 723.70375pt x 471.7625pt>
+<images/Penta_tspace.jpg, id=516, 723.70375pt x 471.7625pt>
 File: images/Penta_tspace.jpg Graphic file (type jpg)
 
 <use images/Penta_tspace.jpg>
-Package pdftex.def Info: images/Penta_tspace.jpg used on input line 638.
-(pdftex.def)             Requested size: 180.67499pt x 117.77477pt.
+Package pdftex.def Info: images/Penta_tspace.jpg used on input line 627.
+(pdftex.def)             Requested size: 162.60638pt x 105.998pt.
 
-<images/Penta_hspace.jpg, id=519, 733.74126pt x 495.8525pt>
+<images/Penta_hspace.jpg, id=517, 733.74126pt x 495.8525pt>
 File: images/Penta_hspace.jpg Graphic file (type jpg)
 
 <use images/Penta_hspace.jpg>
-Package pdftex.def Info: images/Penta_hspace.jpg used on input line 638.
-(pdftex.def)             Requested size: 162.60638pt x 109.88232pt.
+Package pdftex.def Info: images/Penta_hspace.jpg used on input line 627.
+(pdftex.def)             Requested size: 180.67499pt x 122.094pt.
 
-<images/Penta_standard_fspace.jpg, id=520, 632.3625pt x 399.4925pt>
+<images/Penta_standard_fspace.jpg, id=518, 632.3625pt x 399.4925pt>
 File: images/Penta_standard_fspace.jpg Graphic file (type jpg)
 
 <use images/Penta_standard_fspace.jpg>
-Package pdftex.def Info: images/Penta_standard_fspace.jpg used on input line 65
-6.
+Package pdftex.def Info: images/Penta_standard_fspace.jpg used on input line 64
+5.
 (pdftex.def)             Requested size: 198.74359pt x 125.55429pt.
 
-<images/Penta_standard_tspace.jpg, id=521, 613.29124pt x 419.5675pt>
+<images/Penta_standard_tspace.jpg, id=519, 613.29124pt x 419.5675pt>
 File: images/Penta_standard_tspace.jpg Graphic file (type jpg)
 
 <use images/Penta_standard_tspace.jpg>
-Package pdftex.def Info: images/Penta_standard_tspace.jpg used on input line 65
-6.
+Package pdftex.def Info: images/Penta_standard_tspace.jpg used on input line 64
+5.
 (pdftex.def)             Requested size: 180.67499pt x 123.60487pt.
 
-<images/Penta_standard_hspace.jpg, id=522, 625.33624pt x 446.66875pt>
+<images/Penta_standard_hspace.jpg, id=520, 625.33624pt x 446.66875pt>
 File: images/Penta_standard_hspace.jpg Graphic file (type jpg)
 
 <use images/Penta_standard_hspace.jpg>
-Package pdftex.def Info: images/Penta_standard_hspace.jpg used on input line 65
-6.
+Package pdftex.def Info: images/Penta_standard_hspace.jpg used on input line 64
+5.
 (pdftex.def)             Requested size: 162.60638pt x 116.14476pt.
- [17
+ [18
 
- </home/luca/git/Master_Thesis/Report_ongoing/images/Tricopter.jpg> </home/luca
-/git/Master_Thesis/Report_ongoing/images/Tri_hspace.jpg> </home/luca/git/Master
-_Thesis/Report_ongoing/images/Tri_fspace.jpg> </home/luca/git/Master_Thesis/Rep
-ort_ongoing/images/Tri_tspace.jpg>]
-<images/Heptacopter.jpg, id=529, 831.105pt x 685.56125pt>
+ </home/luca/git/Master_Thesis/Report_ongoing/images/Pentacopter_odd.jpg> </hom
+e/luca/git/Master_Thesis/Report_ongoing/images/Pentacopter_standard.jpg>] [19 <
+/home/luca/git/Master_Thesis/Report_ongoing/images/Penta_fspace.jpg> </home/luc
+a/git/Master_Thesis/Report_ongoing/images/Penta_tspace.jpg> </home/luca/git/Mas
+ter_Thesis/Report_ongoing/images/Penta_hspace.jpg> </home/luca/git/Master_Thesi
+s/Report_ongoing/images/Penta_standard_fspace.jpg> </home/luca/git/Master_Thesi
+s/Report_ongoing/images/Penta_standard_tspace.jpg> </home/luca/git/Master_Thesi
+s/Report_ongoing/images/Penta_standard_hspace.jpg>] <images/Heptacopter.jpg, id
+=540, 831.105pt x 685.56125pt>
 File: images/Heptacopter.jpg Graphic file (type jpg)
 
 <use images/Heptacopter.jpg>
-Package pdftex.def Info: images/Heptacopter.jpg used on input line 683.
+Package pdftex.def Info: images/Heptacopter.jpg used on input line 693.
 (pdftex.def)             Requested size: 144.53778pt x 119.22183pt.
 
-<images/Heptacopter_standard.jpg, id=530, 1080.035pt x 745.78625pt>
+<images/Heptacopter_standard.jpg, id=541, 1080.035pt x 745.78625pt>
 File: images/Heptacopter_standard.jpg Graphic file (type jpg)
 
 <use images/Heptacopter_standard.jpg>
-Package pdftex.def Info: images/Heptacopter_standard.jpg used on input line 683
+Package pdftex.def Info: images/Heptacopter_standard.jpg used on input line 693
 .
 (pdftex.def)             Requested size: 162.60638pt x 112.27278pt.
 
-<images/Hepta_opt_hspace.jpg, id=531, 618.31pt x 416.55624pt>
+<images/Hepta_opt_hspace.jpg, id=542, 618.31pt x 416.55624pt>
 File: images/Hepta_opt_hspace.jpg Graphic file (type jpg)
 
 <use images/Hepta_opt_hspace.jpg>
-Package pdftex.def Info: images/Hepta_opt_hspace.jpg used on input line 692.
+Package pdftex.def Info: images/Hepta_opt_hspace.jpg used on input line 702.
 (pdftex.def)             Requested size: 180.67499pt x 121.71985pt.
 
-<images/Hepta_hspace.jpg, id=532, 641.39626pt x 411.5375pt>
+<images/Hepta_hspace.jpg, id=543, 641.39626pt x 411.5375pt>
 File: images/Hepta_hspace.jpg Graphic file (type jpg)
 
 <use images/Hepta_hspace.jpg>
-Package pdftex.def Info: images/Hepta_hspace.jpg used on input line 692.
+Package pdftex.def Info: images/Hepta_hspace.jpg used on input line 702.
 (pdftex.def)             Requested size: 180.67499pt x 115.92674pt.
+
+<images/Tricopter.jpg, id=548, 790.955pt x 688.5725pt>
 File: images/Tricopter.jpg Graphic file (type jpg)
- <use images/Tricopter.jpg>
-Package pdftex.def Info: images/Tricopter.jpg used on input line 713.
+
+<use images/Tricopter.jpg>
+Package pdftex.def Info: images/Tricopter.jpg used on input line 741.
 (pdftex.def)             Requested size: 180.67499pt x 157.28613pt.
 File: images/Quadcopter.jpg Graphic file (type jpg)
-
-<use images/Quadcopter.jpg>
-Package pdftex.def Info: images/Quadcopter.jpg used on input line 713.
+ <use images/Quadcopter.jpg>
+Package pdftex.def Info: images/Quadcopter.jpg used on input line 741.
 (pdftex.def)             Requested size: 180.67499pt x 160.23784pt.
 
-<images/Pentacopter.jpg, id=533, 785.93625pt x 695.59875pt>
+<images/Pentacopter.jpg, id=549, 785.93625pt x 695.59875pt>
 File: images/Pentacopter.jpg Graphic file (type jpg)
 
 <use images/Pentacopter.jpg>
-Package pdftex.def Info: images/Pentacopter.jpg used on input line 713.
+Package pdftex.def Info: images/Pentacopter.jpg used on input line 741.
 (pdftex.def)             Requested size: 180.67499pt x 159.91005pt.
 File: images/Hexacopter.jpg Graphic file (type jpg)
  <use images/Hexacopter.jpg>
-Package pdftex.def Info: images/Hexacopter.jpg used on input line 726.
+Package pdftex.def Info: images/Hexacopter.jpg used on input line 754.
 (pdftex.def)             Requested size: 180.67499pt x 172.08551pt.
 File: images/Heptacopter.jpg Graphic file (type jpg)
 
 <use images/Heptacopter.jpg>
-Package pdftex.def Info: images/Heptacopter.jpg used on input line 726.
+Package pdftex.def Info: images/Heptacopter.jpg used on input line 754.
 (pdftex.def)             Requested size: 180.67499pt x 149.03514pt.
 File: images/Octacopter.jpg Graphic file (type jpg)
  <use images/Octacopter.jpg>
-Package pdftex.def Info: images/Octacopter.jpg used on input line 726.
+Package pdftex.def Info: images/Octacopter.jpg used on input line 754.
 (pdftex.def)             Requested size: 180.67499pt x 169.15666pt.
- [18 </home/luca/git/Master_Thesis/Report_ongoing/images/Pentacopter_odd.jpg> <
-/home/luca/git/Master_Thesis/Report_ongoing/images/Pentacopter_standard.jpg> </
-home/luca/git/Master_Thesis/Report_ongoing/images/Penta_fspace.jpg> </home/luca
-/git/Master_Thesis/Report_ongoing/images/Penta_tspace.jpg> </home/luca/git/Mast
-er_Thesis/Report_ongoing/images/Penta_hspace.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 </home/luca/git/Master_Thesis/Report_ongoing/images/Penta_standard_fspace.
-jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Penta_standard_tspace.
-jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Penta_standard_hspace.
-jpg> </home/luca/git/Master_Thesis/Report_ongoing/images/Heptacopter.jpg> </hom
+ [20 </home/luca/git/Master_Thesis/Report_ongoing/images/Heptacopter.jpg> </hom
 e/luca/git/Master_Thesis/Report_ongoing/images/Heptacopter_standard.jpg> </home
 /luca/git/Master_Thesis/Report_ongoing/images/Hepta_opt_hspace.jpg> </home/luca
-/git/Master_Thesis/Report_ongoing/images/Hepta_hspace.jpg>] [20 </home/luca/git
-/Master_Thesis/Report_ongoing/images/Pentacopter.jpg>]
-<images/opt_n_ga.jpg, id=557, 973.6375pt x 808.01875pt>
-File: images/opt_n_ga.jpg Graphic file (type jpg)
-
-<use images/opt_n_ga.jpg>
-Package pdftex.def Info: images/opt_n_ga.jpg used on input line 818.
-(pdftex.def)             Requested size: 180.67499pt x 149.93732pt.
-
-<images/opt_n_sqp.jpg, id=558, 796.9775pt x 729.72626pt>
-File: images/opt_n_sqp.jpg Graphic file (type jpg)
-
-<use images/opt_n_sqp.jpg>
-Package pdftex.def Info: images/opt_n_sqp.jpg used on input line 818.
-(pdftex.def)             Requested size: 162.60638pt x 148.88223pt.
-) [21 </home/luca/git/Master_Thesis/Report_ongoing/images/opt_n_ga.jpg> </home/
-luca/git/Master_Thesis/Report_ongoing/images/opt_n_sqp.jpg>] [22
-
-]
+/git/Master_Thesis/Report_ongoing/images/Hepta_hspace.jpg>]) [21 </home/luca/gi
+t/Master_Thesis/Report_ongoing/images/Tricopter.jpg> </home/luca/git/Master_The
+sis/Report_ongoing/images/Pentacopter.jpg>] [22]
 (/home/luca/git/Master_Thesis/Report_ongoing/chapters/simulation_results.tex
 Chapter 4.
+
+LaTeX Warning: Reference `fig:Tricopter_fspace' on page 1 undefined on input li
+ne 10.
+
+
+LaTeX Warning: Reference `fig:Tricopter_fspace' on page 1 undefined on input li
+ne 11.
+
 ) [23
+
 
 ] [24
 
@@ -2208,51 +2164,46 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: CD702A60C81972AAAB46369365357FA0;1911.
+(rerunfilecheck)             Checksum: 1AB89DFB9EF732258B0D77079E4441A6;1757.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 66 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 24240 strings out of 493029
- 463254 string characters out of 6136235
+ 24182 strings out of 493029
+ 461979 string characters out of 6136235
  552015 words of memory out of 5000000
- 27037 multiletter control sequences out of 15000+600000
- 15427 words of font info for 57 fonts, out of 8000000 for 9000
+ 26988 multiletter control sequences out of 15000+600000
+ 15424 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,15n,65p,611b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfrm1000.pfb>
+ 64i,15n,65p,611b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfrm1000.pfb>
 Output written on /home/luca/git/Master_Thesis/Report_ongoing/report.pdf (40 pa
-ges, 8099711 bytes).
+ges, 7541769 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
- 585 compressed objects within 6 object streams
- 157 named destinations out of 1000 (max. 500000)
- 589 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 548 words of extra memory for PDF output out of 10000 (max. 10000000)
 

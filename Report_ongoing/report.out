@@ -13,20 +13,18 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{Hexa-copter}{section.3.2}% 13
 \BOOKMARK [2][-]{subsection.3.2.3}{Octa-copter}{section.3.2}% 14
 \BOOKMARK [1][-]{section.3.3}{Odd Designs}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.3.1}{Tri-copter}{section.3.3}% 16
-\BOOKMARK [2][-]{subsection.3.3.2}{Penta-copter}{section.3.3}% 17
-\BOOKMARK [2][-]{subsection.3.3.3}{Hepta-copter}{section.3.3}% 18
-\BOOKMARK [1][-]{section.3.4}{Comparison of Different Designs}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.5}{Results when n is an Optimization Parameter}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Simulation Results}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Tri-copter}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Hexa-copter}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{Hepta-copter}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Octa-copter}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Summary/Achieved}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{Improvements}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{Further Developement}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter*.58}{Bibliography}{}% 30
-\BOOKMARK [0][-]{chapter*.59}{Acknowledgements}{}% 31
-\BOOKMARK [0][-]{appendix.A}{UML: Activity Diagram}{}% 32
+\BOOKMARK [2][-]{subsection.3.3.1}{Penta-copter}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.2}{Hepta-copter}{section.3.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Comparison of Different Designs}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Simulation Results}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Tri-copter}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Hexa-copter}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Hepta-copter}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{Octa-copter}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Summary/Achieved}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{Improvements}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.3}{Further Developement}{chapter.5}% 27
+\BOOKMARK [0][-]{chapter*.56}{Bibliography}{}% 28
+\BOOKMARK [0][-]{chapter*.57}{Acknowledgements}{}% 29
+\BOOKMARK [0][-]{appendix.A}{UML: Activity Diagram}{}% 30
