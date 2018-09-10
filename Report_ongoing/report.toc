@@ -28,13 +28,12 @@
 \contentsline {section}{\numberline {3.4}Comparison of Different Designs}{20}{section.3.4}
 \contentsline {chapter}{\numberline {4}Simulation Results}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Tri-copter}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hexa-copter}{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}Hepta-copter}{23}{section.4.3}
-\contentsline {section}{\numberline {4.4}Octa-copter}{23}{section.4.4}
+\contentsline {section}{\numberline {4.2}Hexa-copter}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Hepta-copter}{24}{section.4.3}
 \contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}
 \contentsline {section}{\numberline {5.1}Summary/Achieved}{25}{section.5.1}
 \contentsline {section}{\numberline {5.2}Improvements}{25}{section.5.2}
 \contentsline {section}{\numberline {5.3}Further Developement}{25}{section.5.3}
-\contentsline {chapter}{Bibliography}{27}{chapter*.56}
-\contentsline {chapter}{Acknowledgements}{29}{chapter*.57}
+\contentsline {chapter}{Bibliography}{27}{chapter*.59}
+\contentsline {chapter}{Acknowledgements}{29}{chapter*.60}
 \contentsline {chapter}{\numberline {A}UML: Activity Diagram}{31}{appendix.A}
