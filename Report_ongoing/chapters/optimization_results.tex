@@ -28,17 +28,17 @@ in the rest of this work this angle will be referred to as the platonic solids a
 ($\beta_{PS}$).
 
 \begin{figure}[!ht]
-  \begin{subfigure}[b]{0.22\textwidth}
+  \begin{subfigure}[b]{0.29\textwidth}
     \includegraphics[width=\linewidth]{images/tetrahedron.jpg}
     \caption{Tetrahedron.} \label{fig:tetrahedron}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.27\textwidth}
+  \begin{subfigure}[b]{0.32\textwidth}
     \includegraphics[width=\linewidth]{images/octahedron.jpg}
     \caption{Octahedron.} \label{fig:octahedron}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.26\textwidth}
+  \begin{subfigure}[b]{0.32\textwidth}
     \includegraphics[width=\linewidth]{images/cube.jpg}
     \caption{Cube.} \label{fig:cube}
   \end{subfigure}
@@ -63,7 +63,7 @@ force and the minimal attainable torque that the MAV can produce in any directio
 and that minimizes the inertia of the drone is used. The result is depicted in
 \Cref{fig:Quadcopter_1} and has the following features:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 4$
   \item $\beta_{arm}\ =\ [-32.42^{\circ},\  -35.49^{\circ},\  -35.44^{\circ},\  -35.49^{\circ}]$
   \item $\theta_{arm}\ =\ [-0.99^{\circ},\  -1.88^{\circ},\  -2.26^{\circ},\  -2.94^{\circ}]$
@@ -79,43 +79,47 @@ plane ($\theta_{arm}$ = 0) and forming the platonic solid angle with the same ho
 plane ($\beta_{arm}\ =\ \beta_{PS}$). So as to verify this, the second
 design is obtained when performing the same optimization as before with a slight
 change, which consists in choosing as initial solution $\beta_{arm,0} \ =\
-[35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$. The result is
-depicted in \Cref{fig:Quadcopter_1} and has the following parameters:
+[35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$. The result
+in \Cref{fig:Quadcopter_1} is defined by:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 4$
   \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ}]$
   \item $\theta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  0^{\circ},\  0^{\circ}]$
   \item $L\ =\ 0.5\ [m]$
 \end{itemize}}
 
+\begin{figure}[!ht]
+  \begin{center}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
+    \caption{Design 1.} \label{fig:Quadcopter_1}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
+    \caption{Design 2.} \label{fig:Quadcopter_2}
+  \end{subfigure}
+  \caption{Representation of the designs obtained for the quad-copter.}
+  \label{fig:Quadcopter_result}
+\end{center}
+\end{figure}
+
 After optimization the second design is the same as the initial solution. This means
 that the initially chosen design is optimal and it is very likely a global optimum
 as when starting the optimization from different initial solution it converges to it.
 It is interesting to note that the four propellers of the second design form the four
-vertices of a tetrahedron (see \Cref{fig:Quadcopter_2_tetra}).
+vertices of a tetrahedron (see \Cref{fig:Quadcopter_2_tetra}).\\
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Quadcopter2.jpg}
-    \caption{Design 1.} \label{fig:Quadcopter_1}
-  \end{subfigure}
-\hspace*{\fill} % separation between the subfigures
-\begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
-    \caption{Design 2.} \label{fig:Quadcopter_2}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[width=\linewidth]{images/Quad_tetrahedron.jpg}
-    \caption{Design 2 within a tetrahedron.} \label{fig:Quadcopter_2_tetra}
-  \end{subfigure}}
-  \caption{Representation of the designs obtained for the quad-copter.}
-  \label{fig:Quadcopter_result}
+  \centering
+  \includegraphics[width=0.35\linewidth]{images/Quad_tetrahedron.jpg}
+  \caption{Design 2 within a tetrahedron.}
+  \label{fig:Quadcopter_2_tetra}
 \end{figure}
 
 It is important to understand that for the tool, the designs with all the arms
-on the same side (as design 1), or the designs with distributed arms (as design 2),
+oriented upwards (as design 1), or the designs with distributed arms (as design 2),
 are equivalent. Even with slightly different arm angles’ magnitudes
 between the two designs, when comparing \Cref{fig:Quadcopter1_spaces}with
 \Cref{fig:Quadcopter2_spaces} and when comparing the different metrics
@@ -123,23 +127,26 @@ in \Cref{tab:tab_Quad_compare_force}, \Cref{tab:tab_Quad_compare_torque} and
 \Cref{tab:tab_Quad_compare_hover}, one can easily see that the two designs
 propose similar abilities. The main difference is the location of their center of mass
 that the tool does not consider. For instance, second design’s CoM coincide with
-the body origin. Which renders the drone more balanced and thus more controllable.
+the body origin. Which renders the drone more balanced and thus more controllable.\\
 
 \begin{figure}[!ht]
   \begin{center}
-  \resizebox{1.1\textwidth}{!}{\begin{subfigure}[b]{0.54\textwidth}
+  \begin{subfigure}[b]{0.42\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Quad_design_2_fspace.jpg}
     \caption{Attainable force space.} \label{fig:deisgn1_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.51\textwidth}
+  \begin{subfigure}[b]{0.4\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Quad_design_2_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:deisgn1_tspace}
   \end{subfigure}
-  \begin{subfigure}[b]{0.52\textwidth}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Quad_design_2_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:deisgn1_hspace}
-  \end{subfigure}}
+  \end{subfigure}
   \caption{Visual representation of the abilities of design 1.}
   \label{fig:Quadcopter1_spaces}
   \end{center}
@@ -147,19 +154,22 @@ the body origin. Which renders the drone more balanced and thus more controllabl
 
 \begin{figure}[!ht]
   \begin{center}
-  \resizebox{1.1\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
+  \begin{subfigure}[b]{0.42\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Quad_design_1_fspace.jpg}
     \caption{Attainable force space.} \label{fig:deisgn2_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.52\textwidth}
+  \begin{subfigure}[b]{0.4\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Quad_design_1_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:deisgn2_tspace}
   \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Quad_design_1_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:deisgn2_hspace}
-  \end{subfigure}}
+  \end{subfigure}
   \caption{Visual representation of the abilities of design 2.}
   \label{fig:Quadcopter2_spaces}
   \end{center}
@@ -233,7 +243,7 @@ design parameters $n\ =\ 6$ and $L\ =\ 0.5\ [m]$ and as chosen cost function
 for the optimization problem the cost function that maximizes the volumes
 of the force and torque spaces, the tool returns a design defined by:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 6$
   \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ},\
                           35.26^{\circ},\  -35.26^{\circ}]$
@@ -252,58 +262,67 @@ which is equivalent to Voliro presented in \citep{kamel_voliro:_2018}
 (see \Cref{fig:Hexacopter_resultc}).
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.6\textwidth}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Hexacopter.jpg}
     \caption{Optimal hexa-copter} \label{fig:Hexacopter_resulta}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.55\textwidth}
-    \includegraphics[width=\linewidth]{images/Hexa_octahedron.jpg}
-    \caption{Optimal hexa-copter within an octahedron.} \label{fig:Hexacopter_resultb}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.8\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Voliro.jpg}
     \caption{Voliro's design for comparison.} \label{fig:Hexacopter_resultc}
-  \end{subfigure}}
+  \end{subfigure}
   \caption{Representation of the design obtained for the hexa-copter.}
   \label{fig:Hexacopter_result}
 \end{figure}
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.44\textwidth}
+  \centering
+  \includegraphics[width=0.45\linewidth]{images/Hexa_octahedron.jpg}
+  \caption{Optimal hexa-copter within an octahedron.}
+  \label{fig:Hexacopter_resultb}
+\end{figure}
+
+\begin{figure}[!ht]
+  \begin{center}
+  \begin{subfigure}[b]{0.46\textwidth}
     \includegraphics[width=\linewidth]{images/Hexa_fspace.jpg}
     \caption{Attainable force space.} \label{fig:hexa_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.46\textwidth}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
     \includegraphics[width=\linewidth]{images/Hexa_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:hexa_tspace}
   \end{subfigure}
-  \begin{subfigure}[b]{0.47\textwidth}
+  \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Hexa_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:hexa_hspace}
-  \end{subfigure}}
+  \end{subfigure}
   \caption{Visual representation of the abilities of the optimal hexa-copter.}
   \label{fig:Hexacopter_spaces}
+  \end{center}
 \end{figure}
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.52\textwidth}
+  \begin{center}
+  \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Voliro_fspace.jpg}
     \caption{Attainable force space.} \label{fig:voliro_fspace}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.47\textwidth}
     \includegraphics[width=\linewidth]{images/Voliro_tspace.jpg}
     \caption{Attainable torque space.} \label{fig:voliro_tspace}
   \end{subfigure}
-  \begin{subfigure}[b]{0.52\textwidth}
+  \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Voliro_hspace.jpg}
     \caption{Hover efficiency in every orientation.} \label{fig:voliro_hspace}
-  \end{subfigure}}
+  \end{subfigure}
   \caption{Visual representation of the abilities of Voliro.}
   \label{fig:Voliro_spaces}
+  \end{center}
 \end{figure}
 
 When comparing the different spaces shown in \Cref{fig:Hexacopter_spaces}
@@ -362,8 +381,6 @@ higher for the optimized design (see \Cref{tab:tab_Hexa_compare_hover}).
 \end{center}
 \end{table}
 
-\clearpage
-
 \subsection{Octa-copter}
 \label{sec:octa_copter}
 
@@ -373,7 +390,7 @@ minimal attainable force and the minimal attainable torque that the MAV
 can produce in any direction and that minimizes the inertia of the drone.
 The result represented in \Cref{fig:Octacopter_resulta} is defined by:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 8$
   \item $\beta_{arm}\ =\ [35.26^{\circ},\  -35.26^{\circ},\  35.26^{\circ},\  -35.26^{\circ},\
                           35.26^{\circ},\  -35.26^{\circ},\ 35.26^{\circ},\  -35.26^{\circ}]$
@@ -389,7 +406,7 @@ comparison, it is assumed that the Omnicopter can dynamically tilt its rotors
 around their axes (see \Cref{fig:Octacopter_resultb}). The Omnicopter design
 parameters are:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 8$
   \item $\beta_{arm}\ =\ [-35.26^{\circ},\  -35.26^{\circ},\  -35.26^{\circ},\  -35.26^{\circ},\
                           35.26^{\circ},\  35.26^{\circ},\ 35.26^{\circ},\  35.26^{\circ}]$
@@ -399,20 +416,15 @@ parameters are:
 \end{itemize}}
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.6\textwidth}
+  \begin{subfigure}[b]{0.49\textwidth}
     \includegraphics[width=\linewidth]{images/Octacopter.jpg}
     \caption{Optimal hexa-copter} \label{fig:Octacopter_resulta}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.6\textwidth}
+  \begin{subfigure}[b]{0.49\textwidth}
     \includegraphics[width=\linewidth]{images/omnicopter.jpg}
     \caption{Omnicopter's design for comparison.} \label{fig:Octacopter_resultb}
   \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Octa_cube.jpg}
-    \caption{Omnicopter in a cube.} \label{fig:Octacopter_resultc}
-  \end{subfigure}}
   \caption{Representation of the designs obtained for the octa-copter.}
   \label{fig:Octacopter_result}
 \end{figure}
@@ -422,39 +434,9 @@ form a platonic solid with its propellers, but the Omnicopter does (see
 \Cref{fig:Octacopter_resultc}).
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
-    \includegraphics[width=\linewidth]{images/Octa_fspace.jpg}
-    \caption{Attainable force space.} \label{fig:Octa_fspace}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Octa_tspace.jpg}
-    \caption{Attainable torque space.} \label{fig:Octa_tspace}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\linewidth]{images/Octa_hspace.jpg}
-    \caption{Hover efficiency in every orientation.} \label{fig:Octa_hspace}
-  \end{subfigure}}
-  \caption{Visual representation of the abilities of the optimal octa-copter.}
-  \label{fig:Octacopter_spaces}
-\end{figure}
-
-\begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.55\textwidth}
-    \includegraphics[width=\linewidth]{images/Omnicopter_fspace.jpg}
-    \caption{Attainable force space.} \label{fig:Omnicopter_fspace}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Omnicopter_tspace.jpg}
-    \caption{Attainable torque space.} \label{fig:Omnicopter_tspace}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\linewidth]{images/Omnicopter_hspace.jpg}
-    \caption{Hover efficiency in every orientation.} \label{fig:Omnicopter_hspace}
-  \end{subfigure}}
-  \caption{Visual representation of the abilities of the Omnicopter.}
-  \label{fig:Omnicopter_spaces}
+  \centering
+  \includegraphics[width=0.5\linewidth]{images/Octa_cube.jpg}
+  \caption{Omnicopter in a cube.} \label{fig:Octacopter_resultc}
 \end{figure}
 
 When comparing the two designs’ features represented in \Cref{fig:Omnicopter_spaces}
@@ -462,7 +444,47 @@ and \Cref{fig:Octacopter_spaces} and detailed in \Cref{tab:tab_Octa_compare_forc
 \Cref{tab:tab_Octa_compare_torque} and \Cref{tab:tab_Octa_compare_hover}, one
 notices that the two design are quite similar. Nevertheless, the arms of the optimal octa-copter
 are more evenly distributed, this leads to a slightly bigger torque and force space volume
-and a average hover efficiency better for the optimal octa-copter.
+and a average hover efficiency better for the optimal octa-copter.\\\\\\\\
+
+\begin{figure}[!ht]
+  \begin{center}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\linewidth]{images/Octa_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:Octa_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Octa_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:Octa_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Octa_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:Octa_hspace}
+  \end{subfigure}
+  \caption{Visual representation of the abilities of the optimal octa-copter.}
+  \label{fig:Octacopter_spaces}
+  \end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+  \begin{center}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/Omnicopter_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:Omnicopter_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Omnicopter_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:Omnicopter_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Omnicopter_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:Omnicopter_hspace}
+  \end{subfigure}
+  \caption{Visual representation of the abilities of the Omnicopter.}
+  \label{fig:Omnicopter_spaces}
+  \end{center}
+\end{figure}
 
 \begin{table}[!ht]
 \begin{center}
@@ -494,7 +516,7 @@ and a average hover efficiency better for the optimal octa-copter.
 \end{center}
 \end{table}
 
-{\scriptsize\begin{table}[!ht]
+\begin{table}[!ht]
 \begin{center}
  \caption{Information on the designs’ hover efficiency space properties.}\vspace{1ex}
  \label{tab:tab_Octa_compare_hover}
@@ -507,9 +529,7 @@ and a average hover efficiency better for the optimal octa-copter.
  \hline
 \end{tabular}}
 \end{center}
-\end{table}}
-
-\clearpage
+\end{table}
 
 \section{Odd Designs}
 \label{sec:odd_designs}
@@ -527,7 +547,7 @@ in order for the tool to have less parameters to optimize and thus to be more
 precise. The morphology obtained is represented in \Cref{fig:Pentacopter_odd}
 and its parameters are:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 5$
   \item $\beta_{arm}\ =\ [0^{\circ},\  0^{\circ},\  36.89^{\circ},\  -58.46^{\circ},\   41.45^{\circ}]$
   \item $\theta_{arm}\ =\ [0^{\circ},\  30.3^{\circ},\  -16.13^{\circ},\  -5.46^{\circ},\  -33.37^{\circ}]$
@@ -540,12 +560,12 @@ standard tilting-rotors penta-copter is proposed. First, to  visual comparison o
 two designs is found in \Cref{fig:Pentacopter_result}.
 
 \begin{figure}[!ht]
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.35\textwidth}
     \includegraphics[width=\linewidth]{images/Pentacopter_odd.jpg}
     \caption{Optimal penta-copter.} \label{fig:Pentacopter_odd}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.55\textwidth}
+  \begin{subfigure}[b]{0.42\textwidth}
     \includegraphics[width=\linewidth]{images/Pentacopter_standard.jpg}
     \caption{Penta-copter standard.} \label{fig:Pentacopter_standard}
   \end{subfigure}
@@ -565,6 +585,46 @@ examining the values showed in \Cref{tab:tab_Penta_compare_force},
 the first impression are confirmed, despite rather low minimal attainable
 force and torque, this optimal design shows a very good average hover
 efficiency.
+
+\begin{figure}[!ht]
+  \begin{center}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:penta_fspace}
+    \end{subfigure}
+    \hspace*{\fill} % separation between the subfigures
+    \begin{subfigure}[b]{0.43\textwidth}
+      \includegraphics[width=\linewidth]{images/Penta_tspace.jpg}
+      \caption{Attainable torque space.} \label{fig:penta_tspace}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.47\textwidth}
+      \includegraphics[width=\linewidth]{images/Penta_hspace.jpg}
+      \caption{Hover efficiency in every orientation.} \label{fig:penta_hspace}
+    \end{subfigure}
+    \caption{Visual representation of the abilities of the optimal penta-copter.}
+    \label{fig:Pentacopter_spaces}
+  \end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+  \begin{center}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_standard_fspace.jpg}
+    \caption{Attainable force space.} \label{fig:penta_standard_fspace}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.42\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_standard_tspace.jpg}
+    \caption{Attainable torque space.} \label{fig:penta_standard_tspace}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.47\textwidth}
+    \includegraphics[width=\linewidth]{images/Penta_standard_hspace.jpg}
+    \caption{Hover efficiency in every orientation.} \label{fig:penta_standard_hspace}
+  \end{subfigure}
+  \caption{Visual representation of the abilities of the standard penta-copter.}
+  \label{fig:penta_standard_spaces}
+  \end{center}
+\end{figure}
 
 \begin{table}[!ht]
 \begin{center}
@@ -600,7 +660,7 @@ efficiency.
 \begin{center}
  \caption{Information on the designs’ hover efficiency space properties.}\vspace{1ex}
  \label{tab:tab_Penta_compare_hover}
-  {\scriptsize\begin{tabular}{|c|cccc|}
+  {\tiny\begin{tabular}{|c|cccc|}
  \hline
   Design & $H_{eff,min}\ [\%]$ & $H_{eff,max}\ [\%]$ & $H_{eff,mean}\ [\%]$
   & $MAD(H_{eff})\ [\%]$\\ \hline
@@ -611,42 +671,6 @@ efficiency.
 \end{center}
 \end{table}
 
-\begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Penta_fspace.jpg}
-    \caption{Attainable force space.} \label{fig:penta_fspace}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\linewidth]{images/Penta_tspace.jpg}
-    \caption{Attainable torque space.} \label{fig:penta_tspace}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.48\textwidth}
-    \includegraphics[width=\linewidth]{images/Penta_hspace.jpg}
-    \caption{Hover efficiency in every orientation.} \label{fig:penta_hspace}
-  \end{subfigure}}
-  \caption{Visual representation of the abilities of the optimal penta-copter.}
-  \label{fig:Pentacopter_spaces}
-\end{figure}
-
-\begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
-    \includegraphics[width=\linewidth]{images/Penta_standard_fspace.jpg}
-    \caption{Attainable force space.} \label{fig:penta_standard_fspace}
-  \end{subfigure}
-  \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.46\textwidth}
-    \includegraphics[width=\linewidth]{images/Penta_standard_tspace.jpg}
-    \caption{Attainable torque space.} \label{fig:penta_standard_tspace}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.47\textwidth}
-    \includegraphics[width=\linewidth]{images/Penta_standard_hspace.jpg}
-    \caption{Hover efficiency in every orientation.} \label{fig:penta_standard_hspace}
-  \end{subfigure}}
-  \caption{Visual representation of the abilities of the standard penta-copter.}
-  \label{fig:penta_standard_spaces}
-\end{figure}
-
 \subsection{Hepta-copter}
 \label{sec:hepta_copter}
 
@@ -655,7 +679,7 @@ the arm angles in order to obtain the maximal minimum attainable force and torqu
 this result was obtained from the tool. The design is represented in
 \Cref{fig:Heptacopter}and is defined by:
 
-{\scriptsize\begin{itemize}
+{\small\begin{itemize}
   \item $n\ =\ 7$
   \item $\beta_{arm}\ =\ [35.26^{\circ},\  35.26^{\circ},\  35.26^{\circ},\  35.26^{\circ},\
                           35.26^{\circ},\  35.26^{\circ},\  35.26^{\circ}]$
@@ -726,7 +750,7 @@ picture in any position at any orientation for as an example bridge inspection o
 making.
 
 \begin{figure}[!ht]
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Tricopter.jpg}
     \caption{Tri-copter.} \label{fig:comp_tri}
   \end{subfigure}
@@ -735,23 +759,26 @@ making.
     \includegraphics[width=\linewidth]{images/Quadcopter.jpg}
     \caption{Quad-copter.} \label{fig:comp_quad}
   \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Pentacopter.jpg}
     \caption{Penta-copter.} \label{fig:comp_penta}
-  \end{subfigure}}
-  \resizebox{\textwidth}{!}{\begin{subfigure}[b]{0.5\textwidth}
+  \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
+  \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Hexacopter.jpg}
     \caption{Hexa-copter.} \label{fig:comp_hexa}
   \end{subfigure}
   \hspace*{\fill} % separation between the subfigures
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.45\textwidth}
     \includegraphics[width=\linewidth]{images/Heptacopter.jpg}
     \caption{Hepta-copter.} \label{fig:comp_hepta}
   \end{subfigure}
+  \hspace*{\fill} % separation between the subfigures
   \begin{subfigure}[b]{0.5\textwidth}
     \includegraphics[width=\linewidth]{images/Octacopter.jpg}
     \caption{Octa-copter.} \label{fig:comp_octo}
-  \end{subfigure}}
+  \end{subfigure}
   \caption{Representation of all the optimal designs.}
   \label{fig:Compare_all_regular_designs}
 \end{figure}

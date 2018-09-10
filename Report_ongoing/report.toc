@@ -20,20 +20,19 @@
 \contentsline {section}{\numberline {3.1}Platonic Solids}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Even Designs}{12}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Quad-copter}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Hexa-copter}{14}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Octa-copter}{16}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Odd Designs}{18}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Penta-copter}{18}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Hepta-copter}{19}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{20}{section.3.4}
-\contentsline {chapter}{\numberline {4}Simulation Results}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Tri-copter}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hexa-copter}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}Hepta-copter}{24}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Summary/Achieved}{25}{section.5.1}
-\contentsline {section}{\numberline {5.2}Improvements}{25}{section.5.2}
-\contentsline {section}{\numberline {5.3}Further Developement}{25}{section.5.3}
-\contentsline {chapter}{Bibliography}{27}{chapter*.59}
-\contentsline {chapter}{Acknowledgements}{29}{chapter*.60}
-\contentsline {chapter}{\numberline {A}UML: Activity Diagram}{31}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.2}Hexa-copter}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Octa-copter}{17}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Odd Designs}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Penta-copter}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Hepta-copter}{22}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Comparison of Different Designs}{23}{section.3.4}
+\contentsline {chapter}{\numberline {4}Simulation Results}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Tri-copter}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hexa-copter}{27}{section.4.2}
+\contentsline {section}{\numberline {4.3}Hepta-copter}{33}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary/Achieved}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Improvements}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}Further Developement}{35}{section.5.3}
+\contentsline {chapter}{Bibliography}{37}{chapter*.70}
+\contentsline {chapter}{Acknowledgements}{39}{chapter*.71}
